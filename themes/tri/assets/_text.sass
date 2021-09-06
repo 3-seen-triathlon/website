@@ -1,0 +1,43 @@
+.text
+    .row
+        display: flex
+        justify-content: center
+    .col
+        width: 60%
+        max-width: $content-max-width
+    p
+        text-align: left
+    ul
+        text-align: left
+    img, video
+        position: relative
+        width: 100%
+        max-width: 90vw
+        height: auto
+        margin: 20px 0
+        border-radius: 8px
+    iframe
+        margin-left: auto !important
+        margin-right: auto !important
+    a.video:hover
+        border-bottom: 0px solid #fff
+    .iframes
+        display: flex
+        justify-content: center
+        align-items: top
+        flex-wrap: wrap
+    table
+        margin-top: 30px
+        margin-bottom: 30px
+        background-color: $light-grey
+        text-align: left
+        thead th
+            font-weight: 500 !important
+        td, th
+            padding: 10px 20px !important
+    h1, h2, h3
+        margin: 45px 0 15px 0 !important
+    a
+        transform: none !important
+        &:hover
+            border-bottom: 2px solid $red

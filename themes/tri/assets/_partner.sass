@@ -1,0 +1,23 @@
+.partner .col
+    text-align: center
+    h2
+        color: #000000
+    img
+        width: 150px
+        height: auto
+        transition: all 0.1s
+        &:hover
+            transform: scale(1.025)
+
+.partner .row .col
+    &.big a img
+        width: 450px !important
+    &.medium a img
+        width: 300px !important
+ 
+@media (max-width: 800px)
+  .partner .row .col
+    &.big a img
+      width: 300px !important
+    &.medium a img
+      width: 250px !important

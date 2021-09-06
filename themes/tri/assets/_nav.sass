@@ -1,0 +1,127 @@
+$overlay-link-color: #fff
+$overlay-link-hover-color: #fff
+$open-nav-button-color: #fff
+$open-nav-button-hover-color: #fff
+
+/* Position the close button (top right corner) */
+.overlay > div
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  .row
+    width: 100%
+  .close .col
+    display: flex
+    justify-content: flex-end !important
+    align-items: center
+    svg
+      width: 32px
+      height: 32px
+      cursor: pointer
+      z-index: 1114 !important
+      path
+        fill: #fff !important
+        stroke: #fff !important
+        stroke-width: 1.5px
+
+      
+
+.header
+  position: fixed
+  z-index: 1110 !important
+  top: 0
+  left: 0
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  background-color: black
+  color: white
+  .row
+    width: 100%
+    margin: 0
+    padding: 0
+  .col
+    display: flex
+    justify-content: space-between
+    align-items: center
+  a
+    width: 100px
+  a.logo
+    color: white
+    font-weight: 500
+    font-size: 15px !important
+    width: 100px
+    img
+      height: 50px
+  .menu
+    display: flex
+    justify-content: center
+    width: 100px
+  span
+    text-transform: uppercase
+    margin-right: 10px
+    font-size: 15px !important
+    letter-spacing: 1px
+  svg
+    cursor: pointer
+    width: 25px
+    height: 25px
+  img
+    height: 60px
+
+// overlay
+
+#nav_overlay .row .col
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+      height: 120px
+  .menu-list
+    width: 100%
+
+.overlay
+  height: 0%
+  width: 100%
+  position: fixed
+  z-index: 1111 !important
+  overflow: hidden
+  left: 0
+  top: 0
+  background-color: rgba(0,0,0,0.95)
+  transition: all 0.5s
+  ul
+    padding: 0
+    list-style-type: none
+    li
+      margin: 1rem !important
+    a
+      text-transform: uppercase
+      letter-spacing: 2px
+      font-weight: 600
+      font-size: 25px !important
+      text-transform: none !important
+      color: #fff
+      padding: 0 !important
+      line-height: 1 !important
+      &:hover
+        color: $red
+    li a 
+      padding: 8px
+      color: #ffffff
+      &:hover
+        color: #fff
+        border-bottom: 2px solid $red
+
+@media (max-width: 600px)
+  header a.logo.title
+    display: none
+
+  #nav_overlay .row .col img
+    height: 80px
+  .overlay ul
+    li
+      margin: 0.5rem !important
+      a
+        font-size: 16px !important
+  

@@ -1,0 +1,8 @@
+<a href='{{ .Get "link" | relURL }}' target="_blank">
+    <div class="card mt-3">
+        <img src='{{ .Get "image" | relURL }}' class="card-img-top infocard" alt='{{ .Get "image_alt" }}'>
+        <div class="card-body">
+            <h6 class="card-text">{{ .Get "name" }}</h6>
+        </div>
+    </div>
+</a>

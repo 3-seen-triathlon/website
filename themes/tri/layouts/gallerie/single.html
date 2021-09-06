@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body>
+
+    {{- partial "header.html" . -}}
+
+    {{ if .Params.heading }}
+        {{- partial "heading.html" . -}}
+    {{ end }}
+
+    {{- partial "text.html" . -}}
+
+    {{- partial "gallery.html" . -}}
+
+    {{ if .Params.partner }}
+        {{- partial "partner.html" . -}}
+    {{ end }}
+
+
+    {{- partial "footer.html" . -}}
+
+</body>
+
+</html>
+

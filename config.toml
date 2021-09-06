@@ -1,0 +1,78 @@
+baseURL = "https://dreiseenstafette.ch/"
+languageCode = "de"
+title = 'Dreiseenstafette'
+
+
+theme = 'tri'
+
+[menu]
+    # main menu
+    [[menu.main]]
+        name = 'Triathlon'
+        url = 'kategorien/triathlon'
+        weight = 1
+    [[menu.main]]
+        name = 'Stafette'
+        url = 'kategorien/stafette'
+        weight = 2
+    [[menu.main]]
+        name = 'Lauf'
+        url = 'kategorien/lauf'
+        weight = 3
+    [[menu.main]]
+        name = 'Anmelden'
+        url = 'https://secure.datasport.com/?dss21'
+        weight = 4
+    [[menu.main]]
+        name = 'Startlisten'
+        url = 'https://www.datasport.com/live/startlist/?racenr=23893'
+        weight = 5
+    [[menu.main]]
+        name = 'Galerie'
+        url = 'galerie'
+        weight = 6
+    [[menu.main]]
+        name = 'Infos'
+        url = 'infos'
+        weight = 7
+    [[menu.main]]
+        name = 'Kontakt'
+        url = 'kontakt'
+        weight = 8
+    [[menu.main]]
+        name = 'Helferbereich'
+        url = 'https://helfer.dreiseenstafette.ch'
+        weight = 9
+    # footer menu
+    [[menu.footer]]
+        name = 'Instagram'
+        url = 'https://www.instagram.com/dreiseenstafette/'
+        weight = 1
+    [[menu.footer]]
+        name = 'Facebook'
+        url = 'https://www.facebook.com/DreiSeenStafette/'
+        weight = 2
+    [[menu.footer]]
+        name = 'Youtube'
+        url = 'https://www.youtube.com/channel/UCfi5DPqo-Z8zKkDl2eU6zow'
+        weight = 3
+    [[menu.footer]]
+        name = 'Helfer'
+        url = 'https://helfer.dreiseenstafette.ch'
+        weight = 4
+  
+
+[params]
+    [params.logo]
+        src = 'logo/dss.png'
+
+    [params.button]
+        link = 'https://secure.datasport.com/?dss21'
+        text = 'Jetzt anmelden'
+    
+    [params.description]
+        text = 'Die Dreiseenstafette ist ein kleiner und familiärer Anlass am Hüttwilersee im Thurgau.'
+        date = '22.08.2021'
+
+[markup.goldmark.renderer]
+    unsafe= true

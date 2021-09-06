@@ -1,0 +1,26 @@
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid routes">
+    <div class="row">
+        <div class="col">
+
+            <div class="iframes">
+            {{ $routes := . }}
+            {{ range (seq 0 (sub (len .Params) 1) ) }}
+
+            <iframe src="{{ $routes.Get . }}" width='465' height='548'
+                frameborder='0'></iframe>
+
+            {{ end }}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid text">
+    <div class="row pl-2 pr-2 p-3">
+        <div class="col p-2">

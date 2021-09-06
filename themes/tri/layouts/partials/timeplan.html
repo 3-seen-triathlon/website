@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col p-5 timeplan">
+		
+			<ul>
+				{{ range .Params.time }}
+				<li>{{ .time }}: {{ .text }}</li>
+				{{ end }}
+			</ul>
+		
+		</div>
+	</div>
+</div>

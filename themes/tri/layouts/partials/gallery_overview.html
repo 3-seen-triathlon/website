@@ -1,0 +1,24 @@
+<div class="container-fluid cards">
+        <div class="row pl-5 pr-5">
+            <div class="col p-5">
+                <div class="card-deck">
+                    {{ range .Params.galleries }}
+                    <a href="{{ .link }}">
+                        <div class="card mt-3">
+                            {{ if .video }}
+                            <video src="{{ .video | relURL }}" autoplay muted loop></video>
+                            {{ else }}
+                            <img src="{{ .image | relURL }}" class="card-img-top" alt="{{ .Params.image_alt }}">
+                            {{ end }}
+                            <div class="card-body">
+                                <h6 class="card-title">#galerie</h6>
+                                <h5 class="card-text">{{ .name }}</h5>
+                                <small>{{ dateFormat "2 January, 2006" .date }}</small>
+                            </div>
+                        </div>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>

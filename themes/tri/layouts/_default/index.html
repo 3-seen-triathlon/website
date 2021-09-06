@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+    {{ if .Params.signup }}
+        {{- partial "signup.html" . -}}
+    {{ end }}
+
+    {{ if .Params.slider }}
+        {{- partial "slider.html" . -}}
+    {{ end }}
+
+    {{ if .Params.cancelled }}
+    	{{- partial "cancelled.html" . -}}
+    {{ end }}
+
+    {{ if .IsHome }}
+        {{- partial "card.html" . -}}
+    {{ end }}
+
+    {{ if .Params.time }}
+    	{{- partial "timeplan.html" . -}}
+    {{ end }}
+
+    {{ if .Params.partner }}
+        {{- partial "partner.html" . -}}
+    {{ end }}
+
+{{ end }}

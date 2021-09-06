@@ -1,0 +1,35 @@
+.gallery
+    .row
+        max-width: 100%
+    .col
+        max-width: 100%
+        column-count: 8
+        column-gap: 0
+        background-color: #fff
+    img
+        max-width: 100%
+        height: auto
+        transition: all 0.25s
+        &:hover
+            filter: grayscale(25%) brightness(40%)
+
+@media (min-width: 601px) and (max-width: 1000px)
+    .gallery .col
+        column-count: 4
+
+@media (max-width: 600px)
+    .gallery .col
+        column-count: 3
+
+.ekko-lightbox
+    background-color: rgba(0,0,0,0.8)
+    z-index: 1200 !important
+    .modal-content
+        background-color: rgba(0,0,0,0)
+        border: 0px solid $red
+    .ekko-lightbox-nav-overlay a
+        color: $red !important
+        span
+            font-size: 40px !important
+    img
+        border-radius: 8px
