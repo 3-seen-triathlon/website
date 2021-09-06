@@ -8,7 +8,7 @@ heading:
 galleries:
     - name: "DSS21"
       date: "2021-08-22"
-      link: "dss19"
+      link: "dss21"
       image: "background/2021_velo_olympic.jpg"
     - name: "DSS19"
       date: "2019-08-18"
