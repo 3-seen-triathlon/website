@@ -12,7 +12,7 @@ image: "background/lauf.jpg"
 
 {{< /info >}}
 
-# Zeitplan vom 22. August 2021
+# Zeitplan vom 21. August 2022
 
 - 08:00 Uhr: Öffnung Wettkampfgelände
 - 10:00 Uhr: Start Short Distance Triathlon, men

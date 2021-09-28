@@ -21,7 +21,7 @@ theme = 'tri'
         weight = 3
     [[menu.main]]
         name = 'Anmelden'
-        url = 'https://secure.datasport.com/?dss21'
+        url = 'https://www.datasport.com/de/sportevents/kalender/'
         weight = 4
     [[menu.main]]
         name = 'Startlisten'
@@ -72,7 +72,7 @@ theme = 'tri'
     
     [params.description]
         text = 'Die Dreiseenstafette ist ein kleiner und familiärer Anlass am Hüttwilersee im Thurgau.'
-        date = '22.08.2021'
+        date = '21.08.2022'
 
 [markup.goldmark.renderer]
     unsafe= true

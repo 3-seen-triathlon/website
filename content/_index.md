@@ -18,6 +18,12 @@ slider:
     link: "kategorien/lauf"
     link_text: "Streckenpläne & Infos"
 
+signup:
+  text: "Die nächste DSS findet am 21.08.2022 statt"
+  image: "background/triathlon_red.jpg"
+  link_text: "Jetzt Anmelden"
+  link: "https://www.datasport.com/de/sportevents/kalender/"
+
 partner:
   - gold:
     heading: "Hauptsponsor"
