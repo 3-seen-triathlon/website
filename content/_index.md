@@ -22,7 +22,7 @@ signup:
   text: "Die nächste DSS findet am 21.08.2022 statt"
   image: "background/triathlon_red.jpg"
   link_text: "Jetzt Anmelden"
-  link: "https://www.datasport.com/de/sportevents/kalender/"
+  link: "https://secure.datasport.com/?dss22"
 
 partner:
   - gold:
