@@ -21,7 +21,7 @@ theme = 'tri'
         weight = 3
     [[menu.main]]
         name = 'Anmelden'
-        url = 'https://www.datasport.com/de/sportevents/kalender/'
+        url = 'https://secure.datasport.com/?dss22'
         weight = 4
     [[menu.main]]
         name = 'Startlisten'
