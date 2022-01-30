@@ -39,10 +39,10 @@ partner:
       - image: "logo/dss21/dermaplast_active.png"
         image_alt: "DermaPlast Active"
         link: "https://www.dermaplast.ch/de/produktuebersicht/active.html"
-      - image: "logo/dss21/focus_water.jpg"
+      - image: "logo/dss22/focus_water_logo.png"
         image_alt: "Focus Water"
         link: "https://focuswater.ch/"
-      - image: "logo/dss21/saucony.png"
+      - image: "logo/dss22/saucony_logo.png"
         image_alt: "Saucony"
         link: "https://saucony.ch"
   - silver:
