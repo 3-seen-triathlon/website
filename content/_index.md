@@ -36,13 +36,13 @@ partner:
     size: "medium"
     heading: "Sponsoren"
     partner:
-      - image: "logo/dss21/dermaplast_active.png"
+      - image: "logo/dss22/logo_dermaplast.png"
         image_alt: "DermaPlast Active"
-        link: "https://www.dermaplast.ch/de/produktuebersicht/active.html"
-      - image: "logo/dss22/focus_water_logo.png"
+        link: "http://www.dermaplastactive.ch/"
+      - image: "logo/dss22/logo_focus_water.png"
         image_alt: "Focus Water"
         link: "https://focuswater.ch/"
-      - image: "logo/dss22/saucony_logo.png"
+      - image: "logo/dss22/logo_saucony.png"
         image_alt: "Saucony"
         link: "https://saucony.ch"
   - silver:
