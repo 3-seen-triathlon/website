@@ -1,22 +1,20 @@
 deploy:
   image: golang:alpine
   stage: deploy
-
-  # only build on main branch
   only:
     refs:
       - main
-
+  except:
+    changes:
+      - docs/**/*
   variables:
     VERSION: "0.88.1"
-
   script:
     - apk --no-cache add curl lftp libc6-compat # see https://stackoverflow.com/a/66974607
     - curl --location --output hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_extended_${VERSION}_Linux-64bit.tar.gz"
     - tar -zxvf hugo.tar.gz
     - ./hugo --minify
     - lftp -e "open $FTP_HOST; user $FTP_USER $FTP_PW; mkdir -f staging; mirror --only-newer -X .* -X .*/ --reverse --verbose --delete --ignore-time public/ httpdocs/; bye"
-
   environment:
     name: production
     url: https://dreiseenstafette.ch
