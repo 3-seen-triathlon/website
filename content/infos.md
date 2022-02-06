@@ -6,7 +6,7 @@ image: "background/lauf.jpg"
 {{< info >}}
 
 {{< infocard name="Regelwerk" link="documents/regelwerk_dss20.pdf" image="background/book-solid.svg" image_alt="" >}}
-{{< infocard name="Lageplan und Wettkampfzentrum" link="documents/wechselzone_dss21.png" image="background/map-regular.svg" image_alt="" >}}
+{{< infocard name="Lageplan und Wettkampfzentrum" link="documents/wechselzone_dss20.pdf" image="background/map-regular.svg" image_alt="" >}}
 {{< infocard name="Zeitplan" link="documents/provisorischer_zeitplan_dss21.pdf" image="background/calendar-alt-regular.svg" image_alt="" >}}
 {{< infocard name="Kategorien und Startlisten" link="https://www.datasport.com/live/startlist/?racenr=23893" image="background/list-ul-solid.svg" image_alt="" >}}
 
