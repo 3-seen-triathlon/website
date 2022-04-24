@@ -34,19 +34,6 @@ partner:
         link: "http://raiffeisen.ch"
   - silver:
     size: "medium"
-    heading: "Sponsoren"
-    partner:
-      - image: "logo/dss22/logo_dermaplast.png"
-        image_alt: "DermaPlast Active"
-        link: "http://www.dermaplastactive.ch/"
-      - image: "logo/dss22/logo_focus_water.png"
-        image_alt: "Focus Water"
-        link: "https://focuswater.ch/"
-      - image: "logo/dss22/logo_saucony.png"
-        image_alt: "Saucony"
-        link: "https://saucony.ch"
-  - silver:
-    size: "medium"
     heading: "Kategoriensponsoren Olympic Distance Triathlon"
     partner:
       - image: "logo/dss21/amsler.png"
@@ -72,9 +59,9 @@ partner:
       - image: "logo/dss19/bantli.png"
         image_alt: "Schreinerei Bantli"
         link: "https://bantli.com"
-      - image: "logo/dss19/burren.png"
-        image_alt: "Garage Burren"
-        link: "https://garageburren.ch"
+      - image: "logo/dss22/logo_thurplus.png"
+        image_alt: "Thurplus"
+        link: "https://thurplus.ch"
   - silver:
     size: "medium"
     heading: "Kategoriensponsoren Stafette Kurz"
@@ -99,6 +86,15 @@ partner:
     heading: "Suppliers"
     size: "medium"
     partner:
+    - image: "logo/dss22/logo_dermaplast.png"
+      image_alt: "DermaPlast Active"
+      link: "http://www.dermaplastactive.ch/"
+    - image: "logo/dss22/logo_focus_water.png"
+      image_alt: "Focus Water"
+      link: "https://focuswater.ch/"
+    - image: "logo/dss22/logo_saucony.png"
+      image_alt: "Saucony"
+      link: "https://saucony.ch"
     - image: "logo/dss21/swisslos.png"
       image_alt: "Swisslos"
       link: "http://swisslos.ch"

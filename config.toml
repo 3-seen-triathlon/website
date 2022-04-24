@@ -2,7 +2,6 @@ baseURL = "https://dreiseenstafette.ch/"
 languageCode = "de"
 title = 'Dreiseenstafette'
 
-
 theme = 'tri'
 
 [menu]
