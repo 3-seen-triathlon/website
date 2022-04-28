@@ -20,7 +20,7 @@ image: "background/lauf.jpg"
 - 10:30 Uhr: Start Viertelmarathon
 - 12:30 Uhr: Start Stafette kurz
 - 12:30 Uhr: Start Stafette lang
-- ca. 13.00 Uhr: Rangverkündigung Short Distance Triathlon und Viertelmarathon
+- ab 12.40 Uhr: Rangverkündigung Short Distance Triathlon und Viertelmarathon
 - ca. 14.00 Uhr: Rangverkündigung Olympic Distance Triathlon
 - ca. 17.00 Uhr: Rangverkündigung Stafetten
 
