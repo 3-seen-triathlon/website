@@ -63,7 +63,7 @@ weight = 4
 
 [params]
 [params.logo]
-src = 'logo/dss.png'
+src = 'logo/logo_dss_white.png'
 
 [params.button]
 link = 'https://secure.datasport.com/?dss21'
