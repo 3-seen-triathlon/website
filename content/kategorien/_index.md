@@ -11,3 +11,4 @@ Als Tabelle mit den verschiedenen Distanzen.
 - [Stafette Lang](/kategorien/stafette#stafette-lang)
 - [Triathlon Short Distance](/kategorien/triathlon#short-distance-triathlon)
 - [Triathlon Olympic Distance](/kategorien/triathlon#olympic-distance-triathlon)
+- [Dä schnellst Seebachtaler](/kategorien/seebachtaler)

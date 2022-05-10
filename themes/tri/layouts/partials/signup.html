@@ -6,6 +6,8 @@
       <h2 class="mb-4">{{ .Params.signup.text }}</h2>
       <div>
         <p class="text mb-4">{{ .Params.signup.info }}</p>
+        <a href="{{ .Params.signup.info_link }}" class="btn btn-primary">{{
+          .Params.signup.info_link_text }}</a>
         <a href="{{ .Params.signup.link }}" class="btn btn-primary" target="_blank">{{ .Params.signup.link_text }}</a>
       </div>
 
