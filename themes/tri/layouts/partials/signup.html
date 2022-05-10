@@ -1,11 +1,14 @@
 <div class="container-fluid signup first"
-    style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('{{ .Params.signup.image | relURL }}');">
-    <div class="row p-5">
-        <div class="col p-5">
+  style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('{{ .Params.signup.image | relURL }}');">
+  <div class="row p-5">
+    <div class="col p-5">
 
-            <h2 class="mb-4">{{ .Params.signup.text }}</h2>
-            <a href="{{ .Params.signup.link }}" class="btn btn-primary" target="_blank">{{ .Params.signup.link_text }}</a>
+      <h2 class="mb-4">{{ .Params.signup.text }}</h2>
+      <div>
+        <p class="text mb-4">{{ .Params.signup.info }}</p>
+        <a href="{{ .Params.signup.link }}" class="btn btn-primary" target="_blank">{{ .Params.signup.link_text }}</a>
+      </div>
 
-        </div>
     </div>
+  </div>
 </div>
