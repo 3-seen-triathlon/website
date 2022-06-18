@@ -16,7 +16,7 @@ Mehr Informationen zum Format findet auf der Website von [Visana Sprint](https:/
 # Anmeldeformular
 
 <style>
-form {
+form#registration {
     margin-top: 40px;
     display: relative;
     width: 100%;
@@ -30,18 +30,19 @@ button {
     padding: 4px 16px;
 }
 
-form div {
+form#registration div {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-form div input {
+form#registration div input {
     border-radius: 5px;
 }
 </style>
 
 <form
+  id="registration"
   action="https://formspree.io/f/xqknoznj"
   method="POST"
 >

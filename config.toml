@@ -19,7 +19,7 @@ name = 'Lauf'
 url = 'kategorien/lauf'
 weight = 3
 [[menu.main]]
-name = 'Dä schnellst Seebachtaler'
+name = 'Diä schnellste Seebachtaler:inne'
 url = 'kategorien/seebachtaler'
 weight = 4
 [[menu.main]]
