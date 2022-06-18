@@ -39,6 +39,9 @@ partner:
     size: "medium"
     heading: "Kategoriensponsoren Olympic Distance Triathlon"
     partner:
+      - image: "logo/dss19/bantli.png"
+        image_alt: "Schreinerei Bantli"
+        link: "https://bantli.com"
       - image: "logo/dss21/amsler.png"
         image_alt: "Amsler Bikes & Parts"
         link: "https://www.amslervelo.ch"
@@ -49,7 +52,7 @@ partner:
     size: "medium"
     heading: "Kategoriensponsoren Short Distance Triathlon"
     partner:
-      - image: "logo/dss19/siro.png"
+      - image: "logo/dss22/logo_intersport_siro.svg"
         image_alt: "Siro Sport"
         link: "https://sirosport.ch"
       - image: "logo/dss19/ewe.png"
@@ -59,12 +62,9 @@ partner:
     size: "medium"
     heading: "Kategoriensponsoren Stafette Lang"
     partner:
-      - image: "logo/dss19/bantli.png"
-        image_alt: "Schreinerei Bantli"
-        link: "https://bantli.com"
-      - image: "logo/dss22/logo_thurplus.png"
-        image_alt: "Thurplus"
-        link: "https://thurplus.ch"
+      - image: "logo/dss22/logo_bikelounge.png"
+        image_alt: "Bikelounge"
+        link: "https://bikelounge.ch"
   - silver:
     size: "medium"
     heading: "Kategoriensponsoren Stafette Kurz"
