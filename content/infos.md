@@ -13,14 +13,19 @@ image: "background/lauf.jpg"
 # Zeitplan vom 21. August 2022
 
 - 08:00 Uhr: Öffnung Wettkampfgelände
+- 08:00 - 09:00 Uhr: Nachmeldungen für Triathlon
+- 09:00 - 10:00 Uhr: Nachmeldungen für 1/4 Marathon
+- 08:00 - 12:00 Uhr: Nachmeldungen für "Diä schnellste Seebachtaler:inne"
+- 09:45 Uhr: Räumung Wechselzone und Info Triathlon im Startbereich
 - 10:00 Uhr: Start Short Distance Triathlon, men
 - 10:05 Uhr: Start Short Distance Triathlon, women
 - 10:15 Uhr: Start Olympic Distance Triathlon, men
 - 10:20 Uhr: Start Olympic Distance Triathlon, women
-- 10:30 Uhr: Start Viertelmarathon
-- 12:30 Uhr: Start Stafette kurz
-- 12:30 Uhr: Start Stafette lang
-- ab 12.40 Uhr: Rangverkündigung Short Distance Triathlon und Viertelmarathon
+- 10:30 Uhr: Start 1/4 Marathon
+- 11:45 Uhr: Teamcaptain Briefing Staffel
+- 12:30 Uhr: Start Stafette kurz & lang
+- ab 12.45 Uhr: Start "Diä schnellste Seebachtaler:inne"
+- ab 13.00 Uhr: Rangverkündigung Short Distance Triathlon und Viertelmarathon
 - ca. 14.00 Uhr: Rangverkündigung Olympic Distance Triathlon
 - ca. 17.00 Uhr: Rangverkündigung Stafetten
 
