@@ -123,6 +123,13 @@ partner:
       image_alt: "Bschüssig Teigwaren"
       link: "http://bschüssig.ch"
   - silver:
+    heading: "Partner"
+    size: "medium"
+    partner:
+    - image: "logo/dss22/logo_regiosportkollektiv.png"
+      image_alt: "Regiosport Kollektiv"
+      link: "https://www.regiosportkollektiv.ch"
+  - silver:
     heading: "Partnerevents"
     size: "medium"
     partner:
