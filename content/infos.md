@@ -6,11 +6,10 @@ image: "background/lauf.jpg"
 {{< info >}}
 {{< infocard name="Regelwerk" link="documents/regelwerk_dss20.pdf" image="background/book-solid.svg" image_alt="Regelwerk" >}}
 {{< infocard name="Lageplan und Wettkampfzentrum" link="documents/wechselzone_dss20.pdf" image="background/map-regular.svg" image_alt="Lageplan und Wettkampfzentrum" >}}
-{{< infocard name="Zeitplan" link="documents/provisorischer_zeitplan_dss21.pdf" image="background/calendar-alt-regular.svg" image_alt="Zeitplan" >}}
 {{< infocard name="Kategorien und Startlisten" link="https://www.datasport.com/live/startlist/?racenr=24893" image="background/list-ul-solid.svg" image_alt="Kategorien und Startlisten" >}}
 {{< /info >}}
 
-# Zeitplan vom 21. August 2022
+# Zeitplan
 
 - 08:00 Uhr: Öffnung Wettkampfgelände
 - 08:00 - 09:00 Uhr: Nachmeldungen für Triathlon
