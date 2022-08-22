@@ -18,15 +18,6 @@ slider:
     link: "kategorien/lauf"
     link_text: "Streckenpläne & Infos"
 
-signup:
-  text: "Die nächste DSS findet am 21.08.2022 statt"
-  image: "background/triathlon_red.jpg"
-  info: "Dieses Jahr mit einer neuen Kategorie: diä schnellste Seebachtaler:inne!"
-  info_link: "kategorien/seebachtaler"
-  info_link_text: "Mehr zur Kategorie"
-  link_text: "Jetzt Anmelden"
-  link: "https://secure.datasport.com/?dss22"
-
 partner:
   - gold:
     heading: "Hauptsponsor"

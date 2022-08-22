@@ -75,7 +75,7 @@ text = 'Jetzt anmelden'
 
 [params.description]
 text = 'Die Dreiseenstafette ist ein kleiner und familiärer Anlass am Hüttwilersee im Thurgau.'
-date = '21.08.2022'
+date = '20.08.2023'
 
 [markup.goldmark.renderer]
 unsafe = true
