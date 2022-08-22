@@ -18,6 +18,10 @@ slider:
     link: "kategorien/lauf"
     link_text: "Streckenpläne & Infos"
 
+signup:
+  text: "Die nächste DSS findet am 20.08.2023 statt"
+  image: "background/triathlon_red.jpg"
+
 partner:
   - gold:
     heading: "Hauptsponsor"
