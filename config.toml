@@ -31,21 +31,25 @@ name = 'Startlisten'
 url = 'https://www.datasport.com/live/startlist/?racenr=24893'
 weight = 6
 [[menu.main]]
+name = 'Ranglisten'
+url = 'https://www.datasport.com/live/leaderboard/?racenr=24893'
+weight = 7
+[[menu.main]]
 name = 'Galerie'
 url = 'galerie'
-weight = 7
+weight = 8
 [[menu.main]]
 name = 'Infos'
 url = 'infos'
-weight = 8
+weight = 9
 [[menu.main]]
 name = 'Kontakt'
 url = 'kontakt'
-weight = 9
+weight = 10
 [[menu.main]]
 name = 'Helferbereich'
 url = 'https://helfer.dreiseenstafette.ch'
-weight = 10
+weight = 11
 # footer menu
 [[menu.footer]]
 name = 'Instagram'
