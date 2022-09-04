@@ -6,6 +6,10 @@ heading:
     image: "background/triathlon_start.jpg"
 
 galleries:
+    - name: "DSS22"
+      date: "2022-08-21"
+      link: "https://www.flickr.com/photos/196345639@N03/albums/72177720301543030"
+      image: "background/start_women_22.jpg"
     - name: "DSS21"
       date: "2021-08-22"
       link: "dss21"
