@@ -6,7 +6,7 @@ export default function Layout({ children }: any) {
   return (
     <>
       <Head>
-        <title>Startup Nights 2022</title>
+        <title>Dreiseenstafette {new Date().getFullYear()}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>

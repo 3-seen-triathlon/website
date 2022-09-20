@@ -30,7 +30,7 @@ export default function Attend({ title, description, items }: AttendProps) {
           <Link href={type.url}>
             <li
               key={type.name}
-              className="col-span-1 flex flex-col rounded-lg text-center shadow text-white bg-gray-900 hover:bg-gradient-to-tr hover:from-ecw-blue-900 hover:to-ecw-yellow-900 hover:shadow-xl hover:shadow-blue-900/50 transition transition-all"
+              className="col-span-1 flex flex-col rounded-lg text-center shadow text-white bg-gray-900 gradient-background-hover hover:shadow-xl hover:shadow-blue-900/50 transition transition-all"
             >
               <div className="flex flex-1 flex-col p-8">
                 <img className="mx-auto h-32 w-32 flex-shrink-0 rounded-full" src={type.imageUrl} alt="" />

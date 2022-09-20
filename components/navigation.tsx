@@ -4,9 +4,6 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 const navigation = [
-  { name: 'Why attend?', href: '/why-attend' },
-  { name: 'Formats', href: '#' },
-  { name: 'Speakers', href: '#' },
   { name: 'About', href: '#' },
   { name: 'Partners', href: '#' },
   { name: 'FAQ', href: '#' },
@@ -27,7 +24,7 @@ export default function Navigation({ children }: any) {
                         <span className="sr-only">Startup Nights</span>
                         <img
                           className="h-8 w-auto sm:h-10"
-                          src="/logo/startup-nights.png"
+                          src="/logo/dss_white.png"
                           alt="Startup Nights Logo"
                         />
                       </div>
@@ -53,7 +50,7 @@ export default function Navigation({ children }: any) {
                   <span className="inline-flex rounded-md shadow">
                     <a
                       href="https://portal.startup-nights.ch" target="_blank"
-                      className="inline-flex items-center rounded-md px-4 py-2 text-base font-bold text-white bg-gradient-to-br from-ecw-yellow-600 to-ecw-blue-600 hover:underline hover:underline-offset-4 transition transition-all hover:bg-gradient-to-r"
+                      className="inline-flex items-center rounded-md px-4 py-2 text-base font-bold text-white hover:underline hover:underline-offset-4 gradient-background"
                     >
                       Tickets
                     </a>
@@ -81,7 +78,7 @@ export default function Navigation({ children }: any) {
                       <div>
                         <img
                           className="h-8 w-auto"
-                          src="/logo/startup-nights.png"
+                          src="/logo/dss_white.png"
                           alt=""
                         />
                       </div>
@@ -105,7 +102,7 @@ export default function Navigation({ children }: any) {
                   </div>
                   <a
                     href="https://portal.startup-nights.ch" target="_blank"
-                    className="block w-full px-5 text-white py-3 text-center font-bold bg-gradient-to-tr from-ecw-yellow-600 to-ecw-blue-600 hover:underline hover:underline-offset-4 transition transition-all hover:bg-gradient-to-r"
+                    className="block w-full px-5 text-white py-3 text-center font-bold gradient-background hover:underline hover:underline-offset-4"
                   >
                     Tickets
                   </a>

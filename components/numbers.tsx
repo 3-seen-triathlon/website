@@ -9,7 +9,7 @@ interface Number {
 
 export default function Numbers({ numbers }: NumbersProps) {
   return (
-    <div className="bg-gradient-to-bl from-ecw-yellow-600 to-ecw-blue-600">
+    <div className="gradient-background">
       <div className="mx-auto max-w-4xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">

@@ -133,7 +133,7 @@ export default function Speakers() {
         {people.map((person, i) => (
           <li
             key={person.name}
-            className="col-span-1 flex flex-col rounded-lg text-center shadow text-white bg-gray-900 hover:bg-gradient-to-br hover:from-ecw-blue-900 hover:to-ecw-yellow-900 hover:shadow-xl hover:shadow-blue-900/50 transition transition-all"
+            className="col-span-1 flex flex-col rounded-lg text-center shadow text-white bg-gray-900 gradient-background-hover hover:shadow-xl hover:shadow-blue-900/50 transition transition-all"
           >
             <a href="#" onClick={(e: any) => { e.preventDefault(); openModal(person, i) }}>
               <div className="flex flex-1 flex-col p-8">
@@ -174,7 +174,7 @@ export default function Speakers() {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-gradient-to-tr from-ecw-blue-900 to-ecw-yellow-900 px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg gradient-background px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                   <div>
                     <div className="mt-3 text-center sm:mt-5">
                       <div className="flex flex-1 flex-col px-8">
