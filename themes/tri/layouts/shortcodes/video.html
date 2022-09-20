@@ -1,7 +1,0 @@
-{{ if .Get 1 }}
-<a href="{{ .Get 1 }}" target="_blank" class="video">
-{{ else }}
-<a href="{{ .Get 0 | relURL }}" target="_blank" class="video">
-{{ end }}
-<video src="{{ .Get 0 | relURL }}" autoplay loop muted></video>
-</a>
