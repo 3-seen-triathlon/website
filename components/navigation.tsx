@@ -4,10 +4,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 const navigation = [
-  { name: 'About', href: '#' },
-  { name: 'Partners', href: '#' },
+  { name: 'Kategorien', href: '#' },
+  { name: 'Partner', href: '#' },
   { name: 'FAQ', href: '#' },
 ]
+
+const signupLink = "https://secure.datasport.com/?dss22";
 
 export default function Navigation({ children }: any) {
   return (
@@ -49,10 +51,10 @@ export default function Navigation({ children }: any) {
                 <div className="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
                   <span className="inline-flex rounded-md shadow">
                     <a
-                      href="https://portal.startup-nights.ch" target="_blank"
+                      href={signupLink} target="_blank"
                       className="inline-flex items-center rounded-md px-4 py-2 text-base font-bold text-white hover:underline hover:underline-offset-4 gradient-background"
                     >
-                      Tickets
+                      Anmelden
                     </a>
                   </span>
                 </div>
@@ -101,10 +103,10 @@ export default function Navigation({ children }: any) {
                     ))}
                   </div>
                   <a
-                    href="https://portal.startup-nights.ch" target="_blank"
+                    href={signupLink} target="_blank"
                     className="block w-full px-5 text-white py-3 text-center font-bold gradient-background hover:underline hover:underline-offset-4"
                   >
-                    Tickets
+                    Anmelden
                   </a>
                 </div>
               </Popover.Panel>
