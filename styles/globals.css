@@ -6,11 +6,10 @@
 
 @layer base {
   html {
-    font-family: futura-pt, sans-serif;
+    font-family: open-sans, sans-serif;
     font-style: normal;
   }
 }
-
 
 /* custom classes for often used combinations */
 .gradient-background {

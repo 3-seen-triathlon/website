@@ -20,7 +20,7 @@ export default function Hero({ img, title, description }: HeroProps) {
       </div>
       <div className="mx-auto max-w-4xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10">
         <div className="relative md:grid md:grid-cols-3 md:gap-4">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-100 md:text-4xl md:col-span-2">
+          <h2 className="text-3xl font-semibold text-gray-100 md:text-4xl md:col-span-2">
             {title}
           </h2>
           <p className="mt-3 text-xl text-gray-100 sm:mt-4 md:col-span-2">
