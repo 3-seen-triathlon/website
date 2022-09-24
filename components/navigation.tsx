@@ -6,73 +6,84 @@ import {
   Bars3Icon,
   BookmarkSquareIcon,
   CalendarIcon,
+  CameraIcon,
   ChartBarIcon,
+  ClipboardDocumentIcon,
   CursorArrowRaysIcon,
+  DocumentChartBarIcon,
+  HeartIcon,
   LifebuoyIcon,
   PhoneIcon,
-  PlayIcon,
   ShieldCheckIcon,
   Squares2X2Icon,
+  TicketIcon,
+  TrophyIcon,
+  UserGroupIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-const solutions = [
+const categories = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    name: 'Triathlon',
+    description: 'Short und Olympic Distance.',
     href: '#',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    name: 'Stafette',
+    description: 'Lang und kurz. Allenfalls auch mit Reiter.',
     href: '#',
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
+    name: 'Lauf',
+    description: "10km Lauf rund um den Hütwiler- und Nussbaumersee.",
     href: '#',
     icon: Squares2X2Icon,
   },
   {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
+    name: 'Die schnellste Seebachtaler:inne',
+    description: "Sprints und Qualifikation für den Visana Event.",
     href: '#',
-    icon: ArrowPathIcon,
+    icon: Squares2X2Icon,
   },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  { name: 'Anmelden', href: '#', icon: TicketIcon },
+  { name: 'Startlisten', href: '#', icon: DocumentChartBarIcon },
 ]
 const resources = [
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
+    name: 'Über uns',
+    description: 'Die Geschichte der DSS und wer dahinter steckt.',
     href: '#',
-    icon: LifebuoyIcon,
+    icon: UserGroupIcon,
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
+    name: 'Impressionen',
+    description: 'Bilder und Videos von vorherigen Events.',
     href: '#',
-    icon: BookmarkSquareIcon,
+    icon: CameraIcon,
   },
   {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
+    name: 'Ranglisten',
+    description: 'Ergebnisse von der letzten Austragung.',
     href: '#',
-    icon: CalendarIcon,
+    icon: TrophyIcon,
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
+  {
+    name: 'Kontakt',
+    description: 'So könnt ihr uns erreichen.',
+    href: '#',
+    icon: PhoneIcon,
+  },
+  {
+    name: 'Helferbereich',
+    description: 'Infos und Pläne für den Event.',
+    href: '#',
+    icon: ClipboardDocumentIcon,
+  },
 ]
 
 function classNames(...classes: any[]) {
@@ -91,14 +102,14 @@ export default function Example({ children }: any) {
                   <div>
                     <img
                       className="h-8 w-auto sm:h10"
-                      src="/logo/dss_logo_light_6.png"
+                      src="/logo/dss_logo_light_3.png"
                       alt=""
                     />
                   </div>
                 </Link>
               </div>
               <div className="-my-2 -mr-2 md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                   <span className="sr-only">Open menu</span>
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -109,15 +120,15 @@ export default function Example({ children }: any) {
                     <>
                       <Popover.Button
                         className={classNames(
-                          open ? 'text-gray-900' : 'text-gray-500',
-                          'group inline-flex items-center rounded-md text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                          open ? 'text-gray-200' : 'text-gray-400',
+                          'group inline-flex items-center rounded-md text-base font-medium hover:text-gray-200 '
                         )}
                       >
-                        <span>Solutions</span>
+                        <span>Kategorien</span>
                         <ChevronDownIcon
                           className={classNames(
-                            open ? 'text-gray-600' : 'text-gray-400',
-                            'ml-2 h-5 w-5 group-hover:text-gray-500'
+                            open ? 'text-gray-200' : 'text-gray-400',
+                            'ml-2 h-5 w-5 group-hover:text-gray-200'
                           )}
                           aria-hidden="true"
                         />
@@ -132,32 +143,32 @@ export default function Example({ children }: any) {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1"
                       >
-                        <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                        <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 ">
+                          <div className="overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5 bg-black/80 backdrop-blur-sm rounded-lg">
                             <div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-8">
-                              {solutions.map((item) => (
+                              {categories.map((item) => (
                                 <a
                                   key={item.name}
                                   href={item.href}
-                                  className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                                  className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-800/90"
                                 >
-                                  <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                                  <item.icon className="h-6 w-6 flex-shrink-0 text-blue-500" aria-hidden="true" />
                                   <div className="ml-4">
-                                    <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                    <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                    <p className="text-base font-medium text-gray-200">{item.name}</p>
+                                    <p className="mt-1 text-sm text-gray-400">{item.description}</p>
                                   </div>
                                 </a>
                               ))}
                             </div>
-                            <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                            <div className="space-y-6 bg-black/30 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8 flex justify-center">
                               {callsToAction.map((item) => (
                                 <div key={item.name} className="flow-root">
                                   <a
                                     href={item.href}
-                                    className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 hover:bg-gray-100"
+                                    className="-m-3 flex items-center rounded-md p-3 text-base font-medium text-gray-900 gradient-background-hover"
                                   >
-                                    <item.icon className="h-6 w-6 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                                    <span className="ml-3">{item.name}</span>
+                                    <item.icon className="h-6 w-6 flex-shrink-0 text-gray-200" aria-hidden="true" />
+                                    <span className="ml-3 text-gray-200 font-bold">{item.name}</span>
                                   </a>
                                 </div>
                               ))}
@@ -169,11 +180,12 @@ export default function Example({ children }: any) {
                   )}
                 </Popover>
 
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Pricing
+                <a href="#" className="text-base font-medium text-gray-400 hover:text-gray-200">
+                  Informationen
                 </a>
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Docs
+
+                <a href="#" className="text-base font-medium text-gray-400 hover:text-gray-200">
+                  Partner
                 </a>
 
                 <Popover className="relative">
@@ -181,15 +193,15 @@ export default function Example({ children }: any) {
                     <>
                       <Popover.Button
                         className={classNames(
-                          open ? 'text-gray-900' : 'text-gray-500',
-                          'group inline-flex items-center rounded-md text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                          open ? 'text-gray-200' : 'text-gray-400',
+                          'group inline-flex items-center rounded-md text-base font-medium hover:text-gray-200 '
                         )}
                       >
-                        <span>More</span>
+                        <span>Mehr</span>
                         <ChevronDownIcon
                           className={classNames(
-                            open ? 'text-gray-600' : 'text-gray-400',
-                            'ml-2 h-5 w-5 group-hover:text-gray-500'
+                            open ? 'text-gray-200' : 'text-gray-400',
+                            'ml-2 h-5 w-5 group-hover:text-gray-200'
                           )}
                           aria-hidden="true"
                         />
@@ -204,42 +216,22 @@ export default function Example({ children }: any) {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1"
                       >
-                        <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
-                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                        <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 ">
+                          <div className="overflow-hidden shadow-lg ring-1 ring-black ring-opacity-5 bg-black/80 backdrop-blur-sm rounded-lg">
                             <div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-8">
                               {resources.map((item) => (
                                 <a
                                   key={item.name}
                                   href={item.href}
-                                  className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                                  className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-800/90"
                                 >
-                                  <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
+                                  <item.icon className="h-6 w-6 flex-shrink-0 text-blue-500" aria-hidden="true" />
                                   <div className="ml-4">
-                                    <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                    <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                    <p className="text-base font-medium text-gray-200">{item.name}</p>
+                                    <p className="mt-1 text-sm text-gray-400">{item.description}</p>
                                   </div>
                                 </a>
                               ))}
-                            </div>
-                            <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
-                              <div>
-                                <h3 className="text-base font-medium text-gray-500">Recent Posts</h3>
-                                <ul role="list" className="mt-4 space-y-4">
-                                  {recentPosts.map((post) => (
-                                    <li key={post.id} className="truncate text-base">
-                                      <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
-                                        {post.name}
-                                      </a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              <div className="mt-5 text-sm">
-                                <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
-                                  View all posts
-                                  <span aria-hidden="true"> &rarr;</span>
-                                </a>
-                              </div>
                             </div>
                           </div>
                         </Popover.Panel>
@@ -247,16 +239,14 @@ export default function Example({ children }: any) {
                     </>
                   )}
                 </Popover>
+
               </Popover.Group>
               <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                  Sign in
-                </a>
                 <a
                   href="#"
-                  className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
+                  className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md  px-4 py-2 text-base font-bold text-white shadow-sm gradient-background"
                 >
-                  Sign up
+                  Anmelden
                 </a>
               </div>
             </div>
@@ -272,7 +262,7 @@ export default function Example({ children }: any) {
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel focus className="absolute bg-gray-900/90 z-10 backdrop-blur-sm inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-              <div className="divide-y-2 divide-gray-50 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+              <div className="divide-y-2 divide-gray-600 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="px-5 pt-5 pb-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -287,7 +277,7 @@ export default function Example({ children }: any) {
                       </Link>
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                      <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-800 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                         <span className="sr-only">Close menu</span>
                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -295,14 +285,14 @@ export default function Example({ children }: any) {
                   </div>
                   <div className="mt-6">
                     <nav className="grid gap-y-8">
-                      {solutions.map((item) => (
+                      {categories.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
-                          className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
+                          className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-800/90"
                         >
-                          <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
-                          <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                          <item.icon className="h-6 w-6 flex-shrink-0 text-blue-500" aria-hidden="true" />
+                          <span className="ml-3 text-base font-medium text-gray-200">{item.name}</span>
                         </a>
                       ))}
                     </nav>
@@ -310,18 +300,20 @@ export default function Example({ children }: any) {
                 </div>
                 <div className="space-y-6 py-6 px-5">
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Pricing
+
+                    <a href="#" className="text-base font-medium text-gray-200 hover:text-gray-400">
+                      Informationen
                     </a>
 
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                      Docs
+                    <a href="#" className="text-base font-medium text-gray-200 hover:text-gray-400">
+                      Partner
                     </a>
+
                     {resources.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-base font-medium text-gray-900 hover:text-gray-700"
+                        className="text-base font-medium text-gray-200 hover:text-gray-400"
                       >
                         {item.name}
                       </a>
@@ -330,16 +322,10 @@ export default function Example({ children }: any) {
                   <div>
                     <a
                       href="#"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
+                      className="flex w-full items-center justify-center rounded-md px-4 py-2 text-base font-bold text-white shadow-sm gradient-background"
                     >
-                      Sign up
+                      Anmelden
                     </a>
-                    <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      Existing customer?{' '}
-                      <a href="#" className="text-blue-600 hover:text-blue-500">
-                        Sign in
-                      </a>
-                    </p>
                   </div>
                 </div>
               </div>
