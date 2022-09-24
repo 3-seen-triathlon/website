@@ -1,22 +1,16 @@
+import { categories } from "./data"
+
 const navigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+  kategorien: categories,
+  event: [
+    { name: 'Information', href: '#' },
+    { name: 'Reglement', href: '#' },
   ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+  about: [
+    { name: 'Über uns', href: '#' },
+    { name: 'Partner', href: '#' },
+    { name: 'Helferbereich', href: '#' },
+    { name: 'TV Hüttwilen', href: 'https://tvhuettwilen.ch' },
   ],
   legal: [
     { name: 'Claim', href: '#' },
@@ -77,9 +71,9 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-xl font-bold text-white">Solutions</h3>
+                <h3 className="text-xl font-bold text-white">Kategorien</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.kategorien.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
                         {item.name}
@@ -89,9 +83,9 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-xl font-bold text-white">Support</h3>
+                <h3 className="text-xl font-bold text-white">Wettkampf</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.support.map((item) => (
+                  {navigation.event.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
                         {item.name}
@@ -102,22 +96,10 @@ export default function Footer() {
               </div>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-white">Company</h3>
+              <div className="">
+                <h3 className="text-xl font-bold text-white">DSS</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-xl font-bold text-white">Legal</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
+                  {navigation.about.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
                         {item.name}
@@ -144,7 +126,7 @@ export default function Footer() {
                 autoComplete="email"
                 required
                 className="w-full min-w-0 appearance-none rounded-md border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
-                placeholder="Enter your email"
+                placeholder="Deine Mailadresse"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
@@ -157,17 +139,17 @@ export default function Footer() {
             </form>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+        <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-ecw-yellow-500">
+              <a key={item.name} href={item.href} className="text-gray-600 hover:text-green-400">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
-            &copy; {new Date().getFullYear()} Dreiseenstafette
+          <p className="mt-8 text-base text-gray-600 md:order-1 md:mt-0">
+            &copy; 2021-{new Date().getFullYear()} Dreiseenstafette - ein Event vom <a href="https://tvhuettwilen.ch" className="underline underline-offset-4 hover:text-green-400" target="_blank">TV Hüttwilen</a>
           </p>
         </div>
       </div>

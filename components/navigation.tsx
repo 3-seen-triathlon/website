@@ -2,89 +2,12 @@ import Link from 'next/link';
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
-  CameraIcon,
-  ChartBarIcon,
-  ClipboardDocumentIcon,
-  CursorArrowRaysIcon,
-  DocumentChartBarIcon,
-  HeartIcon,
-  LifebuoyIcon,
-  PhoneIcon,
-  ShieldCheckIcon,
-  Squares2X2Icon,
-  TicketIcon,
-  TrophyIcon,
-  UserGroupIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { callsToAction, categories, resources } from './data';
 
-const categories = [
-  {
-    name: 'Triathlon',
-    description: 'Short und Olympic Distance.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Stafette',
-    description: 'Lang und kurz. Allenfalls auch mit Reiter.',
-    href: '#',
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: 'Lauf',
-    description: "10km Lauf rund um den Hütwiler- und Nussbaumersee.",
-    href: '#',
-    icon: Squares2X2Icon,
-  },
-  {
-    name: 'Die schnellste Seebachtaler:inne',
-    description: "Sprints und Qualifikation für den Visana Event.",
-    href: '#',
-    icon: Squares2X2Icon,
-  },
-]
-const callsToAction = [
-  { name: 'Anmelden', href: '#', icon: TicketIcon },
-  { name: 'Startlisten', href: '#', icon: DocumentChartBarIcon },
-]
-const resources = [
-  {
-    name: 'Über uns',
-    description: 'Die Geschichte der DSS und wer dahinter steckt.',
-    href: '#',
-    icon: UserGroupIcon,
-  },
-  {
-    name: 'Impressionen',
-    description: 'Bilder und Videos von vorherigen Events.',
-    href: '#',
-    icon: CameraIcon,
-  },
-  {
-    name: 'Ranglisten',
-    description: 'Ergebnisse von der letzten Austragung.',
-    href: '#',
-    icon: TrophyIcon,
-  },
-  {
-    name: 'Kontakt',
-    description: 'So könnt ihr uns erreichen.',
-    href: '#',
-    icon: PhoneIcon,
-  },
-  {
-    name: 'Helferbereich',
-    description: 'Infos und Pläne für den Event.',
-    href: '#',
-    icon: ClipboardDocumentIcon,
-  },
-]
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
