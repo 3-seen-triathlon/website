@@ -146,7 +146,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-600 md:order-1 md:mt-0">
-            &copy; 2021-{new Date().getFullYear()} Dreiseenstafette - ein Event vom <a href="https://tvhuettwilen.ch" className="underline underline-offset-4 hover:text-blue-500" target="_blank">TV Hüttwilen</a>
+            &copy; 2021-{new Date().getFullYear()} Dreiseenstafette - ein Event vom <a href="https://tvhuettwilen.ch" className="link" target="_blank">TV Hüttwilen</a>
           </p>
         </div>
       </div>
