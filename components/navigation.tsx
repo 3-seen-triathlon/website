@@ -73,7 +73,7 @@ export default function Navigation({ children }: any) {
           </div>
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10 h-screen pt-42 md:py-24">
             <div className="h-full flex justify-start content-center items-center">
-              <h2 className="relative text-6xl text-gray-100 md:col-span-2">
+              <h2 className="max-w-4xl relative text-6xl text-gray-100 md:col-span-2 leading-normal">
                 Der schönste Triathlon im Thurgau
               </h2>
             </div>

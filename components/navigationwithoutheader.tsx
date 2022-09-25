@@ -22,7 +22,7 @@ export default function NavigationWithoutHeader({ children }: any) {
       <div className="z-10">
         <Popover className="relative">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="flex items-center justify-between py-16 px-6 md:justify-start align-baseline md:space-x-10">
+            <div className="flex items-center justify-between py-16 px-6 align-baseline md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <div>
@@ -40,18 +40,20 @@ export default function NavigationWithoutHeader({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-10 md:flex md:justify-end md:items-baseline">
+              <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex mdjustify-end md:items-baseline">
                 {menuItems.map(item => (
                   <a href={item.link} className="text-base text-blue-500">
                     {item.name}
                   </a>
                 ))}
-                <a
-                  href="#"
-                  className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
-                >
-                  Anmelden
-                </a>
+                <div>
+                  <a
+                    href="#"
+                    className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
+                  >
+                    Anmelden
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -96,10 +98,10 @@ export default function NavigationWithoutHeader({ children }: any) {
                       ))}
                     </nav>
                   </div>
-                  <div className="space-y-6 py-6 px-5">
+                  <div className="space-y-6 py-6 px-5 text-center">
                     <a
                       href="#"
-                      className="flex w-full items-center justify-center rounded-md px-4 py-2 text-base  text-white shadow-sm gradient-background"
+                      className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500"
                     >
                       Anmelden
                     </a>
