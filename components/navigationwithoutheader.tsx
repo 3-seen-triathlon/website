@@ -6,7 +6,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
-const logo = "/logo/dss_logo_light.png";
+const logo = "/logo/dss_logo_dark.png";
+const logo_light = "/logo/dss_logo_light.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
@@ -15,7 +16,7 @@ const menuItems = [
   { name: "Kontakt", link: "#" },
 ];
 
-export default function Navigation({ children }: any) {
+export default function NavigationWithoutHeader({ children }: any) {
   return (
     <>
       <div className="z-10">
@@ -26,7 +27,7 @@ export default function Navigation({ children }: any) {
                 <Link href="/">
                   <div>
                     <img
-                      className="h-4 sm:h-6 w-auto"
+                      className="h-4 md:h-6 w-auto"
                       src={logo}
                       alt=""
                     />
@@ -34,14 +35,14 @@ export default function Navigation({ children }: any) {
                 </Link>
               </div>
               <div className="-my-2 -mr-2 md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-200">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-blue-500">
                   <span className="sr-only">Open menu</span>
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
               <div className="hidden space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
-                  <a href={item.link} className="text-base text-gray-200 hover:text-gray-200">
+                  <a href={item.link} className="text-base text-blue-500">
                     {item.name}
                   </a>
                 ))}
@@ -54,32 +55,6 @@ export default function Navigation({ children }: any) {
               </div>
             </div>
           </div>
-
-
-          <div className="absolute inset-0 block overflow-hidden -z-10">
-            <video
-              autoPlay={true}
-              loop={true}
-              muted={true}
-              className="absolute w-auto min-w-full min-h-full max-w-none"
-            >
-              <source
-                src="https://www.dreiseenstafette.ch/video/aftermovie2021.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 bg-gray-300 mix-blend-multiply" />
-          </div>
-          <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10 h-screen pt-42 md:py-24">
-            <div className="h-full flex justify-start content-center items-center">
-              <h2 className="relative text-6xl text-gray-100 md:col-span-2">
-                Der schönste Triathlon im Thurgau
-              </h2>
-            </div>
-          </div>
-
-
 
           <Transition
             as={Fragment}
@@ -99,7 +74,7 @@ export default function Navigation({ children }: any) {
                         <div>
                           <img
                             className="h-4 w-auto"
-                            src={logo}
+                            src={logo_light}
                             alt=""
                           />
                         </div>
@@ -115,7 +90,7 @@ export default function Navigation({ children }: any) {
                   <div className="mx-auto text-center">
                     <nav className="grid gap-y-8">
                       {menuItems.map(item => (
-                        <a href={item.link} className="text-3xl text-gray-200 hover:text-gray-200">
+                        <a href={item.link} className="text-3xl text-gray-200">
                           {item.name}
                         </a>
                       ))}
@@ -137,7 +112,7 @@ export default function Navigation({ children }: any) {
         </Popover>
       </div>
 
-      <main className="bg-white">
+      <main className="bg-white mt-12">
         {children}
       </main>
     </>
