@@ -39,7 +39,7 @@ export default function Navigation({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-10 md:flex md:justify-end md:items-baseline">
+              <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
                   <a href={item.link} className="text-base text-gray-200 hover:text-gray-200">
                     {item.name}
@@ -121,7 +121,7 @@ export default function Navigation({ children }: any) {
                       ))}
                     </nav>
                   </div>
-                  <div className="space-y-6 py-6 px-5">
+                  <div className="space-y-6 py-6 px-5 text-center">
                     <a
                       href="#"
                       className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500"

@@ -40,7 +40,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex mdjustify-end md:items-baseline">
+              <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
                   <a href={item.link} className="text-base text-blue-500">
                     {item.name}
