@@ -26,7 +26,7 @@ export default function Navigation({ children }: any) {
                 <Link href="/">
                   <div>
                     <img
-                      className="h-4 sm:h-6 w-auto"
+                      className="h-4 md:h-6 w-auto"
                       src={logo}
                       alt=""
                     />
