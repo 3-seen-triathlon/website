@@ -49,7 +49,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                 <div>
                   <a
                     href="#"
-                    className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
+                    className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
                   >
                     Anmelden
                   </a>
@@ -101,7 +101,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                   <div className="space-y-6 py-6 px-5 text-center">
                     <a
                       href="#"
-                      className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500"
+                      className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500"
                     >
                       Anmelden
                     </a>

@@ -71,7 +71,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-xl font-bold text-white">Kategorien</h3>
+                <h3 className="text-xl text-white">Kategorien</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.kategorien.map((item) => (
                     <li key={item.name}>
@@ -83,7 +83,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-xl font-bold text-white">Wettkampf</h3>
+                <h3 className="text-xl text-white">Wettkampf</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.event.map((item) => (
                     <li key={item.name}>
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className="">
-                <h3 className="text-xl font-bold text-white">DSS</h3>
+                <h3 className="text-xl text-white">DSS</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.about.map((item) => (
                     <li key={item.name}>
@@ -111,7 +111,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-xl font-bold text-white">Newsletter</h3>
+            <h3 className="text-xl text-white">Newsletter</h3>
             <p className="mt-4 text-base text-gray-300">
               Updates und Infos zum Wettkampf. Direkt in deine Inbox.
             </p>
@@ -125,13 +125,13 @@ export default function Footer() {
                 id="email-address"
                 autoComplete="email"
                 required
-                className="w-full min-w-0 appearance-none rounded-md border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
+                className="w-full min-w-0 appearance-none rounded-full border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
                 placeholder="Deine Mailadresse"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center rounded-md gradient-background py-2 px-4 text-base font-bold text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 hover:underline hover:underline-offset-4"
+                  className="flex w-full items-center justify-center rounded-full border-2 border-blue-500 py-2 px-4 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
                 >
                   Anmelden
                 </button>
@@ -142,14 +142,14 @@ export default function Footer() {
         <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-600 hover:text-green-400">
+              <a key={item.name} href={item.href} className="text-gray-600 hover:text-blue-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
             ))}
           </div>
           <p className="mt-8 text-base text-gray-600 md:order-1 md:mt-0">
-            &copy; 2021-{new Date().getFullYear()} Dreiseenstafette - ein Event vom <a href="https://tvhuettwilen.ch" className="underline underline-offset-4 hover:text-green-400" target="_blank">TV Hüttwilen</a>
+            &copy; 2021-{new Date().getFullYear()} Dreiseenstafette - ein Event vom <a href="https://tvhuettwilen.ch" className="underline underline-offset-4 hover:text-blue-500" target="_blank">TV Hüttwilen</a>
           </p>
         </div>
       </div>
