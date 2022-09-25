@@ -8,24 +8,33 @@ interface HeroProps {
 
 export default function Hero({ img, title, description }: HeroProps) {
   return (
-    <div className="relative py-12 md:py-24">
+    <div className="relative">
       <div className="absolute inset-0 block overflow-hidden">
-        <Image
-          layout="fill"
-          objectFit="cover"
-          src={img}
-          alt="Eulachhallen Winterthur"
-        />
-        <div className="absolute inset-0 bg-gray-600 mix-blend-multiply" />
+        <video
+          autoplay="true"
+          loop
+          muted
+          class="absolute w-auto min-w-full min-h-full max-w-none"
+        >
+          <source
+            src="https://www.dreiseenstafette.ch/video/aftermovie2021.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        {/* <Image */}
+        {/*   layout="fill" */}
+        {/*   objectFit="cover" */}
+        {/*   src={img} */}
+        {/*   alt="Eulachhallen Winterthur" */}
+        {/* /> */}
+        <div className="absolute inset-0 bg-gray-300 mix-blend-multiply" />
       </div>
-      <div className="mx-auto max-w-4xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10">
-        <div className="relative md:grid md:grid-cols-3 md:gap-4">
-          <h2 className="text-3xl font-semibold text-gray-100 md:text-4xl md:col-span-2">
+      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10 h-screen pt-42 md:py-24">
+        <div className="h-full flex justify-start content-center items-center">
+          <h2 className="relative text-6xl text-gray-100 md:col-span-2 mt-72">
             {title}
           </h2>
-          <p className="mt-3 text-xl text-gray-100 sm:mt-4 md:col-span-2">
-            {description}
-          </p>
         </div>
       </div>
     </div>

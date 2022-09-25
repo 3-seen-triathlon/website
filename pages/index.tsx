@@ -46,11 +46,6 @@ const types = [
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Hero
-        img="/event/location/eulachhallen.jpg"
-        title="Meet your co-founder"
-        description="Are you ready to change the world with your idea and looking for the right person to join you on your journey?"
-      />
       <Numbers numbers={numbers} />
       <Attend
         title="Why attend?"
