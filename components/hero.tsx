@@ -11,10 +11,10 @@ export default function Hero({ img, title, description }: HeroProps) {
     <div className="relative">
       <div className="absolute inset-0 block overflow-hidden">
         <video
-          autoplay="true"
-          loop
-          muted
-          class="absolute w-auto min-w-full min-h-full max-w-none"
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          className="absolute w-auto min-w-full min-h-full max-w-none"
         >
           <source
             src="https://www.dreiseenstafette.ch/video/aftermovie2021.mp4"

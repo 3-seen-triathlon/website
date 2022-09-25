@@ -5,14 +5,8 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { callsToAction, categories, resources } from './data';
 
 const logo = "/logo/dss_logo_light.png";
-
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ')
-}
 
 const menuItems = [
   { name: "Kategorien", link: "#" },
@@ -64,10 +58,10 @@ export default function Example({ children }: any) {
 
           <div className="absolute inset-0 block overflow-hidden -z-10">
             <video
-              autoplay="true"
-              loop
-              muted
-              class="absolute w-auto min-w-full min-h-full max-w-none"
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              className="absolute w-auto min-w-full min-h-full max-w-none"
             >
               <source
                 src="https://www.dreiseenstafette.ch/video/aftermovie2021.mp4"
@@ -152,7 +146,6 @@ export default function Example({ children }: any) {
       <main className="bg-white">
         {children}
       </main>
-
     </>
   )
 }
