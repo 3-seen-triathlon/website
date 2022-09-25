@@ -129,10 +129,7 @@ export default function Footer() {
                 placeholder="Deine Mailadresse"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="flex w-full items-center justify-center rounded-full border-2 border-blue-500 py-2 px-4 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
-                >
+                <button type="submit" className="flex w-full items-center justify-center button">
                   Anmelden
                 </button>
               </div>

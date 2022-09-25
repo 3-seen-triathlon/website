@@ -41,16 +41,15 @@ export default function Navigation({ children }: any) {
               </div>
               <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
-                  <a href={item.link} className="text-base text-gray-200 hover:text-gray-200">
+                  <a href={item.link} className="text-base text-gray-200">
                     {item.name}
                   </a>
                 ))}
-                <a
-                  href="#"
-                  className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
-                >
-                  Anmelden
-                </a>
+                <div>
+                  <a href="#" className="button">
+                    Anmelden
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -122,10 +121,7 @@ export default function Navigation({ children }: any) {
                     </nav>
                   </div>
                   <div className="space-y-6 py-6 px-5 text-center">
-                    <a
-                      href="#"
-                      className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500"
-                    >
+                    <a href="#" className="button-light">
                       Anmelden
                     </a>
                   </div>

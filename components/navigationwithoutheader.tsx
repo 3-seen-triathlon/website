@@ -47,10 +47,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                   </a>
                 ))}
                 <div>
-                  <a
-                    href="#"
-                    className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white"
-                  >
+                  <a href="#" className="button">
                     Anmelden
                   </a>
                 </div>
@@ -99,10 +96,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                     </nav>
                   </div>
                   <div className="space-y-6 py-6 px-5 text-center">
-                    <a
-                      href="#"
-                      className="ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500"
-                    >
+                    <a href="#" className="button-light">
                       Anmelden
                     </a>
                   </div>

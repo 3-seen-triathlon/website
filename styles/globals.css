@@ -22,3 +22,33 @@
   @apply hover:bg-gradient-to-r hover:from-green-400 hover:to-blue-500;
 }
 
+.h1 {
+  @apply max-w-4xl mb-12 leading-normal text-6xl font-normal;
+}
+
+.h2 {
+  @apply max-w-4xl mb-12 leading-normal text-3xl font-normal;
+}
+
+.h3 {
+  @apply max-w-4xl mb-8 leading-normal text-5xl font-light;
+}
+
+/* like h3 but without the width constraint */
+.h3-wide {
+  @apply mb-8 leading-normal text-5xl font-light;
+}
+
+.p {
+  @apply max-w-4xl mb-8 leading-normal text-base font-normal;
+}
+
+/* for light surfaces */
+.button {
+  @apply inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white;
+}
+
+/* for dark surfaces*/
+.button-light {
+  @apply ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500;
+}
