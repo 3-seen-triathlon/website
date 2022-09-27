@@ -6,8 +6,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
-const logo = "/logo/dss_logo_dark.png";
-const logo_light = "/logo/dss_logo_light.png";
+const logo = "/logo/dss_logo_dark_1.png";
+const logo_light = "/logo/dss_logo_light_3.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
@@ -27,7 +27,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                 <Link href="/">
                   <div>
                     <img
-                      className="h-4 md:h-6 w-auto"
+                      className="h-8 md:h-10 w-auto"
                       src={logo}
                       alt=""
                     />
@@ -40,7 +40,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
+              <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
                   <a href={item.link} className="text-base text-blue-500">
                     {item.name}
@@ -72,7 +72,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                       <Link href="/">
                         <div>
                           <img
-                            className="h-4 w-auto"
+                            className="h-8 w-auto"
                             src={logo_light}
                             alt=""
                           />

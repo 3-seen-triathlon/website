@@ -6,7 +6,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
-const logo = "/logo/dss_logo_light.png";
+const logo = "/logo/dss_logo_light_3.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
@@ -21,12 +21,12 @@ export default function Navigation({ children }: any) {
       <div className="z-10">
         <Popover className="relative">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="flex items-center justify-between py-16 px-6 md:justify-start align-baseline md:space-x-10">
+            <div className="flex items-center justify-between py-16 px-6 align-baseline md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <div>
                     <img
-                      className="h-4 md:h-6 w-auto"
+                      className="h-8 md:h-10 w-auto"
                       src={logo}
                       alt=""
                     />
@@ -39,7 +39,7 @@ export default function Navigation({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-2 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
+              <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
                   <a href={item.link} className="text-base text-gray-200">
                     {item.name}
@@ -97,7 +97,7 @@ export default function Navigation({ children }: any) {
                       <Link href="/">
                         <div>
                           <img
-                            className="h-4 w-auto"
+                            className="h-8 w-auto"
                             src={logo}
                             alt=""
                           />
