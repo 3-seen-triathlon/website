@@ -42,7 +42,7 @@ export default function NavigationWithoutHeader({ children }: any) {
               </div>
               <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
                 {menuItems.map(item => (
-                  <a href={item.link} className="text-base text-blue-500">
+                  <a href={item.link} key={item.name} className="text-base text-blue-500">
                     {item.name}
                   </a>
                 ))}
@@ -89,7 +89,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                   <div className="mx-auto text-center">
                     <nav className="grid gap-y-8">
                       {menuItems.map(item => (
-                        <a href={item.link} className="text-3xl text-gray-200">
+                        <a href={item.link} key={item.name} className="text-3xl text-gray-200">
                           {item.name}
                         </a>
                       ))}
