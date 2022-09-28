@@ -2,40 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://use.typekit.net/pqu5juj.css");
-
 @layer base {
-  /* montserrat light + semibold for the headings */
   html {
-    font-family: montserrat, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: normal;
   }
 }
 
 .h1 {
-  @apply max-w-4xl mb-10 md:mb-12 leading-normal text-4xl md:text-6xl font-normal;
+  @apply max-w-4xl mb-10 md:mb-12 leading-relaxed text-4xl md:text-6xl;
 }
 
 .h2 {
-  @apply max-w-4xl mb-10 md:mb-12 leading-normal text-xl md:text-3xl font-normal;
+  @apply max-w-4xl mb-10 md:mb-12 leading-relaxed text-xl md:text-3xl;
 }
 
 .h3 {
-  @apply max-w-4xl mb-6 md:mb-8 leading-normal text-3xl md:text-5xl font-light;
+  @apply max-w-4xl mb-6 md:mb-8 leading-relaxed text-2xl md:text-4xl;
 }
 
 /* like h3 but without the width constraint */
 .h3-wide {
-  @apply mb-6 md:mb-8 leading-normal text-3xl md:text-5xl font-light;
+  @apply mb-6 md:mb-8 leading-relaxed text-2xl md:text-4xl;
 }
 
 .h4 {
-  @apply max-w-4xl mb-4 md:mb-6 leading-normal text-xl md:text-3xl font-normal;
+  @apply max-w-4xl mb-4 md:mb-6 leading-relaxed text-xl md:text-3xl;
 }
 
 .p {
-  @apply max-w-4xl mb-6 md:mb-8 leading-normal text-base font-normal;
+  @apply max-w-4xl mb-6 md:mb-8 leading-relaxed text-base;
 }
 
 /* for light surfaces */

@@ -54,16 +54,16 @@ export default function Navigation({ children }: any) {
             </div>
           </div>
 
-
           <div className="absolute inset-0 block overflow-hidden -z-10">
             <video
-              autoPlay={true}
+              autoPlay
               loop={true}
-              muted={true}
+              controls
+              muted
               className="absolute w-auto min-w-full min-h-full max-w-none"
             >
               <source
-                src="https://www.dreiseenstafette.ch/video/aftermovie2021.mp4"
+                src="/event/background_video.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
@@ -72,13 +72,11 @@ export default function Navigation({ children }: any) {
           </div>
           <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10 h-screen pt-42 md:py-24">
             <div className="h-full flex justify-start content-center items-center">
-              <h2 className="max-w-4xl relative text-6xl text-gray-100 md:col-span-2 leading-normal">
+              <h2 className="h1 text-white">
                 Der schönste Triathlon im Thurgau
               </h2>
             </div>
           </div>
-
-
 
           <Transition
             as={Fragment}
