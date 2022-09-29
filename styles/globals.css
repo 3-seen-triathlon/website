@@ -22,6 +22,10 @@
   @apply mb-10 md:mb-12 leading-relaxed text-xl md:text-3xl;
 }
 
+.h2-paddingless {
+  @apply leading-relaxed text-xl md:text-3xl;
+}
+
 .h3 {
   @apply mb-6 md:mb-8 leading-relaxed text-2xl md:text-4xl;
 }

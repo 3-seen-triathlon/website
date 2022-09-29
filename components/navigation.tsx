@@ -21,7 +21,7 @@ export default function Navigation({ children }: any) {
       <div className="z-10">
         <Popover className="relative">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
-            <div className="flex items-center justify-between py-16 px-6 align-baseline md:space-x-10">
+            <div className="flex items-center justify-between py-8 md:py-16 px-6 align-baseline md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <div>
@@ -87,7 +87,7 @@ export default function Navigation({ children }: any) {
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel focus className="fixed bottom-0 left-0 right-0 bg-blue-500 z-10 inset-x-0 top-0 transform transition md:hidden">
-              <div className="mx-auto max-w-7xl px-6 h-full py-16">
+              <div className="mx-auto max-w-7xl px-6 h-full py-8 md:py-16">
                 <div className="grid content-between h-full">
                   <div className="flex items-center justify-between px-6 align-baseline">
                     <div>
@@ -109,9 +109,9 @@ export default function Navigation({ children }: any) {
                     </div>
                   </div>
                   <div className="mx-auto text-center">
-                    <nav className="grid gap-y-8">
+                    <nav className="grid gap-y-4 md:gap-y-8">
                       {menuItems.map(item => (
-                        <a href={item.link} key={item.name} className="text-3xl text-gray-200 hover:text-gray-200">
+                        <a href={item.link} key={item.name} className="h2-paddingless text-gray-200">
                           {item.name}
                         </a>
                       ))}
