@@ -11,7 +11,7 @@ const logo = "/logo/dss_logo_light_3.png";
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
   { name: "Informationen", link: "#" },
-  { name: "Partner", link: "#" },
+  { name: "Partner", link: "/partner" },
   { name: "Kontakt", link: "#" },
 ];
 
