@@ -1,32 +1,21 @@
-const images = [
-  "/event/interview.jpg",
-  "/event/schwimmausstieg.jpg",
-  "/event/sprint.jpg",
-  "/event/uebergabe.jpg",
-  "/event/ziel.jpg",
-  "/event/start_stafette.jpg",
-];
-
-const image = (): string => {
-  return images[Math.floor(Math.random() * images.length)];
-};
+const image = "/event/schwimmausstieg.jpg";
 
 export default function Intro() {
   return (
     <>
       <div className="content">
         <h1 className="h1">Kategorien</h1>
-        <h2 className="h2">
+        <h2 className="h2 width">
           Mit den insgesamt 6 Kategorien kommen an der DSS alle auf ihre Kosten. Gemeinsam haben sie den Start und das Ziel, welche bei der Badi am schönen Hüttwilersee sind.
         </h2>
       </div>
 
       <div className="content">
-        <img src={image()} />
+        <img src={image} />
       </div>
 
       <div className="content">
-        <h3 className="h3-wide">
+        <h3 className="h3">
           Bist du bereit für einen einzigartigen Event im schönen Seebachtal?
         </h3>
       </div>

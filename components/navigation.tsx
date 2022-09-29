@@ -10,9 +10,9 @@ const logo = "/logo/dss_logo_light_3.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
-  { name: "Informationen", link: "#" },
+  { name: "Informationen", link: "/informationen" },
   { name: "Partner", link: "/partner" },
-  { name: "Kontakt", link: "#" },
+  { name: "Kontakt", link: "/kontakt" },
 ];
 
 export default function Navigation({ children }: any) {
@@ -58,7 +58,6 @@ export default function Navigation({ children }: any) {
             <video
               autoPlay
               loop={true}
-              controls
               muted
               className="absolute w-auto min-w-full min-h-full max-w-none"
             >

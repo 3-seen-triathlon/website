@@ -11,9 +11,9 @@ const logo_light = "/logo/dss_logo_light_3.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
-  { name: "Informationen", link: "#" },
+  { name: "Informationen", link: "/informationen" },
   { name: "Partner", link: "/partner" },
-  { name: "Kontakt", link: "#" },
+  { name: "Kontakt", link: "/kontakt" },
 ];
 
 export default function NavigationWithoutHeader({ children }: any) {
