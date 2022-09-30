@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
+  ArrowSmallRightIcon,
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
@@ -39,17 +40,16 @@ export default function Navigation({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-baseline">
+              <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-center">
                 {menuItems.map(item => (
-                  <a href={item.link} key={item.name} className="text-base text-gray-200">
+                  <a href={item.link} key={item.name} className="text-base text-gray-100 hover:text-gray-200">
                     {item.name}
                   </a>
                 ))}
-                <div>
-                  <a href="#" className="button">
-                    Anmelden
-                  </a>
-                </div>
+                <a href="#" className="button group">
+                  <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
+                  Anmelden
+                </a>
               </div>
             </div>
           </div>
@@ -111,14 +111,15 @@ export default function Navigation({ children }: any) {
                   <div className="mx-auto text-center">
                     <nav className="grid gap-y-4 md:gap-y-8">
                       {menuItems.map(item => (
-                        <a href={item.link} key={item.name} className="h2-paddingless text-gray-200">
+                        <a href={item.link} key={item.name} className="h2-paddingless text-gray-100 hover:text-gray-200">
                           {item.name}
                         </a>
                       ))}
                     </nav>
                   </div>
                   <div className="space-y-6 py-6 px-5 text-center">
-                    <a href="#" className="button-light">
+                    <a href="#" className="button-light group">
+                      <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-blue-500" />
                       Anmelden
                     </a>
                   </div>

@@ -15,7 +15,7 @@ const Informationen: NextPage = () => {
       </div>
 
       <div className="content">
-        <img src={image} />
+        <img className="image" src={image} />
       </div>
 
       <div className="content">

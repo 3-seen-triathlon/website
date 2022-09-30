@@ -1,3 +1,5 @@
+import { ArrowSmallRightIcon } from "@heroicons/react/24/outline";
+
 const image = "/event/schwimmausstieg.jpg";
 
 export default function Intro() {
@@ -11,7 +13,7 @@ export default function Intro() {
       </div>
 
       <div className="content">
-        <img src={image} />
+        <img className="image" src={image} />
       </div>
 
       <div className="content">
@@ -29,8 +31,8 @@ export default function Intro() {
             Auch bei der Radstrecke bewältigen sie zwei Runden.
           </p>
           <div className="">
-            <a href="#" className="button">
-              Mehr Infos
+            <a href="#" className="button group">
+              Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
             </a>
           </div>
         </div>
@@ -49,8 +51,8 @@ export default function Intro() {
             <li>Stafette lang</li>
           </ul>
           <div className="mt-8">
-            <a href="#" className="button">
-              Mehr Infos
+            <a href="#" className="button group">
+              Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
             </a>
           </div>
         </div>
@@ -62,8 +64,8 @@ export default function Intro() {
             Dabei rennen Kids zwischen 60 und 100m um die Wette und küren so den/die schnelleste Seebachtaler:in.
           </p>
           <div className="">
-            <a href="#" className="button">
-              Mehr Infos
+            <a href="#" className="button group">
+              Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
             </a>
           </div>
         </div>
@@ -74,8 +76,8 @@ export default function Intro() {
             Der Dreiseenlauf führt die Läufer:innen auf Wanderwegen rund um den Nussbaumer- und Hütwillersee.
           </p>
           <div className="">
-            <a href="#" className="button">
-              Mehr Infos
+            <a href="#" className="button group">
+              Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
             </a>
           </div>
         </div>

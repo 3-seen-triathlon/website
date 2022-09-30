@@ -1,21 +1,11 @@
-import { categories } from "./data"
+import { ArrowSmallRightIcon } from "@heroicons/react/24/outline"
 
 const navigation = {
-  kategorien: categories,
-  event: [
-    { name: 'Information', href: '#' },
-    { name: 'Reglement', href: '#' },
-  ],
   about: [
-    { name: 'Über uns', href: '#' },
-    { name: 'Partner', href: '#' },
-    { name: 'Helferbereich', href: '#' },
+    { name: 'Information', href: '/informationen' },
+    { name: 'Kontakt', href: '/kontakt' },
+    { name: 'Partner', href: '/partner' },
     { name: 'TV Hüttwilen', href: 'https://tvhuettwilen.ch' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
   ],
   social: [
     {
@@ -67,50 +57,20 @@ export default function Footer() {
         Footer
       </h2>
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-xl text-white">Kategorien</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.kategorien.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-xl text-white">Wettkampf</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.event.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div className="">
-                <h3 className="text-xl text-white">DSS</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.about.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-300 hover:text-white hover:underline hover:underline-offset-4">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+        <div className="sm:grid sm:grid-cols-2 xl:gap-8">
+          <div className="">
+            <h3 className="text-xl text-white">Links</h3>
+            <ul role="list" className=" mt-4 space-y-4">
+              {navigation.about.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-base text-gray-300 hover:text-gray-100">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="mt-8 xl:mt-0">
+          <div className="mt-8 md:mt-0 xl:mt-0">
             <h3 className="text-xl text-white">Newsletter</h3>
             <p className="mt-4 text-base text-gray-300">
               Updates und Infos zum Wettkampf. Direkt in deine Inbox.
@@ -129,7 +89,8 @@ export default function Footer() {
                 placeholder="Deine Mailadresse"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button type="submit" className="flex w-full items-center justify-center button">
+                <button type="submit" className="button group">
+                  <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                   Anmelden
                 </button>
               </div>
