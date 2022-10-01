@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
       <div className="content">
         <h1 className="h3">
-          Ein atemberaubender Triathlon, eine rassige Stafette und ein einzigartiger Lauf in familiärer Atmosphäre - das ist die Dreiseenstafette im Seebachtal.
+          Ein atemberaubender Triathlon, eine traditionsreiche Stafette und ein einzigartiger Lauf in familiärer Atmosphäre - das ist die Dreiseenstafette im Seebachtal.
         </h1>
       </div>
 
