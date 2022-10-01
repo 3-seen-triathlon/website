@@ -5,7 +5,9 @@ import Team from '../components/team';
 const Kontakt: NextPage = () => {
   return (
     <LayoutWithoutHeader>
-      <Team />
+      <div className="mt-10 md:mt-12">
+        <Team />
+      </div>
     </LayoutWithoutHeader>
   )
 }

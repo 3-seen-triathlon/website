@@ -15,7 +15,7 @@
 }
 
 .h1 {
-  @apply mb-10 md:mb-12 leading-relaxed text-4xl md:text-6xl;
+  @apply mb-10 mt-10 md:mt-12 md:mb-12 leading-relaxed text-4xl md:text-6xl;
 }
 
 .h2 {

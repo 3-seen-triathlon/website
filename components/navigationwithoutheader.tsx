@@ -109,7 +109,7 @@ export default function NavigationWithoutHeader({ children }: any) {
         </Popover>
       </div>
 
-      <main className="bg-white md:mt-12">
+      <main className="bg-white">
         {children}
       </main>
     </>

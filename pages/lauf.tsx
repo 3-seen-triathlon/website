@@ -4,7 +4,7 @@ import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outli
 import Link from 'next/link';
 
 const statsShortDistance = [
-  { name: 'Lauf', stat: '10.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29507170' },
+  { name: 'Lauf', stat: '10.5 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },
 ]
 
 const Lauf: NextPage = () => {

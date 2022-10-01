@@ -6,17 +6,16 @@ import Link from 'next/link';
 const statsShortDistance = [
   { name: 'Schwimmen', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
   { name: 'Rad', stat: '20.64 km', change: '260 m', link: 'https://connect.garmin.com/modern/course/29504861' },
-  { name: 'Bike', stat: '6.6 km', change: '52m', link: 'https://connect.garmin.com/modern/course/29509069' },
-  { name: 'Lauf', stat: '6.2 km', change: '52m', link: 'https://connect.garmin.com/modern/course/29507069' },
+  { name: 'Bike', stat: '6.6 km', change: '150 m', link: 'https://connect.garmin.com/modern/course/29509069' },
+  { name: 'Lauf', stat: '6.2 km', change: '52 m', link: 'https://connect.garmin.com/modern/course/29507069' },
   { name: 'Reiten (optional)', stat: '~1 km', change: '0', link: '#' },
 ]
 const statsOlympicDistance = [
   { name: 'Schwimmen', stat: '1 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506971' },
-  { name: 'Rad', stat: '38.2 km', change: '260 m', link: 'https://connect.garmin.com/modern/course/29506670' },
-  { name: 'Bike', stat: '12.6 km', change: '52m', link: 'https://connect.garmin.com/modern/course/29529369' },
-  { name: 'Lauf', stat: '10.55 km', change: '52m', link: 'https://connect.garmin.com/modern/course/29507170' },
+  { name: 'Rad', stat: '38.2 km', change: '500 m', link: 'https://connect.garmin.com/modern/course/29506670' },
+  { name: 'Bike', stat: '12.6 km', change: '220 m', link: 'https://connect.garmin.com/modern/course/29529369' },
+  { name: 'Lauf', stat: '10.55 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },
 ]
-
 
 const Stafette: NextPage = () => {
   return (
