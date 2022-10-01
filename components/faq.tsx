@@ -15,7 +15,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div className="content">
+    <div className="">
       <h3 className="h3">Oft gestellte Fragen</h3>
       <div className="mt-12">
         <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 md:space-y-0 lg:grid-cols-3">
