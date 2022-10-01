@@ -1,10 +1,17 @@
+import Link from 'next/link';
 import { ArrowSmallRightIcon } from "@heroicons/react/24/outline"
 
 const navigation = {
+  athletes: [
+    { name: 'Kategorien', href: '/kategorien' },
+    { name: 'Informationen', href: '/informationen' },
+    { name: 'Startlisten 2023', href: 'https://www.datasport.com/live/startlist/?racenr=25893' },
+    { name: 'Ranglisten 2022', href: 'https://www.datasport.com/live/ranking/?racenr=24893' },
+  ],
   about: [
-    { name: 'Information', href: '/informationen' },
     { name: 'Kontakt', href: '/kontakt' },
     { name: 'Partner', href: '/partner' },
+    { name: 'Fotos', href: '/kontakt' },
     { name: 'TV Hüttwilen', href: 'https://tvhuettwilen.ch' },
   ],
   social: [
@@ -58,24 +65,42 @@ export default function Footer() {
       </h2>
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="sm:grid sm:grid-cols-2 xl:gap-8">
-          <div className="">
-            <h3 className="text-xl text-white">Links</h3>
-            <ul role="list" className=" mt-4 space-y-4">
-              {navigation.about.map((item) => (
-                <li key={item.name}>
-                  <a href={item.href} className="text-base text-gray-300 hover:text-gray-100">
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="grid md:grid-cols-2">
+            <div>
+              <h3 className="text-xl text-white">Allgemein</h3>
+              <ul role="list" className=" mt-4 space-y-4">
+                {navigation.about.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href}>
+                      <span className="text-base text-gray-400 hover:text-gray-100">
+                        {item.name}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-8 md:mt-0">
+              <h3 className="text-xl text-white">Wettkampf</h3>
+              <ul role="list" className=" mt-4 space-y-4">
+                {navigation.athletes.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href}>
+                      <span className="text-base text-gray-400 hover:text-gray-100">
+                        {item.name}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="mt-8 md:mt-0 xl:mt-0">
             <h3 className="text-xl text-white">Newsletter</h3>
             <p className="mt-4 text-base text-gray-300">
               Updates und Infos zum Wettkampf. Direkt in deine Inbox.
             </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
+            <form action="https://formspree.io/mledbakv" method="post" className="mt-4 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>

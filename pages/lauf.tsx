@@ -11,11 +11,7 @@ const Lauf: NextPage = () => {
   return (
     <LayoutWithoutHeader>
       <div className="content">
-        <h1 className="h1">Stafette</h1>
-        <h2 className="h2 width">
-          Die älteste Kategorie der DSS - und die coolste!
-          Im Gegensatzu zum Triathlon kommen hier auch die Biker zum Zug!
-        </h2>
+        <h1 className="h1">Lauf</h1>
       </div>
 
       <div className="content">

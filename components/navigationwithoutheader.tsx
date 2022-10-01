@@ -47,7 +47,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                     {item.name}
                   </a>
                 ))}
-                <a href="#" className="button group">
+                <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" className="button group">
                   <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                   Anmelden
                 </a>
@@ -96,7 +96,7 @@ export default function NavigationWithoutHeader({ children }: any) {
                     </nav>
                   </div>
                   <div className="space-y-6 py-6 px-5 text-center">
-                    <a href="#" className="button-light group">
+                    <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" className="button-light group">
                       <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-blue-500" />
                       Anmelden
                     </a>

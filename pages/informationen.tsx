@@ -10,7 +10,7 @@ const Informationen: NextPage = () => {
       <div className="content">
         <h1 className="h1">Informationen</h1>
         <h2 className="h2 width">
-          Mit den insgesamt 6 Kategorien kommen an der DSS alle auf ihre Kosten. Gemeinsam haben sie den Start und das Ziel, welche bei der Badi am schönen Hüttwilersee sind.
+          Hier findest Du die wichtigsten Eckdaten und allgemeine Infos zum Wettkampftag; vom Wettkampfzentrum über den Zeitplan bis hin zur Verpflegung.
         </h2>
       </div>
 

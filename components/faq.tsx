@@ -9,7 +9,13 @@ const faqs = [
     id: 2,
     question: "Wo finde ich die Anmeldung für 'Diä schnellste Seebachtaler:inne'?",
     answer:
-      "Die Anmeldung läuft nicht über Datasport - du findest sie deshalb auf der Seite 'Kategorien' wenn du auf mehr Infos bei der Kategorie klickst.",
+      "Die Anmeldung läuft nicht über Datasport - Du findest sie deshalb auf der Seite 'Kategorien' wenn Du auf mehr Infos bei der Kategorie klickst.",
+  },
+  {
+    id: 3,
+    question: "Hat es Parkplätze?",
+    answer:
+      "Ja, es gibt jeweils Parkplätze in der Nähe vom Wettkampfzentrum (Badi Hüttwilen). Diese werden jeweils beschildert sein, spätestens ab Einfahrt Badi Hüttwilen. Dennoch - falls Du nicht unbedingt mit dem Auto kommen musst bitten wir Dich der Umwelt zuliebe mit den ÖV anzureisen. Herzlichen Dank!",
   },
 ]
 

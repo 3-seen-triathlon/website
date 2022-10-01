@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Categories from '../components/categories';
 import LayoutWithoutHeader from '../components/layoutwithoutheader';
 
 const fallbackImage = "/event/ziel.jpg";
@@ -28,6 +29,8 @@ const Home: NextPage = () => {
           Ein atemberaubender Triathlon, eine rassige Stafette und ein einzigartiger Lauf in familiärer Atmosphäre - das ist die Dreiseenstafette im Seebachtal.
         </h1>
       </div>
+
+      <Categories />
 
     </LayoutWithoutHeader >
   )
