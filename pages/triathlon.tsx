@@ -30,7 +30,7 @@ const Triathlon: NextPage = () => {
         <h3 className="h4">Allgemeine Infos</h3>
         <p className="p">
           Alle Kategorien starten im Wettkampfzentrum am Hüttwilersee.
-          Eine Karte vom Wettkampfzentrum und allgemeinen Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
+          Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
           Für beide Triathlon-Kategorien besteht <span className="font-bold">keine</span> Lizenzpflicht.
         </p>
         <p className="p">

@@ -35,7 +35,7 @@
 }
 
 .p {
-  @apply mb-6 md:mb-8 leading-relaxed text-base;
+  @apply mb-6 max-w-4xl md:mb-8 leading-relaxed text-base;
 }
 
 .p-paddingless {
