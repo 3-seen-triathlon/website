@@ -60,6 +60,11 @@
   @apply mx-auto max-w-7xl px-4 sm:px-6 mb-12 md:mb-24;
 }
 
+.content-wide {
+  max-width: 92rem;
+  @apply mx-auto px-4 sm:px-6 mb-12 md:mb-24;
+}
+
 .image {
   @apply rounded-md;
 }

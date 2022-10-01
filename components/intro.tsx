@@ -31,7 +31,7 @@ export default function Intro() {
             Auch bei der Radstrecke bewältigen sie zwei Runden.
           </p>
           <div className="">
-            <a href="#" className="button group">
+            <a href="/triathlon" className="button group">
               Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
             </a>
           </div>
