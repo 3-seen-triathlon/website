@@ -8,7 +8,6 @@ const statsShortDistance = [
   { name: 'Rad', stat: '20.64 km', change: '260 m', link: 'https://connect.garmin.com/modern/course/29504861' },
   { name: 'Bike', stat: '6.6 km', change: '150 m', link: 'https://connect.garmin.com/modern/course/29509069' },
   { name: 'Lauf', stat: '6.2 km', change: '52 m', link: 'https://connect.garmin.com/modern/course/29507069' },
-  { name: 'Reiten (optional)', stat: '~1 km', change: '0', link: '#' },
 ]
 const statsOlympicDistance = [
   { name: 'Schwimmen', stat: '1 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506971' },
@@ -24,7 +23,7 @@ const Stafette: NextPage = () => {
         <h1 className="h1">Stafette</h1>
         <h2 className="h2 width">
           Die älteste Kategorie der DSS - und die coolste!
-          Im Gegensatzu zum Triathlon kommen hier auch die Biker zum Zug!
+          Im Gegensatz zum Triathlon kommen hier auch die Biker zum Zug!
         </h2>
       </div>
 
@@ -41,7 +40,7 @@ const Stafette: NextPage = () => {
         <h3 className="h4">Strecken Stafette Kurz</h3>
         <p className="p">
           Für die Kategorie Stafette Kurz gibt es zwei Wertungen: mit bzw. ohne Reiter.
-          Der Parcour variiert von Jahr zu Jahr aufgrund der Fruchtfolge der umliegenden Kulturzonen
+          Der Parcour variiert von Jahr zu Jahr aufgrund der Fruchtfolge der umliegenden Kulturzonen.
         </p>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:mt-8">
@@ -73,6 +72,26 @@ const Stafette: NextPage = () => {
               </div>
             </a>
           ))}
+          <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg border-2 border-transparent group">
+            <div className="grid grid-cols-1">
+              <div className="col-span-1 text-base font-normal text-gray-900">Reiten (optional)</div>
+
+              <div className="flex justify-between items-baseline">
+                <div className="flex items-baseline text-2xl font-semibold text-blue-600">
+                  ~ 1 km
+                </div>
+                <div
+                  className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium md:mt-2 lg:mt-0 bg-blue-100">
+                  <ArrowTrendingUpIcon
+                    className="-ml-1 mr-2 h-5 w-5 flex-shrink-0 self-center text-blue-600"
+                    aria-hidden="true"
+                  />
+                  0 m
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

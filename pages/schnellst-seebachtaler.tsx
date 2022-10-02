@@ -34,9 +34,9 @@ const Lauf: NextPage = () => {
           action="https://formspree.io/f/xqknoznj"
           method="POST"
         >
-          <div className="mt-5 md:col-span-2 md:mt-0">
+          <div className="mt-5 md:col-span-2 md:mt-0 width">
             <div className="grid grid-cols-6 gap-6">
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="vorname" className="block text-sm font-medium text-gray-700">
                   Vorname
                 </label>
@@ -50,7 +50,7 @@ const Lauf: NextPage = () => {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="nachname" className="block text-sm font-medium text-gray-700">
                   Nachname
                 </label>
@@ -64,7 +64,7 @@ const Lauf: NextPage = () => {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="jahrgang" className="block text-sm font-medium text-gray-700">
                   Jahrgang
                 </label>
@@ -77,7 +77,7 @@ const Lauf: NextPage = () => {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="wohnort" className="block text-sm font-medium text-gray-700">
                   Wohnort
                 </label>
@@ -90,7 +90,7 @@ const Lauf: NextPage = () => {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="schule" className="block text-sm font-medium text-gray-700">
                   Schule
                 </label>
@@ -103,7 +103,7 @@ const Lauf: NextPage = () => {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="klasse" className="block text-sm font-medium text-gray-700">
                   Klasse
                 </label>
@@ -117,7 +117,7 @@ const Lauf: NextPage = () => {
                 />
               </div>
 
-              <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <div className="col-span-6 sm:col-span-3">
                 <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
                   Emailadresse
                 </label>

@@ -11,7 +11,7 @@ const navigation = {
   about: [
     { name: 'Kontakt', href: '/kontakt' },
     { name: 'Partner', href: '/partner' },
-    { name: 'Fotos', href: '/kontakt' },
+    { name: 'Fotos', href: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
     { name: 'TV Hüttwilen', href: 'https://tvhuettwilen.ch' },
   ],
   social: [
