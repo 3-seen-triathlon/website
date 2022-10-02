@@ -9,6 +9,7 @@ const quicklinks = [
   { name: 'Ablauf Wettkampftag', stat: 'Zeitplan', link: '#zeitplan' },
   { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum' },
   { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq' },
+  { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf' },
 ];
 
 const Informationen: NextPage = () => {
