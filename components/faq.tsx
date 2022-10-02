@@ -17,6 +17,12 @@ const faqs = [
     answer:
       "Ja, es gibt jeweils Parkplätze in der Nähe vom Wettkampfzentrum (Badi Hüttwilen). Diese werden jeweils beschildert sein, spätestens ab Einfahrt Badi Hüttwilen. Dennoch - falls Du nicht unbedingt mit dem Auto kommen musst bitten wir Dich der Umwelt zuliebe mit den ÖV anzureisen. Herzlichen Dank!",
   },
+  {
+    id: 3,
+    question: "Gibt es die Strecken als GPX Datei?",
+    answer:
+      "Selbstverständlich. Du findest sie auf der jeweiligen Seite mit Informationen zur Kategorie.",
+  },
 ]
 
 export default function FAQ() {
