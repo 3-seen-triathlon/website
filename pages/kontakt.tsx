@@ -6,6 +6,10 @@ const Kontakt: NextPage = () => {
   return (
     <LayoutWithoutHeader>
       <div className="mt-10 md:mt-12">
+
+        {/* TODO */}
+        {/* Kontaktformular übernehmen */}
+
         <Team />
       </div>
     </LayoutWithoutHeader>

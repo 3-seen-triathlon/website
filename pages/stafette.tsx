@@ -35,6 +35,11 @@ const Stafette: NextPage = () => {
         </p>
       </div>
 
+      {/* TODOs: gleiche Infos wie bei Triathlon */}
+      {/* Bikestrecke: offroad mit sprüngen - gravel bike nicht empfohle und sonst auf eigene verantwortung*/}
+      {/* Teambörse: kommt bald */}
+      {/* Notiz das es effektiv ein Teamevent ist - nicht vollständige Teams können entweder an Teambörse */}
+      {/* Reitparcours -> link zum doc */}
 
       <div className="content">
         <h3 className="h4">Strecken Stafette Kurz</h3>

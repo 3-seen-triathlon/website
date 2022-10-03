@@ -16,9 +16,9 @@ const Lauf: NextPage = () => {
       <div className="content">
         <h3 className="h4">Infos</h3>
         <p className="p">
-          Diä schnellste Seebachtaler:inne ist ein neues Format, bei dem Kinder und Jugendliche zwischen 4 und 13 Jahren im Ausscheidungsverfahren gegeneinander antreten.
-          Die Distanzen sind je nach Alter entweder 40m oder 80m.
-          Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme an am Thurgauer Final im Jahr 2024!
+          Diä schnellste Seebachtaler:inne ist ein Format, bei dem Kinder und Jugendliche zwischen 4 und 13 Jahren im Ausscheidungsverfahren gegeneinander antreten.
+          Die Distanzen sind je nach Alter entweder 40m (KiGa) oder 80m (PS/Sek).
+          Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme an am Thurgauer Final im Folgejahr!
         </p>
         <p className="p">
           Der Startgeldbeitrag beträgt 5.- CHF und wird bei der Abgabe der Startnummer eingezogen.

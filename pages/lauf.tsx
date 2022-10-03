@@ -22,7 +22,6 @@ const Lauf: NextPage = () => {
         </p>
       </div>
 
-
       <div className="content">
         <h3 className="h4">Laufstrecke</h3>
         <p className="p">
@@ -31,8 +30,6 @@ const Lauf: NextPage = () => {
           So führt die Laufstrecke zuerst auf die Anhöhen des Seerückens mit herrlicher Aussicht auf den Hüttwilersee.
           Danach wird über Holzsteg und Natur-Trail der Nussbaumersee umrundet.
           Entlang des Hasensees findet die Runde mit einer kleinen Schlaufe zur geschichtsträchtigen Ruine Helfenberg abermals beim Strandbad des Hüttwilersees sein Ende.
-          (Die Distanz über den Halbmarathon wurde per 2019 aus dem Angebot gestrichen.
-          Dafür wurde der Start auf den Morgen gelegt, was Vorteile bezüglich Tagesplanung und Wettkampftemperatur mit sich bringt.)
         </p>
 
         <p className="p">

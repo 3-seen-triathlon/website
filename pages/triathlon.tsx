@@ -33,9 +33,21 @@ const Triathlon: NextPage = () => {
           Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
           Für beide Triathlon-Kategorien besteht <span className="font-bold">keine</span> Lizenzpflicht.
         </p>
+
+        {/* TODO */}
+        {/* darstellung von den infos */}
+        {/* verpflegungsposten auf der laufstrecke erwähnen + dann später im Ziel */}
+
         <p className="p">
+          Es wird im Hüttwilersee geschwommen.
+          Der Start (Men / Women) erfolgt jeweils als Massenstart.
           Es wird jeweils am Wettkampftag basierend auf der Wassertemperatur entschieden, ob ein Neopren erlaubt ist oder nicht.
         </p>
+        <ul className="list-disc list-inside">
+          <li>Schwimmen: Massenstart am Hüttwilersee</li>
+          <li>Velo: Strecke ist auf vollständig asphaltierten Strassen in gutem Zustand. Windschattenfahren ist erlaubt.</li>
+          <li>Run: Trailrunning</li>
+        </ul>
       </div>
 
 
@@ -77,7 +89,7 @@ const Triathlon: NextPage = () => {
       <div className="content">
         <h3 className="h4">Strecken Olympic Distance</h3>
         <p className="p">
-          Achtung: die Radstrecke ist identisch zur Short Distance, die Runde wird jedoch 2x gefahren bevor die Athleten wieder zurück zur Wechselzone kommen.
+          Die Radstrecke ist identisch zur Short Distance, die Runde wird jedoch 2x gefahren bevor die Athleten wieder zurück zur Wechselzone kommen.
         </p>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:mt-8">

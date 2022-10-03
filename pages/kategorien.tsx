@@ -63,7 +63,7 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Diä schnellste Seebachtaler:inne</h4>
           <p className="p">
-            Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40 m (KiGa) und 80 m (PS/Sek) um die Wette.
+            Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40m (KiGa) und 80m (PS/Sek) um die Wette.
             Im Ausscheidungsverfahren über mehrere Läufe wird der/die schnellste Seebachter:in erkoren.
           </p>
           <div className="">
@@ -79,7 +79,7 @@ const Kategorien: NextPage = () => {
           <h4 className="h4">Lauf</h4>
           <p className="p">
             Kein Velo oder die Schwimmbrille verloren?
-            Kein Problem - du kannst die 3 Seen Region auch beschwingten Fuss entdecken.
+            Kein Problem - du kannst die 3-Seen-Region auch beschwingten Fusses entdecken.
             Die Strecke von 10.55 km führt durch die wunderschöne und vielfältige Seenlandschaft.
           </p>
           <div className="">

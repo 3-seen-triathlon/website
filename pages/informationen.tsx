@@ -10,6 +10,7 @@ const quicklinks = [
   { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum' },
   { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq' },
   { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf' },
+  { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
 ];
 
 const Informationen: NextPage = () => {
@@ -51,6 +52,11 @@ const Informationen: NextPage = () => {
 
       <div className="content">
         <h3 className="h4" id="zeitplan">Zeitplan</h3>
+
+        {/* TODO */}
+        {/* Filter von Kategorien */}
+        {/* Farben für Kategorien */}
+
         <Timetable />
       </div>
 
@@ -81,6 +87,10 @@ const Informationen: NextPage = () => {
       </div>
 
       <div className="content" id="faq">
+
+        {/* TODOs */}
+        {/* Ranglisten von letzten Jahren */}
+
         <FAQ />
       </div>
 
