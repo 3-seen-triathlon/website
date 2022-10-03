@@ -78,7 +78,7 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Lauf</h4>
           <p className="p">
-            Die wunderschöne Laufstrecke von 10.55 km um die Seen kannst Du auch zu Fuss erleben.
+            Die wunderschöne und vielfältige Laufstrecke von 10.55 km um die Seen kannst Du auch zu Fuss erleben.
           </p>
           <div className="">
             <Link href="/lauf">
