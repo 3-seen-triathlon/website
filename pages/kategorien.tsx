@@ -11,7 +11,7 @@ const Kategorien: NextPage = () => {
       <div className="content">
         <h1 className="h1">Kategorien</h1>
         <h2 className="h2 width">
-          Mit den insgesamt 6 Kategorien kommen an der DSS alle auf ihre Kosten. Gemeinsam haben sie den Start und das Ziel, welche bei der Badi am schönen Hüttwilersee sind.
+          Mit den insgesamt 7 Kategorien kommen an der DSS alle auf ihre Kosten. Start und Ziel sind bei allen Kategorien am Strandbad des Hüttwilersees.
         </h2>
       </div>
 
@@ -23,11 +23,15 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Triathlon</h4>
           <p className="p">
-            Den Triathlon gibt es in 2 Variationen; Olympic und Short Distance.
-            Die Strecken unterscheiden sich darin, dass Olympic Distance zwei Runden schwimmt - mit einem kurzen Landgang dazwischen.
-            Auch bei der Radstrecke bewältigen sie zwei Runden.
+            Bist du Triathlon-Neuling oder für kurze Distanzen geboren?
+            Dann ist die Short Distance für dich.
+            Für Routiniers oder wenn Du Dich challengen möchtest ist die Olympic Distance Dich.
           </p>
-          <div className="">
+          <ul className="list-disc list-inside">
+            <li>Short Distance</li>
+            <li>Olympic Distance</li>
+          </ul>
+          <div className="mt-8">
             <Link href="/triathlon">
               <div className="button group">
                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
@@ -39,10 +43,8 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Stafette</h4>
           <p className="p">
-            Die Stafette ist der Namensgeber von der DSS.
-            1945 hat sie das erste Mal stattgefunden und ist damit die älteste, noch durchgeführte Stafette der Schweiz!
-            Die Disziplinen sind Schwimmen, Velofahren, Laufen, Biken und (optional) Reiten.
-            Es gibt aktuell 3 Subkategorien:
+            Möchstest Du als Team reussieren, Deinen Teamgeist stärken oder Dich mit Kollegen challengen?
+            Die Stafetten-Kategorien bieten Dir eine super Möglichkeit dazu - egal ob beim Schwimmen, Velofahren, Laufen, Biken oder (optional) Reiten.
           </p>
           <ul className="list-disc list-inside">
             <li>Stafette kurz</li>
@@ -61,8 +63,8 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Die schnellste Seebachtaler:inne</h4>
           <p className="p">
-            Seit 2022 ist das <a href="https://visanasprint.ch/de/" className="link" target="_blank">Visana Sprint Format</a> auch an der DSS anzutreffen.
-            Dabei rennen Kids zwischen 60 und 100m um die Wette und küren so den/die schnelleste Seebachtaler:in.
+            Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40 m (KiGa) und 80 m (PS / Sek) um die Wette.
+            Im Ausscheidungsverfahren über mehrere Läufe wird der/die schnellste Seebachter:in erkoren.
           </p>
           <div className="">
             <Link href="/schnellst-seebachtaler">
@@ -76,7 +78,7 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Lauf</h4>
           <p className="p">
-            Der Dreiseenlauf führt die Läufer:innen auf Wanderwegen rund um den Nussbaumer- und Hütwillersee.
+            Die wunderschöne Laufstrecke von 10.55 km um die Seen kannst Du auch zu Fuss erleben.
           </p>
           <div className="">
             <Link href="/lauf">
