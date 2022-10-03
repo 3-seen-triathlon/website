@@ -25,7 +25,7 @@ const Kategorien: NextPage = () => {
           <p className="p">
             Bist du Triathlon-Neuling oder für kurze Distanzen geboren?
             Dann ist die Short Distance für dich.
-            Für Routiniers oder wenn Du Dich challengen möchtest ist die Olympic Distance Dich.
+            Für Routiniers oder wenn du dich challengen möchtest, ist die Olympic Distance etwas für dich.
           </p>
           <ul className="list-disc list-inside">
             <li>Short Distance</li>
@@ -43,8 +43,8 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Stafette</h4>
           <p className="p">
-            Möchstest Du als Team reussieren, Deinen Teamgeist stärken oder Dich mit Kollegen challengen?
-            Die Stafetten-Kategorien bieten Dir eine super Möglichkeit dazu - egal ob beim Schwimmen, Velofahren, Laufen, Biken oder (optional) Reiten.
+            Möchstest du als Team reüssieren, deinen Teamgeist stärken oder dich mit Kollegen challengen?
+            Die Stafetten-Kategorien bieten dir eine super Möglichkeit dazu - egal ob beim Schwimmen, Velofahren, Laufen, Biken oder (optional) Reiten.
           </p>
           <ul className="list-disc list-inside">
             <li>Stafette kurz</li>
@@ -61,9 +61,9 @@ const Kategorien: NextPage = () => {
         </div>
 
         <div className="grid content-start">
-          <h4 className="h4">Die schnellste Seebachtaler:inne</h4>
+          <h4 className="h4">Diä schnellste Seebachtaler:inne</h4>
           <p className="p">
-            Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40 m (KiGa) und 80 m (PS / Sek) um die Wette.
+            Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40 m (KiGa) und 80 m (PS/Sek) um die Wette.
             Im Ausscheidungsverfahren über mehrere Läufe wird der/die schnellste Seebachter:in erkoren.
           </p>
           <div className="">
@@ -78,7 +78,9 @@ const Kategorien: NextPage = () => {
         <div className="grid content-start">
           <h4 className="h4">Lauf</h4>
           <p className="p">
-            Die wunderschöne und vielfältige Laufstrecke von 10.55 km um die Seen kannst Du auch zu Fuss erleben.
+            Kein Velo oder die Schwimmbrille verloren?
+            Kein Problem - du kannst die 3 Seen Region auch beschwingten Fuss entdecken.
+            Die Strecke von 10.55 km führt durch die wunderschöne und vielfältige Seenlandschaft.
           </p>
           <div className="">
             <Link href="/lauf">
