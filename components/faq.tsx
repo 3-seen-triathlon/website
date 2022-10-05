@@ -47,7 +47,7 @@ export default function FAQ() {
           <div >
             <dt className="text-lg font-medium leading-6 text-gray-900">Wo finde ich Start- und/oder Ranglisten?</dt>
             <dd className="mt-2 p-paddingless text-gray-500">
-              Du findest sie auf Datasport (<code>Suche</code> > <code>Dreiseenstafette</code>) - sie sind verantwortlich für den Anmeldeprozess und die Auswertung. Unten findest du die letzten Paar Start- und Ranglisten.
+              Du findest sie auf Datasport (Suche - Dreiseenstafette) - sie sind verantwortlich für den Anmeldeprozess und die Auswertung. Unten findest du die letzten Paar Start- und Ranglisten.
               <ul className="list-disc list-inside mt-4">
                 {lists.map(item => (
                   <li><a className="link" target="_blank" href={item.link}>{item.name}</a></li>

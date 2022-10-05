@@ -130,6 +130,20 @@ const Lauf: NextPage = () => {
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                 />
               </div>
+
+              <div className="col-span-6 sm:col-span-3">
+                <label htmlFor="geschlecht" className="block text-sm font-medium text-gray-700">
+                  Geschlecht
+                </label>
+                <input
+                  required
+                  type="text"
+                  name="geschlecht"
+                  id="geschlecht"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                />
+              </div>
+
             </div>
           </div>
           <div className="flex mt-6">

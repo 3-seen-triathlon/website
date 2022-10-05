@@ -5,8 +5,7 @@ const navigation = {
   athletes: [
     { name: 'Kategorien', href: '/kategorien' },
     { name: 'Informationen', href: '/informationen' },
-    { name: 'Start- & Ranglisten', href: '/informationen#faq' },
-    { name: 'Ranglisten 2022', href: 'https://www.datasport.com/live/ranking/?racenr=24893' },
+    { name: 'Start- und Ranglisten', href: '/informationen#faq' },
   ],
   about: [
     { name: 'Kontakt', href: '/kontakt' },
