@@ -9,7 +9,7 @@ const quicklinks = [
   { name: 'Ablauf Wettkampftag', stat: 'Zeitplan', link: '#zeitplan', target: '' },
   { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum', target: '' },
   { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq', target: '' },
-  { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '' },
+  { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '_blank' },
   { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
 ];
 
@@ -54,11 +54,6 @@ const Informationen: NextPage = () => {
 
       <div className="content">
         <h3 className="h4" id="zeitplan">Zeitplan</h3>
-
-        {/* TODO */}
-        {/* Filter von Kategorien */}
-        {/* Farben für Kategorien */}
-
         <Timetable />
       </div>
 

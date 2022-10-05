@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import Infos from '../components/infos';
 
 const statsShortDistance = [
   { name: 'Swim', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
