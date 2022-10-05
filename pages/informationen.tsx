@@ -6,11 +6,11 @@ import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import Timetable from '../components/timetable';
 
 const quicklinks = [
-  { name: 'Ablauf Wettkampftag', stat: 'Zeitplan', link: '#zeitplan' },
-  { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum' },
-  { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq' },
-  { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf' },
-  { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
+  { name: 'Ablauf Wettkampftag', stat: 'Zeitplan', link: '#zeitplan', target: '' },
+  { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum', target: '' },
+  { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq', target: '' },
+  { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '' },
+  { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
 ];
 
 const Informationen: NextPage = () => {
@@ -29,22 +29,24 @@ const Informationen: NextPage = () => {
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:mt-8">
           {quicklinks.map((item) => (
             <Link href={item.link}>
-              <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg group">
-                <ArrowUpRightIcon
-                  className="h-5 w-5 absolute top-2 right-2 group-hover:visible text-gray-300 group-hover:text-blue-500"
-                  aria-hidden="true"
-                />
+              <a target={item.target}>
+                <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg group">
+                  <ArrowUpRightIcon
+                    className="h-5 w-5 absolute top-2 right-2 group-hover:visible text-gray-300 group-hover:text-blue-500"
+                    aria-hidden="true"
+                  />
 
-                <div className="grid grid-cols-1">
-                  <div className="col-span-1 text-base font-normal text-gray-900">{item.name}</div>
+                  <div className="grid grid-cols-1">
+                    <div className="col-span-1 text-base font-normal text-gray-900">{item.name}</div>
 
-                  <div className="flex justify-between items-baseline">
-                    <div className="flex items-baseline text-2xl font-semibold text-blue-600">
-                      {item.stat}
+                    <div className="flex justify-between items-baseline">
+                      <div className="flex items-baseline text-2xl font-semibold text-blue-600">
+                        {item.stat}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </Link>
           ))}
         </div>
@@ -61,7 +63,7 @@ const Informationen: NextPage = () => {
       </div>
 
       <div className="content">
-        <h3 className="h4" id="wettkampfzentrum">Wettkampzentrum</h3>
+        <h3 className="h4" id="wettkampfzentrum">Wettkampfzentrum</h3>
         <p className="p">
           Das Wettkampfzentrum liegt beim <a href="https://goo.gl/maps/PmSss7vXpTofKFjy8" className="link">Strandbad Hüttwilen</a>.
           Dort befindet sich nebst Start- und Ziellinie auch die gesamte Infrastruktur für die Athleten und Zuschauer.
@@ -87,10 +89,6 @@ const Informationen: NextPage = () => {
       </div>
 
       <div className="content" id="faq">
-
-        {/* TODOs */}
-        {/* Ranglisten von letzten Jahren */}
-
         <FAQ />
       </div>
 

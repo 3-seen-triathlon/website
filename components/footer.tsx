@@ -5,7 +5,7 @@ const navigation = {
   athletes: [
     { name: 'Kategorien', href: '/kategorien' },
     { name: 'Informationen', href: '/informationen' },
-    { name: 'Startlisten 2023', href: 'https://www.datasport.com/live/startlist/?racenr=25893' },
+    { name: 'Start- & Ranglisten', href: '/informationen#faq' },
     { name: 'Ranglisten 2022', href: 'https://www.datasport.com/live/ranking/?racenr=24893' },
   ],
   about: [

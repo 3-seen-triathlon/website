@@ -25,6 +25,13 @@ const faqs = [
   },
 ]
 
+const lists = [
+  { name: 'Startliste 2023', link: 'https://www.datasport.com/live/startlist/?racenr=25893' },
+  { name: 'Rangliste 2022', link: 'https://www.datasport.com/live/ranking/?racenr=24893' },
+  { name: 'Rangliste 2021', link: 'https://www.datasport.com/live/ranking/?racenr=23893' },
+  { name: 'Rangliste 2019', link: 'https://www.datasport.com/live/ranking/?racenr=21893' },
+];
+
 export default function FAQ() {
   return (
     <div className="">
@@ -37,6 +44,18 @@ export default function FAQ() {
               <dd className="mt-2 p-paddingless text-gray-500">{faq.answer}</dd>
             </div>
           ))}
+          <div >
+            <dt className="text-lg font-medium leading-6 text-gray-900">Wo finde ich Start- und/oder Ranglisten?</dt>
+            <dd className="mt-2 p-paddingless text-gray-500">
+              Du findest sie auf Datasport (<code>Suche</code> > <code>Dreiseenstafette</code>) - sie sind verantwortlich für den Anmeldeprozess und die Auswertung. Unten findest du die letzten Paar Start- und Ranglisten.
+              <ul className="list-disc list-inside mt-4">
+                {lists.map(item => (
+                  <li><a className="link" target="_blank" href={item.link}>{item.name}</a></li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+
         </dl>
       </div>
     </div>
