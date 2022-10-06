@@ -23,6 +23,12 @@ const faqs = [
     answer:
       "Selbstverständlich. Du findest sie auf der jeweiligen Seite mit Informationen zur Kategorie.",
   },
+  {
+    id: 4,
+    question: "Wo finde ich die Teambörse?",
+    answer:
+      "Die Teambörse gibt es im Moment noch nicht. Wir sind aktuell an der Umsetzung bzw. auf der Suche nach einer geeigneten Lösung.",
+  },
 ]
 
 const lists = [

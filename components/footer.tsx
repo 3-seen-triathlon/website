@@ -6,6 +6,7 @@ const navigation = {
     { name: 'Kategorien', href: '/kategorien' },
     { name: 'Informationen', href: '/informationen' },
     { name: 'Start- und Ranglisten', href: '/informationen#faq' },
+    { name: 'FAQ', href: '/informationen#faq' },
   ],
   about: [
     { name: 'Kontakt', href: '/kontakt' },

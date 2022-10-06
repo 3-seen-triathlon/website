@@ -65,8 +65,14 @@ const events: Array<Event> = [
 
 export default function Timetable() {
   const [filtered, setFiltered] = useState(events);
+  const [filterTerm, setFilterTerm] = useState(all);
+
+  const isFiltered = (filter: string): boolean => {
+    return filterTerm === filter ? true : false;
+  };
 
   const filter = (filter: string) => {
+    setFilterTerm(filter);
     if (filter === all) {
       setFiltered(events);
       return
@@ -83,10 +89,10 @@ export default function Timetable() {
 
   return (
     <div className="">
-      <div className="mt-8 flex">
-        <span>Filtern nach: </span>
+      <div className="mt-8 flex flex-wrap justify-start">
+        <span className="mr-3">Filtern nach: </span>
         {categories.map(category => (
-          <button className={getColor(category) + ' inline-flex ml-3 items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800'}
+          <button className={getColor(category) + ' inline-flex mr-3 items-center rounded-full my-1 ' + (isFiltered(category) ? '' : 'bg-gray-100') + ' px-3 py-0.5 text-sm font-medium text-gray-800'}
             onClick={() => filter(category)}
           >
             {category}
