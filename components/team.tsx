@@ -70,8 +70,8 @@ export default function Team() {
             Kontakt
           </h2>
           <p className="p">
-            Bei Anliegen oder Fragen kannst Du gerne die Adresse <a href="mailto:info@dreiseenstafette.ch" className="link">info@dreiseenstafette.ch</a> verwenden.
-            Wir werden uns dann bald bei Dir melden.
+            Bei Anliegen oder Fragen kannst du gerne die Adresse <a href="mailto:info@dreiseenstafette.ch" className="link">info@dreiseenstafette.ch</a> verwenden.
+            Wir werden uns dann bald bei dir melden.
           </p>
         </div>
       </div>
