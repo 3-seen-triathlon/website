@@ -2,10 +2,15 @@ import type { NextPage } from 'next'
 import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import Infos, { InfoPoint, InfoPointRun } from '../components/infos';
 
 const statsShortDistance = [
   { name: 'Lauf', stat: '10.5 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },
 ]
+
+const infos: InfoPoint[] = [
+  InfoPointRun,
+];
 
 const Lauf: NextPage = () => {
   return (
@@ -20,6 +25,8 @@ const Lauf: NextPage = () => {
           Alle Kategorien starten im Wettkampfzentrum am Hüttwilersee.
           Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
         </p>
+
+        <Infos props={infos} />
       </div>
 
       <div className="content">

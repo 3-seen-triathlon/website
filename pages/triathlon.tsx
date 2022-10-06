@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
-import Infos from '../components/infos';
+import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 
 const statsShortDistance = [
   { name: 'Swim', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
@@ -15,6 +15,20 @@ const statsOlympicDistance = [
   { name: 'Run', stat: '10.5 km', change: '100m', link: 'https://connect.garmin.com/modern/course/29507170' },
 ]
 
+
+const infos: InfoPoint[] = [
+  {
+    name: 'Lizenz',
+    description: 'Für die Triathlon-Kategorien besteht keine Lizenzpflicht.'
+  },
+  {
+    name: 'Start',
+    description: 'Bei den Triathlon-Kategorien gibt es jeweils einen Massenstart am Hüttwilersee.'
+  },
+  InfoPointSwim,
+  InfoPointCycling,
+  InfoPointRun,
+]
 
 const Triathlon: NextPage = () => {
   return (
@@ -32,25 +46,10 @@ const Triathlon: NextPage = () => {
         <p className="p">
           Alle Kategorien starten im Wettkampfzentrum am Hüttwilersee.
           Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
-          Für beide Triathlon-Kategorien besteht <span className="font-bold">keine</span> Lizenzpflicht.
         </p>
 
-        {/* TODO */}
-        {/* darstellung von den infos */}
-        {/* verpflegungsposten auf der laufstrecke erwähnen + dann später im Ziel */}
-
-        <p className="p">
-          Es wird im Hüttwilersee geschwommen.
-          Der Start (Men / Women) erfolgt jeweils als Massenstart.
-          Es wird jeweils am Wettkampftag basierend auf der Wassertemperatur entschieden, ob ein Neopren erlaubt ist oder nicht.
-        </p>
-        <ul className="list-disc list-inside">
-          <li>Schwimmen: Massenstart am Hüttwilersee</li>
-          <li>Velo: Strecke ist auf vollständig asphaltierten Strassen in gutem Zustand. Windschattenfahren ist erlaubt.</li>
-          <li>Run: Trailrunning</li>
-        </ul>
+        <Infos props={infos} />
       </div>
-
 
       <div className="content">
         <h3 className="h4">Strecken Short Distance</h3>

@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 
 const statsShortDistance = [
   { name: 'Schwimmen', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
@@ -15,6 +16,27 @@ const statsOlympicDistance = [
   { name: 'Bike', stat: '12.6 km', change: '220 m', link: 'https://connect.garmin.com/modern/course/29529369' },
   { name: 'Lauf', stat: '10.55 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },
 ]
+
+{/* TODOs: gleiche Infos wie bei Triathlon */ }
+{/* Reitparcours -> link zum doc */ }
+
+const infos: InfoPoint[] = [
+  {
+    name: 'Start',
+    description: 'Bei den Stafette-Kategorien gibt es jeweils einen Massenstart am Hüttwilersee.'
+  },
+  InfoPointSwim,
+  InfoPointCycling,
+  {
+    name: 'Biken',
+    description: 'Die Bikestrecke beinhaltet Sprünge, deshalb sind Mountainbikes empfohlen. Gravelbikes können auf eigene Verwantwortung benutzt werden.'
+  },
+  InfoPointRun,
+  {
+    name: 'Teambörse',
+    description: 'Die Stafette ist ein Team-Wettkampf und es werden nur vollständige Teams zugelassen. Wir werden in Kürze eine Teambörse eröffnen, damit Teams nach fehlenden Personen suchen können.'
+  },
+];
 
 const Stafette: NextPage = () => {
   return (
@@ -33,13 +55,9 @@ const Stafette: NextPage = () => {
           Alle Kategorien starten im Wettkampfzentrum am Hüttwilersee.
           Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
         </p>
-      </div>
 
-      {/* TODOs: gleiche Infos wie bei Triathlon */}
-      {/* Bikestrecke: offroad mit sprüngen - gravel bike nicht empfohle und sonst auf eigene verantwortung*/}
-      {/* Teambörse: kommt bald */}
-      {/* Notiz das es effektiv ein Teamevent ist - nicht vollständige Teams können entweder an Teambörse */}
-      {/* Reitparcours -> link zum doc */}
+        <Infos props={infos} />
+      </div>
 
       <div className="content">
         <h3 className="h4">Strecken Stafette Kurz</h3>
