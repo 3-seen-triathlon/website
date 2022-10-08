@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import LayoutWithoutHeader from '../components/layoutwithoutheader';
-import Link from 'next/link';
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
 
 const Lauf: NextPage = () => {
@@ -158,7 +157,7 @@ const Lauf: NextPage = () => {
       <div className="content">
         <h3 className="h4">Ranglisten</h3>
         <ul className="list-disc list-inside">
-          <li><a href="https://www.dreiseenstafette.ch/documents/rangliste_seebachtaler.pdf" target="_blank"><span className="link">Austragung 2022</span></a></li>
+          <li><a href="/dokumente/2022_rangliste_seebachtaler.pdf" target="_blank"><span className="link">Austragung 2022</span></a></li>
         </ul>
       </div>
     </LayoutWithoutHeader>
