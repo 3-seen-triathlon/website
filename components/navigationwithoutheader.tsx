@@ -7,8 +7,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
-const logo = "/logo/dss_logo_dark_1.png";
-const logo_light = "/logo/dss_logo_light_3.png";
+const logo = "/logo/dss_logo_dark.png";
+const logo_light = "/logo/dss_logo_light.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
