@@ -41,6 +41,38 @@ const navigation = {
         </svg>
       ),
     },
+    //   {
+    //     name: 'LinkedIn',
+    //     href: 'https://www.instagram.com/dreiseenstafette/',
+    //     icon: (props: any) => (
+    //       <svg fill="currentColor" viewBox="0 0 310 310" {...props}>
+    //         <g id="XMLID_801_">
+    //           <path id="XMLID_802_" d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+    // C77.16,101.969,74.922,99.73,72.16,99.73z"/>
+    //           <path id="XMLID_803_" d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+    // c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"/>
+    //           <path id="XMLID_804_" d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+    // c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+    // c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+    // C310,145.43,300.549,94.761,230.454,94.761z"/>
+    //         </g>
+    //       </svg>
+    //     ),
+    //   },
+    {
+      name: 'Youtube',
+      href: 'https://www.youtube.com/channel/UCfi5DPqo-Z8zKkDl2eU6zow',
+      icon: (props: any) => (
+        <svg fill="currentColor" viewBox="0 0 461.001 461.001" {...props}>
+          <g>
+            <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+		c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+		C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+		c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+          </g>
+        </svg>
+      ),
+    },
     {
       name: 'GitHub',
       href: 'https://gitlab.com/joergmis/dreiseenstafette',
@@ -125,10 +157,12 @@ export default function Footer() {
         <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-600 hover:text-blue-500">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
+              <Link key={item.name} href={item.href}>
+                <a target="_blank" className="text-gray-600 hover:text-blue-500">
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                </a>
+              </Link>
             ))}
           </div>
           <p className="mt-8 text-base text-gray-600 md:order-1 md:mt-0">
