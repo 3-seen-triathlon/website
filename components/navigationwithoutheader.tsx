@@ -6,6 +6,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import { socials } from './footer';
 
 const logo = "/logo/dss_logo_dark.png";
 const logo_light = "/logo/dss_logo_light.png";
@@ -100,6 +101,19 @@ export default function NavigationWithoutHeader({ children }: any) {
                       <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-blue-500" />
                       Anmelden
                     </a>
+                    <div className="text-center py-6">
+                      <div className="flex justify-center space-x-6 md:order-2">
+                        {socials.map((item) => (
+                          <Link key={item.name} href={item.href}>
+                            <a target="_blank" className="text-gray-100 hover:text-gray-200">
+                              <span className="sr-only">{item.name}</span>
+                              <item.icon className="h-6 w-6" aria-hidden="true" />
+                            </a>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
