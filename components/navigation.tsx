@@ -6,8 +6,10 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import { socials } from './footer';
 
-const logo = "/logo/dss_logo_light.png";
+const logo = "/logo/dss_logo_dark.png";
+const logo_light = "/logo/dss_logo_light.png";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
@@ -35,45 +37,22 @@ export default function Navigation({ children }: any) {
                 </Link>
               </div>
               <div className="-my-2 -mr-2 md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-200">
+                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-blue-500">
                   <span className="sr-only">Open menu</span>
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
               <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-center">
                 {menuItems.map(item => (
-                  <a href={item.link} key={item.name} className="text-base text-gray-100 hover:text-gray-200">
+                  <a href={item.link} key={item.name} className="text-base text-blue-500 hover:text-blue-600">
                     {item.name}
                   </a>
                 ))}
-                <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" className="button group" target="_blank">
+                <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button group">
                   <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                   Anmelden
                 </a>
               </div>
-            </div>
-          </div>
-
-          <div className="absolute inset-0 block overflow-hidden -z-10">
-            <video
-              autoPlay
-              loop={true}
-              muted
-              className="absolute w-auto min-w-full min-h-full max-w-none"
-            >
-              <source
-                src="/event/background_video.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 bg-gray-300 mix-blend-multiply" />
-          </div>
-          <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-24 lg:px-8 z-10 h-screen pt-42 md:py-24">
-            <div className="h-full flex justify-start content-center items-center">
-              <h2 className="h1 text-white">
-                Der schönste Triathlon im Thurgau
-              </h2>
             </div>
           </div>
 
@@ -95,7 +74,7 @@ export default function Navigation({ children }: any) {
                         <div>
                           <img
                             className="h-8 w-auto"
-                            src={logo}
+                            src={logo_light}
                             alt=""
                           />
                         </div>
@@ -118,10 +97,23 @@ export default function Navigation({ children }: any) {
                     </nav>
                   </div>
                   <div className="space-y-6 py-6 px-5 text-center">
-                    <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" className="button-light group" target="_blank">
+                    <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button-light group">
                       <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-blue-500" />
                       Anmelden
                     </a>
+                    <div className="text-center py-6">
+                      <div className="flex justify-center space-x-6 md:order-2">
+                        {socials.map((item) => (
+                          <Link key={item.name} href={item.href}>
+                            <a target="_blank" className="text-gray-100 hover:text-gray-200">
+                              <span className="sr-only">{item.name}</span>
+                              <item.icon className="h-6 w-6" aria-hidden="true" />
+                            </a>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>

@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowSmallRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Layout from '../components/layout';
 
 const image = "/event/schwimmausstieg.jpg";
 
 const Kategorien: NextPage = () => {
   return (
-    <LayoutWithoutHeader>
+    <Layout>
       <div className="content">
         <h1 className="h1">Kategorien</h1>
         <h2 className="h2 width">
@@ -92,7 +92,7 @@ const Kategorien: NextPage = () => {
         </div>
       </div>
 
-    </LayoutWithoutHeader>
+    </Layout>
   )
 }
 

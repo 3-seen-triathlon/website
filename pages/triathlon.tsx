@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
+import Layout from '../components/layout';
 
 const statsShortDistance = [
   { name: 'Swim', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
@@ -32,7 +32,7 @@ const infos: InfoPoint[] = [
 
 const Triathlon: NextPage = () => {
   return (
-    <LayoutWithoutHeader>
+    <Layout>
       <div className="content">
         <h1 className="h1">Triathlon</h1>
         <h2 className="h2 width">
@@ -124,7 +124,7 @@ const Triathlon: NextPage = () => {
         </div>
       </div>
 
-    </LayoutWithoutHeader>
+    </Layout>
   )
 }
 

@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
+import Layout from '../components/layout';
 
 const Lauf: NextPage = () => {
   return (
-    <LayoutWithoutHeader>
+    <Layout>
       <div className="content">
         <h1 className="h1">Diä schnellste Seebachtaler:inne</h1>
         <h2 className="h2 width">
@@ -160,7 +160,7 @@ const Lauf: NextPage = () => {
           <li><a href="/dokumente/2022_rangliste_seebachtaler.pdf" target="_blank"><span className="link">Austragung 2022</span></a></li>
         </ul>
       </div>
-    </LayoutWithoutHeader>
+    </Layout>
   )
 }
 

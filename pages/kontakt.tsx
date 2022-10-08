@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
+import Layout from '../components/layout';
 import Team from '../components/team';
 
 const Kontakt: NextPage = () => {
   return (
-    <LayoutWithoutHeader>
+    <Layout>
       <div className="mt-10 md:mt-12">
 
         {/* TODO */}
@@ -12,7 +12,8 @@ const Kontakt: NextPage = () => {
 
         <Team />
       </div>
-    </LayoutWithoutHeader>
+
+    </Layout>
   )
 }
 

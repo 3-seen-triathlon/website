@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import Categories from '../components/categories';
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
+import Layout from '../components/layout';
 
 const fallbackImage = "/event/ziel.jpg";
 
 const Home: NextPage = () => {
   return (
-    <LayoutWithoutHeader >
+    <Layout>
 
       <div className="content-wide">
         <video
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
 
       <Categories />
 
-    </LayoutWithoutHeader >
+    </Layout>
   )
 }
 

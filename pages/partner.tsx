@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
+import Layout from '../components/layout';
 import Partners from '../components/partners';
 
 const Partner: NextPage = () => {
   return (
-    <LayoutWithoutHeader>
+    <Layout>
       <Partners />
-    </LayoutWithoutHeader>
+    </Layout>
   )
 }
 

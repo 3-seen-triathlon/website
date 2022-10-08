@@ -2,7 +2,7 @@ import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 import type { NextPage } from 'next'
 import Link from 'next/link';
 import FAQ from '../components/faq';
-import LayoutWithoutHeader from '../components/layoutwithoutheader';
+import Layout from '../components/layout';
 import Timetable from '../components/timetable';
 
 const quicklinks = [
@@ -15,7 +15,7 @@ const quicklinks = [
 
 const Informationen: NextPage = () => {
   return (
-    <LayoutWithoutHeader>
+    <Layout>
       <div className="content">
         <h1 className="h1">Informationen</h1>
         <h2 className="h2 width">
@@ -87,7 +87,7 @@ const Informationen: NextPage = () => {
         <FAQ />
       </div>
 
-    </LayoutWithoutHeader>
+    </Layout>
   )
 }
 
