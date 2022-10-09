@@ -2,9 +2,12 @@ import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Layout from '../components/layout';
 
-const Error404: NextPage = () => {
+const Error500: NextPage = () => {
+  const { query } = useRouter();
+
   return (
     <Layout>
       <div className="content grid grid-cols-1 gap-8 content-center lg:grid-cols-2">
@@ -16,11 +19,18 @@ const Error404: NextPage = () => {
         <div className="grid content-center">
           <div>
             <h1 className="h3">
-              Da ist etwas schief gelaufen
+              Da ist etwas schief gelaufen 👀
             </h1>
 
             <p className="p">
-              Tut uns leid für die Umstände. Falls du das Gefühl hast, dass es ein Fehler auf unserer Seite ist kannst du uns gerne via <Link href="/kontakt"><span className="underline underline-offset-4 hover:text-blue-500">Kontaktformular</span></Link> benachrichtigen. Danke 🙇‍♂️
+              Tut uns leid für die Umstände.
+              Du kannst es entweder nochmals versuchen und deine Eingaben überprüfen oder - um uns das Debugging einfacher zu machen - via <Link href="/kontakt"><span className="underline underline-offset-4 hover:text-blue-500">Kontaktformular</span></Link> folgenden Fehler senden:
+            </p>
+
+            <p className="p bg-gray-100 p-2 rounded-md">
+              <code className="">
+                {query.error}
+              </code>
             </p>
 
             <Link href="/">
@@ -37,4 +47,4 @@ const Error404: NextPage = () => {
   )
 }
 
-export default Error404;
+export default Error500;

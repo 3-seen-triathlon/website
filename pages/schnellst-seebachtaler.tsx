@@ -30,8 +30,8 @@ const Lauf: NextPage = () => {
       <div className="content">
         <h3 className="h4">Anmeldung</h3>
         <form
-          action="https://formspree.io/f/xqknoznj"
-          method="POST"
+          action="/api/seebachtaler"
+          method="post"
         >
           <div className="mt-5 md:col-span-2 md:mt-0 width">
             <div className="grid grid-cols-6 gap-6">
