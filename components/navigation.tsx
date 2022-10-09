@@ -7,6 +7,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { socials } from './footer';
+import Banner from './banner';
 
 const logo = "/logo/dreiseenstafette_black.svg";
 const logo_light = "/logo/dreiseenstafette_white.svg";
@@ -21,6 +22,7 @@ const menuItems = [
 export default function Navigation({ children }: any) {
   return (
     <>
+      <Banner />
       <div className="z-10">
         <Popover className="relative">
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
