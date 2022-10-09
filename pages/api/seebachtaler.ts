@@ -33,14 +33,14 @@ export default function handler(req: any, res: any) {
     text: `Anmeldung für 'Diä schnellste Seebachtaler:inne': ${stringify(body)}`,
   }).then(() => {
     const params = new URLSearchParams(body).toString();
-    res.redirect(307, `/success?${params}`)
+    res.redirect(302, `/success?${params}`)
   }).catch((err) => {
     log.debug('failed to send message to slack channel', err)
     const params = new URLSearchParams({
       handler: 'seebachtaler',
       error: err,
     }).toString();
-    res.redirect(307, `/500?${params}`)
+    res.redirect(302, `/500?${params}`)
   });
 
   res.status(200);
