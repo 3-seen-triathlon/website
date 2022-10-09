@@ -1365,6 +1365,13 @@ nanoid@^3.3.4:
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"
   integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
+next-axiom@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/next-axiom/-/next-axiom-0.14.0.tgz#83b54b8f15833fc1b1adeaa48b68fc5c5cb5386a"
+  integrity sha512-LLbiDcL79274HqaKTSipZo6B4SCLh++11BpVfg+cNTZoLb8VH1g7g14xgFBhKeDN+DaiDSg8Of7ZPqaYEcIUXQ==
+  dependencies:
+    whatwg-fetch "^3.6.2"
+
 next@latest:
   version "12.3.0"
   resolved "https://registry.npmjs.org/next/-/next-12.3.0.tgz"
@@ -1647,6 +1654,11 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+whatwg-fetch@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz#dced24f37f2624ed0281725d51d0e2e3fe677f8c"
+  integrity sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==
 
 xtend@^4.0.2:
   version "4.0.2"

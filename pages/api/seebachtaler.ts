@@ -1,4 +1,6 @@
 import { IncomingWebhook } from '@slack/webhook';
+import { log } from 'next-axiom';
+
 const url = process.env.SLACK_WEBHOOK_URL as string;
 const webhook = new IncomingWebhook(url);
 
@@ -33,7 +35,7 @@ export default function handler(req: any, res: any) {
     const params = new URLSearchParams(body).toString();
     res.redirect(307, `/success?${params}`)
   }).catch((err) => {
-    console.log('failed to send message to slack channel: ', err)
+    log.debug('failed to send message to slack channel', err)
     const params = new URLSearchParams({
       handler: 'seebachtaler',
       error: err,
