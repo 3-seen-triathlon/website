@@ -8,8 +8,8 @@ import {
 } from '@heroicons/react/24/outline'
 import { socials } from './footer';
 
-const logo = "/logo/dss_logo_dark.png";
-const logo_light = "/logo/dss_logo_light.png";
+const logo = "/logo/dreiseenstafette_black.svg";
+const logo_light = "/logo/dreiseenstafette_white.svg";
 
 const menuItems = [
   { name: "Kategorien", link: "/kategorien" },
@@ -29,7 +29,7 @@ export default function Navigation({ children }: any) {
                 <Link href="/">
                   <div>
                     <img
-                      className="h-8 md:h-10 w-auto"
+                      className="h-12 md:h-15 w-auto"
                       src={logo}
                       alt=""
                     />
@@ -66,14 +66,14 @@ export default function Navigation({ children }: any) {
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel focus className="fixed bottom-0 left-0 right-0 bg-blue-500 z-10 inset-x-0 top-0 transform transition md:hidden">
-              <div className="mx-auto max-w-7xl px-6 h-full py-8 md:py-16">
+              <div className="mx-auto max-w-7xl px-6 h-full pt-8 pb-1 md:py-16">
                 <div className="grid content-between h-full">
                   <div className="flex items-center justify-between px-6 align-baseline">
                     <div>
                       <Link href="/">
                         <div>
                           <img
-                            className="h-8 w-auto"
+                            className="h-12 w-auto"
                             src={logo_light}
                             alt=""
                           />
