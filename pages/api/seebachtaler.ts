@@ -42,6 +42,4 @@ export default function handler(req: any, res: any) {
     }).toString();
     res.redirect(302, `/500?${params}`)
   });
-
-  res.status(200);
 }
