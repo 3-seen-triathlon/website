@@ -29,7 +29,13 @@ const Error500: NextPage = () => {
 
             <p className="p bg-gray-100 p-2 rounded-md">
               <code className="">
-                {query.error}
+                error: {query.error}
+              </code>
+            </p>
+
+            <p className="p bg-gray-100 p-2 rounded-md">
+              <code className="">
+                data: {query.data}
               </code>
             </p>
 

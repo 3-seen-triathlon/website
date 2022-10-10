@@ -11,8 +11,7 @@ const people = [
     name: 'Whitney Francis',
     role: 'Copywriter',
     imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80', twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
@@ -63,16 +62,6 @@ export default function Team() {
 
         <div className="content-wide">
           <img className="image" src={image} />
-        </div>
-
-        <div className="content">
-          <h2 className="h3">
-            Kontakt
-          </h2>
-          <p className="p">
-            Bei Anliegen oder Fragen kannst du gerne die Adresse <a href="mailto:info@dreiseenstafette.ch" className="link">info@dreiseenstafette.ch</a> verwenden.
-            Wir werden uns dann bald bei dir melden.
-          </p>
         </div>
       </div>
     </div>

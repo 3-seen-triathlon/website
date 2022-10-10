@@ -18,11 +18,8 @@ const Success: NextPage = () => {
         </div>
         <div className="grid content-center">
           <div>
-            <h1 className="h3">Anmeldung erfolgreich 🥳</h1>
-            <p className="p">
-              Du ({query.vorname} {query.nachname}) bist für "Diä schnellste Seebachtaler:inne" angemeldet!
-              Cool bist du dabei und wir freuen uns, dich an der DSS begrüssen zu können 😊
-            </p>
+            <h1 className="h3">{query.titel}</h1>
+            <p className="p">{query.text}</p>
 
             <Link href="/">
               <div

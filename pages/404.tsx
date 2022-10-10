@@ -20,7 +20,8 @@ const Error404: NextPage = () => {
             </h1>
 
             <p className="p">
-              Tut uns leid für die Umstände. Falls du das Gefühl hast, dass es ein Fehler auf unserer Seite ist kannst du uns gerne via <Link href="/kontakt"><span className="underline underline-offset-4 hover:text-blue-500">Kontaktformular</span></Link> benachrichtigen. Danke 🙇‍♂️
+              Tut uns leid für die Umstände.
+              Falls du das Gefühl hast, dass es ein Fehler auf unserer Seite ist kannst du uns gerne via <Link href="/kontakt"><span className="underline underline-offset-4 hover:text-blue-500">Kontaktformular</span></Link> benachrichtigen. Danke 🙇‍♂️
             </p>
 
             <Link href="/">

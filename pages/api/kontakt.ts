@@ -7,12 +7,9 @@ const webhook = new IncomingWebhook(url);
 const stringify = (body: any) => {
   return `Vorname: ${body.vorname}
 Nachname: ${body.nachname}
-Jahrgang: ${body.jahrgang}
-Wohnort: ${body.wohnort}
-Schule: ${body.schule}
-Klasse: ${body.klasse}
 Email: ${body.email}
-Geschlecht: ${body.geschlecht}`
+Thema: ${body.thema}
+Anfrage: ${body.kommentar}`
 };
 
 export default function handler(req: any, res: any) {
@@ -20,28 +17,26 @@ export default function handler(req: any, res: any) {
 
   if (!body.vorname
     || !body.nachname
-    || !body.jahrgang
-    || !body.wohnort
-    || !body.schule
-    || !body.klasse
     || !body.email
-    || !body.geschlecht) {
+    || !body.thema
+    || !body.kommentar) {
     log.debug('form is not complete', body)
     res.redirect(302, '/404')
   }
 
   webhook.send({
-    text: `Anmeldung für 'Diä schnellste Seebachtaler:inne': ${stringify(body)}`,
+    text: `Anfrage über das Kontaktformular: ${stringify(body)}`,
   }).then(() => {
     const params = new URLSearchParams({
-      titel: 'Anmeldung erfolgreich 🎉',
-      text: `Du (${body.vorname} ${body.nachname}) bist für "Diä schnellste Seebachtaler:inne" angemeldet! Cool bist du mit dabei und wir freuen uns, dich an der DSS begrüssen zu dürfen 😊 Bis dann!`,
+      titel: 'Danke für deine Nachricht ✉️',
+      text: 'Wir haben sie erhalten und werden uns so bald wie möglich bei dir melden.',
     }).toString();
     res.redirect(302, `/success?${params}`)
   }).catch((err) => {
     log.debug('failed to send message to slack channel', err)
     const params = new URLSearchParams({
-      handler: 'seebachtaler',
+      handler: 'kontakt',
+      data: body,
       error: err,
     }).toString();
     res.redirect(302, `/500?${params}`)
