@@ -34,7 +34,7 @@ const infos: InfoPoint[] = [
   InfoPointRun,
   {
     name: 'Teambörse',
-    description: 'Die Stafette ist ein Team-Wettkampf und es werden nur vollständige Teams zugelassen. Wir werden in Kürze eine Teambörse eröffnen, damit Teams nach fehlenden Personen suchen können.'
+    description: 'Die Stafette ist ein Team-Wettkampf und es werden nur vollständige Teams zugelassen. Wir haben aber weiter oben eine Teambörse verlinkt, bei der du entweder einen Platz im Team oder noch fehlende Mitglieder suchen kannst.'
   },
 ];
 
@@ -53,7 +53,9 @@ const Stafette: NextPage = () => {
         <h3 className="h4">Allgemeine Infos</h3>
         <p className="p">
           Alle Kategorien starten im Wettkampfzentrum am Hüttwilersee.
-          Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>.
+          Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>. <span className="p italic">
+            Neu bieten wir dieses Jahr auch eine Teambörse an, damit du dein Team ergänzen oder als einzelner Athlet nach einem Team suchen kannst: <Link href="/teamboerse"><span className="link" >zur Teambörse</span></Link>.
+          </span>
         </p>
 
         <Infos props={infos} />

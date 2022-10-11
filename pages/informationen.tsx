@@ -11,6 +11,7 @@ const quicklinks = [
   { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq', target: '' },
   { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '_blank' },
   { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
+  { name: 'Team vervollständigen oder suchen', stat: 'Teambörse', link: '/teamboerse', target: '' },
 ];
 
 const Informationen: NextPage = () => {
