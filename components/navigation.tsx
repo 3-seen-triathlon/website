@@ -44,7 +44,7 @@ export default function Navigation({ children }: any) {
                   <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <div className="hidden space-x-3 lg:space-x-5 xl:space-x-10 md:flex md:justify-end md:items-center">
+              <div className="hidden space-x-3 lg:space-x-4 xl:space-x-5 md:flex md:justify-end md:items-center">
                 {menuItems.map(item => (
                   <a href={item.link} key={item.name} className="text-base text-blue-500 hover:text-blue-600">
                     {item.name}

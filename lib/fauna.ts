@@ -18,7 +18,11 @@ export const listGuestbookEntries = () => {
         data {
           _id
           _ts
+          kind
+          category
           name
+          contact
+          title
           message
           createdAt
         }
@@ -37,7 +41,11 @@ export const createGuestbookEntry = (newEntry: any) => {
       createGuestbookEntry(data: $input) {
         _id
         _ts
+        kind
+        category
         name
+        contact
+        title
         message
         createdAt
       }

@@ -27,7 +27,7 @@ const faqs = [
     id: 4,
     question: "Wo finde ich die Teambörse?",
     answer:
-      "Die Teambörse gibt es im Moment noch nicht. Wir sind aktuell an der Umsetzung bzw. auf der Suche nach einer geeigneten Lösung.",
+      "Die Teambörse findest du auf der Kategorien-Seite der Stafette oder ganz unten auf der Website im Footer.",
   },
 ]
 

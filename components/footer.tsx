@@ -75,13 +75,14 @@ const navigation = {
   athletes: [
     { name: 'Kategorien', href: '/kategorien' },
     { name: 'Informationen', href: '/informationen' },
-    { name: 'Start- und Ranglisten', href: '/informationen#faq' },
+    { name: 'Teambörse', href: '/teamboerse' },
     { name: 'FAQ', href: '/informationen#faq' },
   ],
   about: [
     { name: 'Kontakt', href: '/kontakt' },
     { name: 'Partner', href: '/partner' },
     { name: 'Fotos', href: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
+    { name: 'Start- und Ranglisten', href: '/informationen#faq' },
     { name: 'TV Hüttwilen', href: 'https://tvhuettwilen.ch' },
   ],
   social: socials,
