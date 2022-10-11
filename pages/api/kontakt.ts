@@ -15,6 +15,14 @@ Anfrage: ${body.kommentar}`
 export default function handler(req: any, res: any) {
   const body = req.body
 
+  if (!body.spamcheck || !body.spamcheck1 || !body.spamcheck2) {
+    res.status(400).json({ text: `Netter Versuch aber ohne die gelöste Rechnung versenden wir keine Nachrichten :P ` })
+  }
+
+  if (body.spamcheck != +body.spamcheck1 + +body.spamcheck2) {
+    res.status(400).json({ text: `Netter Versuch aber ${body.spamcheck1} + ${body.spamcheck2} != ${body.spamcheck} :P` });
+  }
+
   if (!body.vorname
     || !body.nachname
     || !body.email

@@ -1,10 +1,19 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
 import type { NextPage } from 'next'
+import { useEffect, useState } from 'react';
 import FormTopic from '../components/formtopic';
 import Layout from '../components/layout';
 import Team from '../components/team';
 
 const Kontakt: NextPage = () => {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(5);
+
+  useEffect(() => {
+    setA(Math.floor(Math.random() * 10));
+    setB(Math.floor(Math.random() * 10));
+  });
+
   return (
     <Layout>
       <div className="mt-10 md:mt-12">
@@ -86,6 +95,19 @@ const Kontakt: NextPage = () => {
                 />
               </div>
 
+              <div className="col-span-6 sm:col-span-3">
+                <label htmlFor="spamcheck" className="block text-sm font-medium text-gray-700">
+                  Bist du ein Roboter? Bitte trage das Ergebnis der folgenden Rechnung ein: {a} + {b}.
+                </label>
+                <input
+                  required
+                  type="number"
+                  name="spamcheck"
+                  id="spamcheck"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                />
+              </div>
+
             </div>
           </div>
           <div className="flex mt-6">
@@ -93,6 +115,10 @@ const Kontakt: NextPage = () => {
               <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
               Absenden
             </button>
+          </div>
+          <div className="invisible">
+            <input required type="number" name="spamcheck1" id="spamcheck1" value={a} />
+            <input required type="number" name="spamcheck2" id="spamcheck2" value={b} />
           </div>
         </form>
       </div>
