@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import formatDate from 'date-fns/format'
 import useSWR, { mutate } from 'swr'
 import 'tailwindcss/tailwind.css'
@@ -37,7 +37,7 @@ const EntryItem = ({ entry }: any) => (
   <div className="">
     <div>
       <span className='inline-flex mr-3 items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-200' >
-        {entry.kind === 'Ich habe einen Platz frei' ? 'Biete Platz' : 'Suche Team'}
+        {entry.kind}
       </span>
 
       <span className='inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-orange-200' >
@@ -73,8 +73,8 @@ const EntryForm = ({ onSubmit: onSubmitProp }: any) => {
     name: '',
     title: '',
     message: '',
-    kind: '',
-    category: '',
+    kind: types[0].name,
+    category: categories[0].name,
     contact: '',
   }
   const [values, setValues] = useState(initial)
@@ -254,12 +254,8 @@ function classNames(...classes: any[]) {
 
 const typeList = (getter: any, setter: any, triggerer: any) => {
   const [selected, setSelected] = useState(types[0])
-  const val = getter;
-  val.kind = types[0].name;
-  triggerer('kind');
 
   const onChange = (event: any) => {
-    console.log(event);
     const val = getter;
     val.kind = event.name;
     setter(val);
@@ -329,18 +325,14 @@ const typeList = (getter: any, setter: any, triggerer: any) => {
 }
 
 const categories = [
-  { id: 1, name: 'Stafette Lang (4er Team)' },
-  { id: 2, name: 'Stafette Kurz + opt. Reiter (4er / 5er Team)' },
+  { id: 1, name: 'Stafette Kurz + opt. Reiter (4er / 5er Team)' },
+  { id: 2, name: 'Stafette Lang (4er Team)' },
 ];
 
 const categoryList = (getter: any, setter: any, triggerer: any) => {
-  const [selected, setSelected] = useState(categories[1])
-  const val = getter;
-  val.category = categories[0].name;
-  triggerer('category');
+  const [selected, setSelected] = useState(categories[0])
 
   const onChange = (event: any) => {
-    console.log(event);
     const val = getter;
     val.category = event.name;
     setter(val);
