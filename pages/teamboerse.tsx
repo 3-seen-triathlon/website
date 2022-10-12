@@ -6,6 +6,7 @@ import { listGuestbookEntries } from '../lib/fauna'
 import Layout from '../components/layout'
 import { ArrowSmallRightIcon, CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/outline'
 import { Listbox, Transition } from '@headlessui/react'
+import Infos, { InfoPoint } from '../components/infos'
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json())
 
@@ -156,7 +157,7 @@ const EntryForm = ({ onSubmit: onSubmitProp }: any) => {
                 name="title"
                 type="text"
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                placeholder="Titel"
+                placeholder="Kurze Beschreibung, wen oder was du suchst."
                 value={values.title}
                 onChange={makeOnChange('title')}
               />
@@ -171,7 +172,7 @@ const EntryForm = ({ onSubmit: onSubmitProp }: any) => {
                 rows={4}
                 name="message"
                 id="message"
-                placeholder="Besschreibung"
+                placeholder="Hier kannst du dich / dein Team vorstellen. Z.B. welche Disziplinen noch fehlen oder für welche du offen wärst."
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 value={values.message}
                 onChange={makeOnChange('message')}
@@ -199,21 +200,37 @@ const EntryForm = ({ onSubmit: onSubmitProp }: any) => {
   )
 }
 
+const infos: InfoPoint[] = [
+  {
+    name: 'Kontakt aufnehmen',
+    description: 'Die Teambörse ist nicht moderiert von der DSS. Das heisst, ihr müsst untereinander selbst Kontakt aufnehmen.',
+  },
+  {
+    name: 'Löschen',
+    description: 'Wenn euer Team komplett ist oder du den Beitrag löschen möchtest musst du dich aktuell noch bei uns melden, damit wir das erledigen. Nach dem Wettkampf werden wir alle Beiträge löschen.',
+  },
+];
+
 const Guestbook = ({ fallback }: any) => {
   const { entries, onSubmit } = useEntriesFlow({ fallback })
   return (
     <Layout>
       <div className="content">
-        <div className="">
-          <h1 className="h3">
-            Teambörse
-          </h1>
-          <p className="p">
-            Hier kannst du eine Nachricht hinterlassen, wenn du entweder noch einen freien Platz im Team hast oder gerne in einem Team mitmachen möchtest.
-            Die Beiträge werden jeweils nach dem Wettkampf wieder gelöscht.
-          </p>
-          <EntryForm onSubmit={onSubmit} />
-        </div>
+        <h1 className="h3">
+          Teambörse
+        </h1>
+        <p className="p">
+          Hier kannst du eine Nachricht hinterlassen, wenn du entweder noch einen freien Platz im Team hast oder gerne in einem Team mitmachen möchtest.
+          Die Beiträge werden jeweils nach dem Wettkampf wieder gelöscht.
+        </p>
+
+        <Infos props={infos} />
+
+        <h2 className="h4 mt-6 md:mt-8">
+          Beitrag erfassen
+        </h2>
+
+        <EntryForm onSubmit={onSubmit} />
       </div>
 
       <div className="content">
