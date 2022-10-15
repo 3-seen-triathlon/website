@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { ArrowSmallRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Layout from '../components/layout';
+import { Carousel } from 'flowbite-react';
 
 const image = "/event/schwimmausstieg.jpg";
 
@@ -16,11 +17,29 @@ const Kategorien: NextPage = () => {
       </div>
 
       <div className="content-wide">
-        <img className="image" src={image} />
+        <div className='h-72 md:h-[32rem]'>
+          <Carousel slide={true} slideInterval={3000}>
+            <img className="image" src='/fotos/slider/16.jpg' />
+            <img className="image" src='/fotos/slider/35.jpg' />
+            <img className="image" src='/fotos/slider/23.jpg' />
+            <img className="image" src='/fotos/slider/24.jpg' />
+            <img className="image" src='/fotos/slider/25.jpg' />
+            <img className="image" src='/fotos/slider/29.jpg' />
+            <img className="image" src='/fotos/slider/30.jpg' />
+            <img className="image" src='/fotos/slider/28.jpg' />
+            <img className="image" src='/fotos/slider/31.jpg' />
+            <img className="image" src='/fotos/slider/32.jpg' />
+            <img className="image" src='/fotos/slider/27.jpg' />
+            <img className="image" src='/fotos/slider/8.jpg' />
+            <img className="image" src='/fotos/slider/9.jpg' />
+            <img className="image" src='/fotos/slider/17.jpg' />
+            <img className="image" src='/fotos/slider/26.jpg' />
+          </Carousel>
+        </div>
       </div>
 
-      <div className="content grid sm:grid-cols-2 gap-2 mb-12 md:mb-32">
-        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
+      <div className="content grid sm:grid-cols-2 gap-12 md:gap-24 mb-12 md:mb-32">
+        <div className="grid content-start">
           <h4 className="h4">Triathlon</h4>
           <p className="p">
             Bist du Triathlon-Neuling oder für kurze Distanzen geboren?
@@ -40,7 +59,7 @@ const Kategorien: NextPage = () => {
           </div>
         </div>
 
-        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
+        <div className="grid content-start">
           <h4 className="h4">Stafette</h4>
           <p className="p">
             Möchstest du als Team reüssieren, deinen Teamgeist stärken oder dich mit Kollegen challengen?
@@ -60,7 +79,7 @@ const Kategorien: NextPage = () => {
           </div>
         </div>
 
-        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
+        <div className="grid content-start">
           <h4 className="h4">Diä schnellste Seebachtaler:inne</h4>
           <p className="p">
             Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40m (KiGa) und 80m (PS/Sek) um die Wette.
@@ -75,7 +94,7 @@ const Kategorien: NextPage = () => {
           </div>
         </div>
 
-        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
+        <div className="grid content-start">
           <h4 className="h4">Lauf</h4>
           <p className="p">
             Kein Velo oder die Schwimmbrille verloren?
