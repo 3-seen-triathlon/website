@@ -78,7 +78,7 @@ const Stafette: NextPage = () => {
                 />
 
                 <div className="grid grid-cols-1">
-                  <div className="col-span-1 text-base font-normal text-gray-900">{item.name}</div>
+                  <div className="col-span-1 text-base text-gray-900">{item.name}</div>
 
                   <div className="flex justify-between items-baseline">
                     <div className="flex items-baseline text-2xl font-semibold text-blue-600">
@@ -99,7 +99,7 @@ const Stafette: NextPage = () => {
           ))}
           <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg border-2 border-transparent group">
             <div className="grid grid-cols-1">
-              <div className="col-span-1 text-base font-normal text-gray-900">Reiten (optional)</div>
+              <div className="col-span-1 text-base text-gray-900">Reiten (optional)</div>
 
               <div className="flex justify-between items-baseline">
                 <div className="flex items-baseline text-2xl font-semibold text-blue-600">
@@ -133,7 +133,7 @@ const Stafette: NextPage = () => {
                 />
 
                 <div className="grid grid-cols-1">
-                  <div className="col-span-1 text-base font-normal text-gray-900">{item.name}</div>
+                  <div className="col-span-1 text-base text-gray-900">{item.name}</div>
 
                   <div className="flex justify-between items-baseline">
                     <div className="flex items-baseline text-2xl font-semibold text-blue-600">

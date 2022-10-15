@@ -92,7 +92,7 @@ export default function Navigation({ children }: any) {
                   <div className="mx-auto text-center">
                     <nav className="grid gap-y-4 md:gap-y-8">
                       {menuItems.map(item => (
-                        <a href={item.link} key={item.name} className="h2-paddingless text-gray-100 hover:text-gray-200">
+                        <a href={item.link} key={item.name} className="text-gray-100 hover:text-gray-200 h2-menu">
                           {item.name}
                         </a>
                       ))}

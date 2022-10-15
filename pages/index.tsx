@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </div>
 
       <div className="content">
-        <h1 className="h3">
+        <h1 className="h2">
           Ein atemberaubender Triathlon, eine traditionsreiche Stafette und ein einzigartiger Lauf in familiärer Atmosphäre - das ist die Dreiseenstafette im Seebachtal.
         </h1>
       </div>

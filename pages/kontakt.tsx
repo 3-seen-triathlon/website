@@ -110,7 +110,7 @@ const Kontakt: NextPage = () => {
             </div>
           </div>
           <div className="flex mt-6">
-            <button type="submit" className="button group">
+            <button type="submit" className="button-inverse group">
               <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
               Absenden
             </button>

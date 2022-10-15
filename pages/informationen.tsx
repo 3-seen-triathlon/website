@@ -11,7 +11,7 @@ const quicklinks = [
   { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq', target: '' },
   { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '_blank' },
   { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
-  { name: 'Team vervollständigen oder suchen', stat: 'Teambörse', link: '/teamboerse', target: '' },
+  { name: 'Team vervollständigen', stat: 'Teambörse', link: '/teamboerse', target: '' },
 ];
 
 const Informationen: NextPage = () => {
@@ -38,7 +38,7 @@ const Informationen: NextPage = () => {
                   />
 
                   <div className="grid grid-cols-1">
-                    <div className="col-span-1 text-base font-normal text-gray-900">{item.name}</div>
+                    <div className="col-span-1 text-base text-gray-900">{item.name}</div>
 
                     <div className="flex justify-between items-baseline">
                       <div className="flex items-baseline text-2xl font-semibold text-blue-600">

@@ -27,7 +27,7 @@ const Kategorien: NextPage = () => {
             Dann ist die Short Distance für dich.
             Für Routiniers oder wenn du dich challengen möchtest, ist die Olympic Distance etwas für dich.
           </p>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside text-gray-800">
             <li>Short Distance</li>
             <li>Olympic Distance</li>
           </ul>
@@ -46,7 +46,7 @@ const Kategorien: NextPage = () => {
             Möchstest du als Team reüssieren, deinen Teamgeist stärken oder dich mit Kollegen challengen?
             Die Stafetten-Kategorien bieten dir eine super Möglichkeit dazu - egal ob beim Schwimmen, Velofahren, Laufen, Biken oder (optional) Reiten.
           </p>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside text-gray-800">
             <li>Stafette kurz</li>
             <li>Stafette kurz mit Reiter</li>
             <li>Stafette lang</li>

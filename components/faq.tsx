@@ -38,33 +38,54 @@ const lists = [
   { name: 'Rangliste 2019', link: 'https://www.datasport.com/live/ranking/?racenr=21893' },
 ];
 
+import { Disclosure } from '@headlessui/react'
+import { ChevronUpIcon } from '@heroicons/react/20/solid'
+
 export default function FAQ() {
   return (
-    <div className="">
+    <div>
       <h3 className="h3">Oft gestellte Fragen</h3>
-      <div className="mt-12">
-        <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 md:space-y-0 lg:grid-cols-3">
-          {faqs.map((faq) => (
-            <div key={faq.id}>
-              <dt className="text-lg font-medium leading-6 text-gray-900">{faq.question}</dt>
-              <dd className="mt-2 p-paddingless text-gray-500">{faq.answer}</dd>
-            </div>
-          ))}
-          <div >
-            <dt className="text-lg font-medium leading-6 text-gray-900">Wo finde ich Start- und/oder Ranglisten?</dt>
-            <dd className="mt-2 p-paddingless text-gray-500">
-              Du findest sie auf Datasport (Suche - Dreiseenstafette) - sie sind verantwortlich für den Anmeldeprozess und die Auswertung. Unten findest du die letzten Paar Start- und Ranglisten.
-              <ul className="list-disc list-inside mt-4">
-                {lists.map(item => (
-                  <li><a className="link" target="_blank" href={item.link}>{item.name}</a></li>
-                ))}
-              </ul>
-            </dd>
-          </div>
-
-        </dl>
+      <div className="rounded-2xl bg-white p-2">
+        {faqs.map(item => (
+          <Disclosure as="div" className="mt-2" key={item.id}>
+            {({ open }) => (
+              <>
+                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-50 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span>{item.question}</span>
+                  <ChevronUpIcon
+                    className={`${open ? 'rotate-180 transform' : ''
+                      } h-5 w-5 text-blue-500`}
+                  />
+                </Disclosure.Button>
+                <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-700">
+                  {item.answer}
+                </Disclosure.Panel>
+              </>
+            )}
+          </Disclosure>
+        ))}
+        <Disclosure as="div" className="mt-2">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-50 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <span>Wo finde ich Start- und/oder Ranglisten?</span>
+                <ChevronUpIcon
+                  className={`${open ? 'rotate-180 transform' : ''
+                    } h-5 w-5 text-blue-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-700">
+                Du findest sie auf Datasport (Suche - Dreiseenstafette) - sie sind verantwortlich für den Anmeldeprozess und die Auswertung. Unten findest du die letzten Paar Start- und Ranglisten.
+                <ul className="list-disc list-inside mt-4 text-gray-700">
+                  {lists.map(item => (
+                    <li><a className="link" target="_blank" href={item.link}>{item.name}</a></li>
+                  ))}
+                </ul>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
       </div>
     </div>
   )
 }
-

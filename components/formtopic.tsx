@@ -54,7 +54,7 @@ export default function FormTopic() {
                   >
                     {({ selected, active }) => (
                       <>
-                        <span className={classNames(selected ? 'font-semibold' : 'font-normal', 'block truncate')}>
+                        <span className={classNames(selected ? 'font-semibold' : '', 'block truncate')}>
                           {person.name}
                         </span>
 

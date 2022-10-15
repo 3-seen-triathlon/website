@@ -29,7 +29,7 @@ export default function Infos({ props }: { props: InfoPoint[] }) {
           <div key={feature.name} className="relative">
             <dt>
               <InformationCircleIcon className="absolute h-6 w-6 text-blue-500" aria-hidden="true" />
-              <p className="ml-9 text-lg font-medium leading-6 text-gray-900">{feature.name}</p>
+              <p className="ml-9 text-lg font-medium text-gray-900">{feature.name}</p>
             </dt>
             <dd className="mt-2 ml-9 text-base text-gray-500">{feature.description}</dd>
           </div>

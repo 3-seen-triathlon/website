@@ -54,7 +54,7 @@ const Lauf: NextPage = () => {
                 />
 
                 <div className="grid grid-cols-1">
-                  <div className="col-span-1 text-base font-normal text-gray-900">{item.name}</div>
+                  <div className="col-span-1 text-base text-gray-900">{item.name}</div>
 
                   <div className="flex justify-between items-baseline">
                     <div className="flex items-baseline text-2xl font-semibold text-blue-600">

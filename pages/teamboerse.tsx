@@ -182,7 +182,7 @@ const EntryForm = ({ onSubmit: onSubmitProp }: any) => {
           </div>
         </div>
         <div className="flex mt-6">
-          <button className="button" type="submit" disabled={isSubmitting} >
+          <button className="button-inverse" type="submit" disabled={isSubmitting} >
             <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
             Hinzufügen
           </button>
@@ -317,7 +317,7 @@ const typeList = (getter: any, setter: any, triggerer: any) => {
                   >
                     {({ selected, active }) => (
                       <>
-                        <span className={classNames(selected ? 'font-semibold' : 'font-normal', 'block truncate')}>
+                        <span className={classNames(selected ? 'font-semibold' : '', 'block truncate')}>
                           {person.name}
                         </span>
 
@@ -394,7 +394,7 @@ const categoryList = (getter: any, setter: any, triggerer: any) => {
                   >
                     {({ selected, active }) => (
                       <>
-                        <span className={classNames(selected ? 'font-semibold' : 'font-normal', 'block truncate')}>
+                        <span className={classNames(selected ? 'font-semibold' : '', 'block truncate')}>
                           {person.name}
                         </span>
 

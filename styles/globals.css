@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://use.typekit.net/pqu5juj.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,21 +7,8 @@
 
 @layer base {
   html {
-    /* font-family: futura-pt, sans-serif; */
-    /* font-family: depot-new-web, sans-serif; */
-    /* font-family: neue-haas-grotesk-display, sans-serif; */
-    /* font-family: Arial, sans-serif; */
-    /* font-family: 'Rubik', sans-serif; */
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Ubuntu', sans-serif; */
-
     font-weight: 500;
-    /* font-weight: 500; */
     font-style: normal;
   }
 }
@@ -32,27 +18,32 @@
 }
 
 .h1 {
-  @apply mb-10 mt-10 md:mt-12 md:mb-12 leading-relaxed text-4xl md:text-6xl;
+  @apply mb-10 mt-10 md:mt-12 md:mb-12 leading-8 md:leading-10 text-4xl md:text-6xl font-semibold;
+  @apply text-gray-800;
 }
 
 .h2 {
-  @apply mb-10 md:mb-12 leading-relaxed text-xl md:text-3xl;
+  @apply mb-10 md:mb-12 leading-8 md:leading-10 text-xl md:text-3xl font-semibold;
+  @apply text-gray-800;
 }
 
-.h2-paddingless {
-  @apply leading-relaxed text-xl md:text-3xl;
+.h2-menu {
+  @apply leading-8 md:leading-10 text-xl md:text-3xl font-normal;
 }
 
 .h3 {
-  @apply mb-6 md:mb-8 leading-relaxed text-2xl md:text-4xl;
+  @apply mb-6 md:mb-8 leading-8 md:leading-10 text-2xl md:text-4xl font-semibold;
+  @apply text-gray-800;
 }
 
 .h4 {
-  @apply mb-4 md:mb-6 leading-relaxed text-xl md:text-3xl;
+  @apply mb-4 md:mb-6 leading-8 md:leading-10 text-xl md:text-3xl font-semibold;
+  @apply text-gray-800;
 }
 
 .p {
   @apply mb-6 max-w-5xl md:mb-8 leading-relaxed text-base;
+  @apply text-gray-800;
 }
 
 .p-paddingless {
