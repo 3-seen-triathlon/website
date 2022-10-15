@@ -45,7 +45,7 @@ export default function Categories() {
                     src={post.imageUrl}
                     alt="People working on laptops"
                   />
-                  <div className="absolute inset-0 bg-gray-300 group-hover:bg-gray-400 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-gray-400 mix-blend-multiply" />
                 </div>
               </div>
 
