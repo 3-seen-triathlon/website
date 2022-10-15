@@ -20,7 +20,7 @@ const Kontakt: NextPage = () => {
         <Team />
       </div>
 
-      <div className="content">
+      <div className="content" id="formular">
         <h2 className="h3">
           Kontakt
         </h2>

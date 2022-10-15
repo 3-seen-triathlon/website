@@ -101,6 +101,7 @@ const navigation = {
     { name: 'Partner', href: '/partner' },
     { name: 'Fotos', href: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
     { name: 'Start- und Ranglisten', href: '/informationen#faq' },
+    { name: 'Helferbereich', href: '/helfer' },
     { name: 'TV Hüttwilen', href: 'https://tvhuettwilen.ch' },
   ],
   social: socials,

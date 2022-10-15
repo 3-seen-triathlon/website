@@ -10,8 +10,10 @@ export default function Layout({ children }: any) {
         <meta name="robots" content="all" key="setindexing" />
         <link rel="icon" type="image/png" href="/logo/favicon.png" />
       </Head>
-      <main>
-        <Navigation>{children}</Navigation>
+      <main className="min-h-screen flex flex-col">
+        <div className="flex-1">
+          <Navigation>{children}</Navigation>
+        </div>
         <Footer></Footer>
       </main>
     </>

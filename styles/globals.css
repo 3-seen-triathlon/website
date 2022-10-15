@@ -47,6 +47,10 @@
   @apply inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-blue-500 px-4 py-2 text-base text-blue-500 hover:bg-blue-500 hover:text-white;
 }
 
+.button-hover {
+  @apply bg-gradient-to-tr from-blue-600 to-cyan-600;
+}
+
 /* for dark surfaces*/
 .button-light {
   @apply ml-3 xl:ml-6 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-base text-white hover:bg-white hover:text-blue-500;
@@ -67,4 +71,8 @@
 
 .image {
   @apply rounded-md;
+}
+
+.background {
+  @apply bg-gradient-to-tr from-green-400 to-blue-500;
 }
