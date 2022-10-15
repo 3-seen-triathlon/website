@@ -24,25 +24,29 @@ export default function Banner() {
   });
 
   return (
-    <div className={banner ? 'relative background' : 'hidden'}>
-      <div className="mx-auto max-w-5xl py-2 px-3 sm:px-6 lg:px-8 flex justify-between items-center">
-        <p className="font-medium text-white">
-          <span className="">Die nächste DSS findet am 20.08.2023 statt!</span>
-          <span className="block sm:ml-2 sm:inline-block">
-            <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="font-bold text-white hover:underline hover:underline-offset-4">
-              Anmelden
-              <span aria-hidden="true"> &rarr;</span>
-            </a>
-          </span>
-        </p>
-        <button
-          type="button"
-          className="flex p-1 rounded-md hover:bg-gray-100/20 focus:outline-none focus:ring-2 focus:ring-white"
-          onClick={() => removeBanner()}
-        >
-          <span className="sr-only">Schliessen</span>
-          <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
-        </button>
+    <div className={banner ? 'relative bg-blue-600' : 'hidden'}>
+      <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
+        <div className="pr-16 sm:px-16 sm:text-center">
+          <p className="font-medium text-white">
+            <span className="">Die nächste DSS findet am 20.08.2023 statt!</span>
+            <span className="block sm:ml-2 sm:inline-block">
+              <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="font-bold text-white underline underline-offset-4">
+                Anmelden
+                <span aria-hidden="true"> &rarr;</span>
+              </a>
+            </span>
+          </p>
+        </div>
+        <div className="absolute inset-y-0 right-0 flex items-start pt-1 pr-3 sm:items-start sm:pt-1 sm:pr-3">
+          <button
+            type="button"
+            className="flex rounded-md p-2 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-white"
+            onClick={() => removeBanner()}
+          >
+            <span className="sr-only">Dismiss</span>
+            <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
+          </button>
+        </div>
       </div>
     </div>
   )
