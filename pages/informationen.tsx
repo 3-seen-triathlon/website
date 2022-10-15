@@ -19,7 +19,7 @@ const Informationen: NextPage = () => {
     <Layout>
       <div className="content">
         <h1 className="h1">Informationen</h1>
-        <h2 className="h2 width">
+        <h2 className="h2">
           Hier findest Du die wichtigsten Eckdaten und allgemeine Infos zum Wettkampftag; vom Wettkampfzentrum über den Zeitplan bis hin zur Verpflegung.
         </h2>
       </div>

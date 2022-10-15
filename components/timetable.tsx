@@ -42,7 +42,7 @@ const getColor = (category: string) => {
 const events: Array<Event> = [
   { time: '07:30', event: 'Öffnung Wettkampfgelände', location: '-', category: all },
   { time: '07:30 - 08:00', event: 'Startnummernausgabe Teamcaptains', location: 'Infopoint', category: stafette },
-  { time: '08:15 - 08:30', event: 'Briefing Teamcaptains', location: 'Festzelt', category: triathlon },
+  { time: '08:15 - 08:30', event: 'Briefing Teamcaptains', location: 'Festzelt', category: stafette },
   { time: '08:00 - 09:00', event: 'Startnummernausgabe Triathlet:innen und Nachmeldungen', location: 'Infopoint', category: triathlon },
   { time: '09:00 - 10:00', event: 'Startnummernausgabe Lauf und Nachmeldungen', location: 'Infopoint', category: lauf },
   { time: '08:00 - 12:00', event: 'Startnummernausgabe "Diä schnellste Seebachtaler:inne" und Nachmeldungen', location: 'TV Hüttwilen Zelt', category: seebachtaler },
@@ -101,9 +101,9 @@ export default function Timetable() {
       </div>
 
       <div className="mt-8 flex flex-col">
-        <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+        <div className="">
+          <div className="inline-block min-w-full align-middle">
+            <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-md md:rounded-lg">
               <table className="min-w-full divide-y divide-gray-300">
                 <thead className="bg-gray-50">
                   <tr>
@@ -124,8 +124,8 @@ export default function Timetable() {
                       <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                         {event.time} Uhr
                       </td>
-                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{event.event}</td>
-                      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{event.location}</td>
+                      <td className="whitespace-pre-wrap px-3 py-4 text-sm text-gray-500">{event.event}</td>
+                      <td className="whitespace-pre-wrap px-3 py-4 text-sm text-gray-500">{event.location}</td>
                     </tr>
                   ))}
                 </tbody>

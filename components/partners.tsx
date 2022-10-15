@@ -66,7 +66,7 @@ export default function Partners() {
     <>
       <div className="content">
         <h1 className="h1">Partner</h1>
-        <h2 className="h2 width">
+        <h2 className="h2">
           Ein herzliches Dankeschön an unsere Partner, die uns unterstützen und die Durchführung der DSS überhaupt erst ermöglichen!
         </h2>
       </div>

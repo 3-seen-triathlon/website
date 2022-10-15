@@ -43,7 +43,7 @@ const posts = [
 export default function Categories() {
   return (
     <div className="content">
-      <div className="mx-auto mt-12 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 lg:mt-8">
         {posts.map((post) => (
           <Link href={post.href}>
             <div key={post.title} className="relative flex flex-col overflow-hidden rounded-lg bg-gray-50 hover:cursor-pointer hover:bg-gray-100 group">

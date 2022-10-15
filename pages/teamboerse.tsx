@@ -35,7 +35,7 @@ const useEntriesFlow = ({ fallback }: any) => {
 }
 
 const EntryItem = ({ entry }: any) => (
-  <div className="">
+  <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg border-2 border-transparent group">
     <div>
       <span className='inline-flex mr-3 items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-200' >
         {entry.kind}
@@ -206,7 +206,7 @@ const infos: InfoPoint[] = [
     description: 'Die Teambörse ist nicht moderiert von der DSS. Das heisst, ihr müsst untereinander selbst Kontakt aufnehmen.',
   },
   {
-    name: 'Löschen',
+    name: 'Beitrag löschen',
     description: 'Wenn euer Team komplett ist oder du den Beitrag löschen möchtest musst du dich aktuell noch bei uns melden, damit wir das erledigen. Nach dem Wettkampf werden wir alle Beiträge löschen.',
   },
 ];
@@ -216,17 +216,19 @@ const Guestbook = ({ fallback }: any) => {
   return (
     <Layout>
       <div className="content">
-        <h1 className="h3">
+        <h1 className="h1">
           Teambörse
         </h1>
-        <p className="p">
+        <h2 className="h2">
           Hier kannst du eine Nachricht hinterlassen, wenn du entweder noch einen freien Platz im Team hast oder gerne in einem Team mitmachen möchtest.
           Die Beiträge werden jeweils nach dem Wettkampf wieder gelöscht.
-        </p>
+        </h2>
 
         <Infos props={infos} />
+      </div>
 
-        <h2 className="h4 mt-6 md:mt-8">
+      <div className="content">
+        <h2 className="h3 mt-6 md:mt-8">
           Beitrag erfassen
         </h2>
 
@@ -237,7 +239,8 @@ const Guestbook = ({ fallback }: any) => {
         <h2 className="h3">
           Beiträge
         </h2>
-        <div className="grid gap-16 lg:grid-cols-3 lg:gap-x-16 lg:gap-y-12">
+
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 lg:mt-8">
           {entries?.map((entry: any) => (
             <EntryItem key={entry._id} entry={entry} />
           ))}
