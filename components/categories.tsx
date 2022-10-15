@@ -31,7 +31,7 @@ const posts = [
   },
   {
     title: 'Für die Kids: "Diä schnellste Seebachtaler:inne"',
-    href: '/schnellst-seebachtaler',
+    href: '/seebachtaler',
     description:
       'Das Visana Format findet neu auch an der Dreiseenstafette statt.',
     imageUrl:

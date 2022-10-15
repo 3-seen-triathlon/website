@@ -67,7 +67,7 @@ const Kategorien: NextPage = () => {
             Im Ausscheidungsverfahren über mehrere Läufe wird der/die schnellste Seebachter:in erkoren.
           </p>
           <div className="">
-            <Link href="/schnellst-seebachtaler">
+            <Link href="/seebachtaler">
               <div className="button group">
                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
               </div>

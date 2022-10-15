@@ -1,5 +1,6 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
@@ -7,6 +8,12 @@ import Layout from '../components/layout';
 const Error404: NextPage = () => {
   return (
     <Layout>
+
+      <Head>
+        <title>Dreiseenstafette - 404</title>
+        <meta name="robots" content="noindex,nofollow" key="setindexing" />
+      </Head>
+
       <div className="content grid grid-cols-1 gap-8 content-center lg:grid-cols-2">
         <div className="grid content-center">
           <div>

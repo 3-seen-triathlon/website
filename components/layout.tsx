@@ -6,7 +6,8 @@ export default function Layout({ children }: any) {
   return (
     <>
       <Head>
-        <title>Dreiseenstafette {new Date().getFullYear()}</title>
+        <title>Dreiseenstafette</title>
+        <meta name="robots" content="all" key="setindexing" />
         <link rel="icon" type="image/png" href="/logo/favicon.png" />
       </Head>
       <main>

@@ -4,12 +4,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import { useRouter } from "next/router";
+import Head from 'next/head';
 
 const Success: NextPage = () => {
   const { query } = useRouter();
 
   return (
     <Layout>
+
+      <Head>
+        <title>Dreiseenstafette - Success</title>
+        <meta name="robots" content="noindex,nofollow" key="setindexing" />
+      </Head>
+
       <div className="content grid grid-cols-1 gap-8 content-center lg:grid-cols-2">
         <div className="grid content-center">
           <div>
