@@ -19,8 +19,8 @@ const Kategorien: NextPage = () => {
         <img className="image" src={image} />
       </div>
 
-      <div className="content grid sm:grid-cols-2 gap-12 md:gap-24 mb-12 md:mb-32">
-        <div className="grid content-start">
+      <div className="content grid sm:grid-cols-2 gap-2 mb-12 md:mb-32">
+        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
           <h4 className="h4">Triathlon</h4>
           <p className="p">
             Bist du Triathlon-Neuling oder für kurze Distanzen geboren?
@@ -40,7 +40,7 @@ const Kategorien: NextPage = () => {
           </div>
         </div>
 
-        <div className="grid content-start">
+        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
           <h4 className="h4">Stafette</h4>
           <p className="p">
             Möchstest du als Team reüssieren, deinen Teamgeist stärken oder dich mit Kollegen challengen?
@@ -60,7 +60,7 @@ const Kategorien: NextPage = () => {
           </div>
         </div>
 
-        <div className="grid content-start">
+        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
           <h4 className="h4">Diä schnellste Seebachtaler:inne</h4>
           <p className="p">
             Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40m (KiGa) und 80m (PS/Sek) um die Wette.
@@ -75,7 +75,7 @@ const Kategorien: NextPage = () => {
           </div>
         </div>
 
-        <div className="grid content-start">
+        <div className="grid content-start bg-gray-50 px-8 py-12 md:px-12 md:py-18 rounded-lg">
           <h4 className="h4">Lauf</h4>
           <p className="p">
             Kein Velo oder die Schwimmbrille verloren?

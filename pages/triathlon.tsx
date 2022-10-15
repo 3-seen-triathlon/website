@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, ArrowUpRightIcon, IdentificationIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 import Layout from '../components/layout';
@@ -19,10 +19,12 @@ const statsOlympicDistance = [
 const infos: InfoPoint[] = [
   {
     name: 'Lizenz',
+    icon: (props: any) => (<IdentificationIcon {...props} />),
     description: 'Für die Triathlon-Kategorien besteht keine Lizenzpflicht.'
   },
   {
     name: 'Start',
+    icon: (props: any) => (<RocketLaunchIcon {...props} />),
     description: 'Bei den Triathlon-Kategorien gibt es jeweils einen Massenstart am Hüttwilersee.'
   },
   InfoPointSwim,

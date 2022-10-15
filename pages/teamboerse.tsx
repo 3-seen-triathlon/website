@@ -1,10 +1,10 @@
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useState } from 'react'
 import formatDate from 'date-fns/format'
 import useSWR, { mutate } from 'swr'
 import 'tailwindcss/tailwind.css'
 import { listGuestbookEntries } from '../lib/fauna'
 import Layout from '../components/layout'
-import { ArrowSmallRightIcon, CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/outline'
+import { ArrowSmallRightIcon, BanknotesIcon, CheckIcon, ChevronUpDownIcon, PhoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Listbox, Transition } from '@headlessui/react'
 import Infos, { InfoPoint } from '../components/infos'
 
@@ -203,10 +203,12 @@ const EntryForm = ({ onSubmit: onSubmitProp }: any) => {
 const infos: InfoPoint[] = [
   {
     name: 'Kontakt aufnehmen',
+    icon: (props: any) => (<PhoneIcon {...props} />),
     description: 'Die Teambörse ist nicht moderiert von der DSS. Das heisst, ihr müsst untereinander selbst Kontakt aufnehmen.',
   },
   {
     name: 'Beitrag löschen',
+    icon: (props: any) => (<XMarkIcon {...props} />),
     description: 'Wenn euer Team komplett ist oder du den Beitrag löschen möchtest musst du dich aktuell noch bei uns melden, damit wir das erledigen. Nach dem Wettkampf werden wir alle Beiträge löschen.',
   },
 ];

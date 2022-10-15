@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, ArrowUpRightIcon, MapIcon, RocketLaunchIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 import Layout from '../components/layout';
@@ -23,17 +23,20 @@ const statsOlympicDistance = [
 const infos: InfoPoint[] = [
   {
     name: 'Start',
+    icon: (props: any) => (<RocketLaunchIcon {...props} />),
     description: 'Bei den Stafette-Kategorien gibt es jeweils einen Massenstart am Hüttwilersee.'
   },
   InfoPointSwim,
   InfoPointCycling,
   {
     name: 'Biken',
+    icon: (props: any) => (<MapIcon {...props} />),
     description: 'Die Bikestrecke beinhaltet Sprünge, deshalb sind Mountainbikes empfohlen. Gravelbikes können auf eigene Verwantwortung benutzt werden.'
   },
   InfoPointRun,
   {
     name: 'Teambörse',
+    icon: (props: any) => (<UserGroupIcon {...props} />),
     description: 'Die Stafette ist ein Team-Wettkampf und es werden nur vollständige Teams zugelassen. Wir haben aber weiter oben eine Teambörse verlinkt, bei der du entweder einen Platz im Team oder noch fehlende Mitglieder suchen kannst.'
   },
 ];
