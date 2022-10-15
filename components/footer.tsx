@@ -164,7 +164,7 @@ export default function Footer() {
                 placeholder="Deine Mailadresse"
               />
               <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button type="submit" className="button group">
+                <button type="submit" className="button-inverse group">
                   <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                   Anmelden
                 </button>

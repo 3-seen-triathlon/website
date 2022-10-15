@@ -33,7 +33,7 @@ const Kategorien: NextPage = () => {
           </ul>
           <div className="mt-8">
             <Link href="/triathlon">
-              <div className="button group">
+              <div className="button-inverse group">
                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
               </div>
             </Link>
@@ -53,7 +53,7 @@ const Kategorien: NextPage = () => {
           </ul>
           <div className="mt-8">
             <Link href="/stafette">
-              <div className="button group">
+              <div className="button-inverse group">
                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
               </div>
             </Link>
@@ -68,7 +68,7 @@ const Kategorien: NextPage = () => {
           </p>
           <div className="">
             <Link href="/seebachtaler">
-              <div className="button group">
+              <div className="button-inverse group">
                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
               </div>
             </Link>
@@ -84,7 +84,7 @@ const Kategorien: NextPage = () => {
           </p>
           <div className="">
             <Link href="/lauf">
-              <div className="button group">
+              <div className="button-inverse group">
                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
               </div>
             </Link>

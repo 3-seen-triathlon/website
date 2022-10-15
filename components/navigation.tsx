@@ -51,7 +51,7 @@ export default function Navigation({ children }: any) {
                   </a>
                 ))}
                 <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button group">
-                  <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
+                  <ArrowSmallRightIcon className="button-icon" />
                   Anmelden
                 </a>
               </div>
