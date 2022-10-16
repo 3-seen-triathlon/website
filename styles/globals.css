@@ -25,6 +25,10 @@
   @apply mb-10 md:mb-12 leading-8 md:leading-10 text-xl md:text-3xl font-semibold;
 }
 
+.h2-paddingless {
+  @apply leading-8 md:leading-10 text-lg md:text-xl lg:text-2xl font-semibold;
+}
+
 .h2-menu {
   @apply leading-8 md:leading-10 text-xl md:text-3xl font-normal;
 }

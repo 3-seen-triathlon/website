@@ -4,8 +4,6 @@ import Link from "next/link";
 import Layout from '../components/layout';
 import { Carousel } from 'flowbite-react';
 
-const image = "/event/schwimmausstieg.jpg";
-
 const Kategorien: NextPage = () => {
   return (
     <Layout>
@@ -20,6 +18,7 @@ const Kategorien: NextPage = () => {
         <div className='h-72 md:h-[32rem]'>
           <Carousel slide={true} slideInterval={3000}>
             <img className="image" src='/fotos/slider/16.jpg' />
+            <img className="image" src='/fotos/slider/2.jpg' />
             <img className="image" src='/fotos/slider/35.jpg' />
             <img className="image" src='/fotos/slider/23.jpg' />
             <img className="image" src='/fotos/slider/24.jpg' />
@@ -33,7 +32,6 @@ const Kategorien: NextPage = () => {
             <img className="image" src='/fotos/slider/8.jpg' />
             <img className="image" src='/fotos/slider/9.jpg' />
             <img className="image" src='/fotos/slider/17.jpg' />
-            <img className="image" src='/fotos/slider/26.jpg' />
           </Carousel>
         </div>
       </div>
