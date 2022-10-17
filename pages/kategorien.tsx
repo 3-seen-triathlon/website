@@ -2,7 +2,9 @@ import type { NextPage } from 'next'
 import { ArrowSmallRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Layout from '../components/layout';
-import { Carousel } from 'flowbite-react';
+import RandomImage from '../components/RandomImage';
+
+const image = "/event/schwimmausstieg.jpg";
 
 const Kategorien: NextPage = () => {
   return (
@@ -15,25 +17,7 @@ const Kategorien: NextPage = () => {
       </div>
 
       <div className="content-wide">
-        <div className='h-72 md:h-[32rem]'>
-          <Carousel slide={true} slideInterval={3000}>
-            <img className="image" src='/fotos/slider/16.jpg' />
-            <img className="image" src='/fotos/slider/2.jpg' />
-            <img className="image" src='/fotos/slider/35.jpg' />
-            <img className="image" src='/fotos/slider/23.jpg' />
-            <img className="image" src='/fotos/slider/24.jpg' />
-            <img className="image" src='/fotos/slider/25.jpg' />
-            <img className="image" src='/fotos/slider/29.jpg' />
-            <img className="image" src='/fotos/slider/30.jpg' />
-            <img className="image" src='/fotos/slider/28.jpg' />
-            <img className="image" src='/fotos/slider/31.jpg' />
-            <img className="image" src='/fotos/slider/32.jpg' />
-            <img className="image" src='/fotos/slider/27.jpg' />
-            <img className="image" src='/fotos/slider/8.jpg' />
-            <img className="image" src='/fotos/slider/9.jpg' />
-            <img className="image" src='/fotos/slider/17.jpg' />
-          </Carousel>
-        </div>
+        <RandomImage />
       </div>
 
       <div className="content grid sm:grid-cols-2 gap-12 md:gap-24 mb-12 md:mb-32">

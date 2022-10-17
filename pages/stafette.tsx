@@ -3,6 +3,7 @@ import { ArrowTrendingUpIcon, ArrowUpRightIcon, MapIcon, RocketLaunchIcon, UserG
 import Link from 'next/link';
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 import Layout from '../components/layout';
+import RandomImage from '../components/RandomImage';
 
 const statsShortDistance = [
   { name: 'Schwimmen', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
@@ -50,6 +51,10 @@ const Stafette: NextPage = () => {
           Die älteste Kategorie der DSS - und die coolste!
           Im Gegensatz zum Triathlon kommen hier auch die Biker zum Zug!
         </h2>
+      </div>
+
+      <div className="content-wide">
+        <RandomImage />
       </div>
 
       <div className="content">

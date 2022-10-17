@@ -31,31 +31,23 @@ const posts = [
 
 export default function Categories() {
   return (
-    <div className="content-wide">
-      <div className="my-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:my-8">
+    <div className="content">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 lg:mt-8">
         {posts.map((post) => (
           <Link href={post.href}>
-            <div key={post.title} className="rounded-xl relative hover:cursor-pointer bg-white drop-shadow-xl h-72 md:h-96 border-2 border-gray-100">
-              <div className="absolute top-20 left-0 right-0 bottom-0 rounded-xl">
-                <Image
-                  objectFit="cover"
-                  objectPosition={"center"}
-                  layout={'fill'}
-                  className="w-full rounded-xl"
-                  src={post.imageUrl}
-                  alt="People working on laptops"
-                />
-              </div>
+            <div key={post.title} className="relative flex flex-col overflow-hidden rounded-lg bg-gray-50 hover:cursor-pointer hover:bg-gray-100 group">
+              <ArrowUpRightIcon
+                className="h-5 w-5 absolute top-2 right-2 group-hover:visible text-gray-300 group-hover:text-blue-500"
+                aria-hidden="true"
+              />
 
-              <div className="px-6 py-9 md:px-8 md:py-12 w-full bg-white relative rounded-t-xl">
-                <p className="h2-paddingless">{post.title}</p>
-
-                <ArrowUpRightIcon
-                  strokeWidth={2}
-                  className="h-6 w-6 absolute top-8 right-8"
-                  aria-hidden="true"
-                />
-
+              <div className="flex flex-1 flex-col justify-between p-6">
+                <div className="flex-1">
+                  <div className="mt-2 block">
+                    <p className="text-xl font-semibold text-blue-600">{post.title}</p>
+                    <p className="mt-3 text-base text-gray-900">{post.description}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </Link>

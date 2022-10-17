@@ -3,6 +3,7 @@ import { ArrowTrendingUpIcon, ArrowUpRightIcon, IdentificationIcon, RocketLaunch
 import Link from 'next/link';
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 import Layout from '../components/layout';
+import RandomImage from '../components/RandomImage';
 
 const statsShortDistance = [
   { name: 'Swim', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
@@ -41,6 +42,10 @@ const Triathlon: NextPage = () => {
           Die abwechslungsreichste Disziplin an der DSS.
           Athlet:innen entdecken das Seebachtal auf 3 verschiedene Arten.
         </h2>
+      </div>
+
+      <div className="content-wide">
+        <RandomImage />
       </div>
 
       <div className="content">

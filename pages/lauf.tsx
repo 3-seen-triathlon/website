@@ -3,6 +3,7 @@ import { ArrowTrendingUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/outli
 import Link from 'next/link';
 import Infos, { InfoPoint, InfoPointRun } from '../components/infos';
 import Layout from '../components/layout';
+import RandomImage from '../components/RandomImage';
 
 const statsShortDistance = [
   { name: 'Lauf', stat: '10.5 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },

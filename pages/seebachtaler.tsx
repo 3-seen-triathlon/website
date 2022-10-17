@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
 import Layout from '../components/layout';
+import RandomImage from '../components/RandomImage';
 
 const Lauf: NextPage = () => {
   return (
@@ -10,6 +11,10 @@ const Lauf: NextPage = () => {
         <h2 className="h2 width">
           Die jüngste Kategorie der DSS mit ihrem Debut im Jahr 2022.
         </h2>
+      </div>
+
+      <div className="content-wide">
+        <RandomImage />
       </div>
 
       <div className="content">
