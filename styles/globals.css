@@ -91,6 +91,6 @@
   @apply rounded-md;
 }
 
-.background {
-  @apply bg-gradient-to-tr from-green-400 to-blue-500;
+.gradient {
+  @apply bg-gradient-to-tr from-teal-400 to-blue-600;
 }
