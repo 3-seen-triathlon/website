@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import { ArrowTrendingUpIcon, ArrowUpRightIcon, MapIcon, RocketLaunchIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
+import Image from 'next/image';
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 import Layout from '../components/layout';
-import RandomImage from '../components/RandomImage';
 
 const statsShortDistance = [
   { name: 'Schwimmen', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
@@ -54,7 +54,16 @@ const Stafette: NextPage = () => {
       </div>
 
       <div className="content-wide">
-        <RandomImage />
+        <div className="relative w-full h-60 sm:h-80 md:h-[30rem]">
+          <Image
+            objectFit="cover"
+            objectPosition={"center"}
+            layout={'fill'}
+            className="image"
+            src={'/event/ziel.jpg'}
+            alt="People working on laptops"
+          />
+        </div>
       </div>
 
       <div className="content">

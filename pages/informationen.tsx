@@ -1,6 +1,7 @@
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 import type { NextPage } from 'next'
 import Link from 'next/link';
+import Image from 'next/image';
 import FAQ from '../components/faq';
 import Layout from '../components/layout';
 import Timetable from '../components/timetable';
@@ -22,6 +23,19 @@ const Informationen: NextPage = () => {
         <h2 className="h2">
           Hier findest Du die wichtigsten Eckdaten und allgemeine Infos zum Wettkampftag; vom Wettkampfzentrum über den Zeitplan bis hin zur Verpflegung.
         </h2>
+      </div>
+
+      <div className="content-wide">
+        <div className="relative w-full h-60 sm:h-80 md:h-[30rem]">
+          <Image
+            objectFit="cover"
+            objectPosition={"center"}
+            layout={'fill'}
+            className="image"
+            src={'/fotos/slider/35.jpg'}
+            alt="People working on laptops"
+          />
+        </div>
       </div>
 
       <div className="content">

@@ -1,15 +1,29 @@
 import type { NextPage } from 'next'
 import Categories from '../components/categories';
 import Layout from '../components/layout';
-import RandomImage from '../components/RandomImage';
+
+const fallbackImage = "/event/ziel.jpg";
 
 const Home: NextPage = () => {
   return (
     <Layout>
 
       <div className="content-wide">
-        <RandomImage />
+        <video
+          autoPlay
+          loop={true}
+          muted
+          className="w-full image object-cover"
+          poster={fallbackImage}
+        >
+          <source
+            src="/event/background_video.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
+
 
       <div className="content">
         <h1 className="h2">

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
 import Layout from '../components/layout';
-import RandomImage from '../components/RandomImage';
+import Image from 'next/image';
 
 const Lauf: NextPage = () => {
   return (
@@ -14,7 +14,16 @@ const Lauf: NextPage = () => {
       </div>
 
       <div className="content-wide">
-        <RandomImage />
+        <div className="relative w-full h-60 sm:h-80 md:h-[30rem]">
+          <Image
+            objectFit="cover"
+            objectPosition={"center"}
+            layout={'fill'}
+            className="image"
+            src={'/fotos/slider/1.jpg'}
+            alt="People working on laptops"
+          />
+        </div>
       </div>
 
       <div className="content">

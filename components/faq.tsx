@@ -29,6 +29,18 @@ const faqs = [
     answer:
       "Die Teambörse findest du auf der Kategorien-Seite der Stafette oder ganz unten auf der Website im Footer.",
   },
+  {
+    id: 5,
+    question: "Hat es Duschen / Umkleidekabinen vor Ort?",
+    answer:
+      "Ja, das Wettkampfzentrum ist gleich bei der Badi Hüttwilen. Dort gibt es Umkleidekabinen sowie WCs getrennt nach Geschlecht. Duschen hat es auch vor Ort.",
+  },
+  {
+    id: 6,
+    question: "Wie sieht es mit den ÖV Verbindungen aus?",
+    answer:
+      "Der Bus fährt jeweils 1x in der Stunde zwischen Diessenhofen und Frauenfeld. Zwischen Hüttwilen und Nussbaumen gibt es die Haltestelle 'Hüttwilen, Stutheien' - das ist der nächste Punkt am Wettkampfzentrum. Danach geht es noch ca. 1km Richtung See hinunter bis du beim Start bist. Idealerweise überprüfst du online den Fahrplan nochmals, bevor du dich auch den Bus verlässt 😉",
+  },
 ]
 
 const lists = [

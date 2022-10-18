@@ -67,7 +67,7 @@ export default function Navigation({ children }: any) {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Popover.Panel focus className="fixed bottom-0 left-0 right-0 bg-blue-500 z-10 inset-x-0 top-0 transform transition md:hidden">
+            <Popover.Panel focus className="fixed bottom-0 left-0 right-0 gradient z-10 inset-x-0 top-0 transform transition md:hidden">
               <div className="mx-auto max-w-5xl px-6 h-full pt-8 pb-1 md:py-16">
                 <div className="grid content-between h-full">
                   <div className="flex items-center justify-between px-6 align-baseline">
