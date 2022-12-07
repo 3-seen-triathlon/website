@@ -7,7 +7,7 @@ const partners = [
         cols: 1,
         partners: [
             { name: 'Raiffeisen', image: '/logo/dss19/raiffeisen.png', link: 'https://raiffeisen.ch' },
-            { name: 'die Mobiliar', image: '/logo/dss23/die_mobiliar_generalagentur_frauenfeld.png', link: 'https://mobiliar.ch' },
+            { name: 'die Mobiliar', image: '/logo/dss23/die_mobiliar_generalagentur_frauenfeld.png', link: 'https://www.mobiliar.ch/frauenfeld' },
         ],
     },
     {
