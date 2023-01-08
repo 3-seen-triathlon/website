@@ -9,9 +9,9 @@ import {
 import { socials } from './footer';
 import Banner from './banner';
 
-const logo = "/logo/dss/dark_4.svg";
+const logo = "/logo/dss/dark_5.svg";
 const logo_small = "/logo/dss/dark_small.svg";
-const logo_light = "/logo/dss/light_4.svg";
+const logo_light = "/logo/dss/light_5.svg";
 const logo_light_small = "/logo/dss/light_small.svg";
 
 const menuItems = [
