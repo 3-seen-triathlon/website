@@ -9,7 +9,7 @@ import {
 import { socials } from './footer';
 import Banner from './banner';
 
-const logo = "/logo/dreiseenstafette_black.svg";
+const logo = "/logo/dreiseenstafette_black_8.svg";
 const logo_light = "/logo/dreiseenstafette_white.svg";
 
 const menuItems = [
@@ -25,13 +25,13 @@ export default function Navigation({ children }: any) {
             <Banner />
             <div className="z-10">
                 <Popover className="relative">
-                    <div className="mx-auto max-w-5xl px-4 sm:px-6">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6">
                         <div className="flex items-center justify-between py-8 md:py-16 px-6 align-baseline md:space-x-10">
                             <div className="flex justify-start lg:w-0 lg:flex-1">
                                 <Link href="/">
                                     <div>
                                         <img
-                                            className="h-14 md:h-16 w-auto"
+                                            className="h-12 md:h-14 w-auto"
                                             src={logo}
                                             alt=""
                                         />
@@ -68,7 +68,7 @@ export default function Navigation({ children }: any) {
                         leaveTo="opacity-0 scale-95"
                     >
                         <Popover.Panel focus className="fixed bottom-0 left-0 right-0 gradient z-10 inset-x-0 top-0 transform transition md:hidden">
-                            <div className="mx-auto max-w-5xl px-6 h-full pt-8 pb-1 md:py-16">
+                            <div className="mx-auto max-w-7xl px-6 h-full pt-8 pb-1 md:py-16">
                                 <div className="grid content-between h-full">
                                     <div className="flex items-center justify-between px-6 align-baseline">
                                         <div>
