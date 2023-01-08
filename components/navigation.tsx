@@ -9,10 +9,10 @@ import {
 import { socials } from './footer';
 import Banner from './banner';
 
-const logo = "/logo/dss/dark_5.svg";
+const logo = "/logo/dss/dark_6.svg";
 const logo_small = "/logo/dss/dark_small.svg";
-const logo_light = "/logo/dss/light_5.svg";
-const logo_light_small = "/logo/dss/light_small.svg";
+const logo_medium = "/logo/dss/dark_7.svg";
+const logo_light = "/logo/dss/light_small.svg";
 
 const menuItems = [
     { name: "Kategorien", link: "/kategorien" },
@@ -24,6 +24,7 @@ const menuItems = [
 export default function Navigation({ children }: any) {
     // default tailwind breakpoint for md: https://tailwindcss.com/docs/screens
     const isSmallScreen = useMediaQuery(768)
+    const isMediumScreen = useMediaQuery(1280)
 
     return (
         <>
@@ -37,6 +38,8 @@ export default function Navigation({ children }: any) {
                                     <div>
                                         {isSmallScreen ? (
                                             <img className="h-8 w-auto" src={logo_small} alt="Dreiseenstafette Logo" />
+                                        ) : isMediumScreen ? (
+                                            <img className="h-12 w-auto" src={logo_medium} alt="Dreiseenstafette Logo" />
                                         ) : (
                                             <img className="h-12 w-auto" src={logo} alt="Dreiseenstafette Logo" />
                                         )}
@@ -79,11 +82,7 @@ export default function Navigation({ children }: any) {
                                         <div>
                                             <Link href="/">
                                                 <div>
-                                                    {isSmallScreen ? (
-                                                        <img className="h-8 w-auto" src={logo_light_small} alt="Dreiseenstafette Logo" />
-                                                    ) : (
-                                                        <img className="h-16 w-auto" src={logo_light} alt="Dreiseenstafette Logo" />
-                                                    )}
+                                                    <img className="h-8 w-auto" src={logo_light} alt="Dreiseenstafette Logo" />
                                                 </div>
                                             </Link>
                                         </div>
