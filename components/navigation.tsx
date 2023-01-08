@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Fragment } from 'react'
+import { Fragment, useCallback, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
     ArrowSmallRightIcon,
@@ -9,8 +9,10 @@ import {
 import { socials } from './footer';
 import Banner from './banner';
 
-const logo = "/logo/dreiseenstafette_black_8.svg";
-const logo_light = "/logo/dreiseenstafette_white.svg";
+const logo = "/logo/dss/dark_1.svg";
+const logo_small = "/logo/dss/dark_small.svg";
+const logo_light = "/logo/dss/light_1.svg";
+const logo_light_small = "/logo/dss/light_small.svg";
 
 const menuItems = [
     { name: "Kategorien", link: "/kategorien" },
@@ -20,6 +22,9 @@ const menuItems = [
 ];
 
 export default function Navigation({ children }: any) {
+    // default tailwind breakpoint for md: https://tailwindcss.com/docs/screens
+    const isSmallScreen = useMediaQuery(768)
+
     return (
         <>
             <Banner />
@@ -30,11 +35,11 @@ export default function Navigation({ children }: any) {
                             <div className="flex justify-start lg:w-0 lg:flex-1">
                                 <Link href="/">
                                     <div>
-                                        <img
-                                            className="h-12 md:h-14 w-auto"
-                                            src={logo}
-                                            alt=""
-                                        />
+                                        {isSmallScreen ? (
+                                            <img className="h-8 w-auto" src={logo_small} alt="Dreiseenstafette Logo" />
+                                        ) : (
+                                            <img className="h-16 w-auto" src={logo} alt="Dreiseenstafette Logo" />
+                                        )}
                                     </div>
                                 </Link>
                             </div>
@@ -74,11 +79,11 @@ export default function Navigation({ children }: any) {
                                         <div>
                                             <Link href="/">
                                                 <div>
-                                                    <img
-                                                        className="h-14 w-auto"
-                                                        src={logo_light}
-                                                        alt=""
-                                                    />
+                                                    {isSmallScreen ? (
+                                                        <img className="h-8 w-auto" src={logo_light_small} alt="Dreiseenstafette Logo" />
+                                                    ) : (
+                                                        <img className="h-16 w-auto" src={logo_light} alt="Dreiseenstafette Logo" />
+                                                    )}
                                                 </div>
                                             </Link>
                                         </div>
@@ -131,4 +136,34 @@ export default function Navigation({ children }: any) {
         </>
     )
 }
+
+
+// https://github.com/vercel/next.js/discussions/14810#discussioncomment-61177
+const useMediaQuery = (width: any) => {
+    const [targetReached, setTargetReached] = useState(false);
+
+    const updateTarget = useCallback((e: any) => {
+        if (e.matches) {
+            setTargetReached(true);
+        } else {
+            setTargetReached(false);
+        }
+    }, []);
+
+    useEffect(() => {
+        const media = window.matchMedia(`(max-width: ${width}px)`);
+        media.addEventListener("change", updateTarget)
+
+
+        // Check on mount (callback is not called until a change occurs)
+        if (media.matches) {
+            setTargetReached(true);
+        }
+
+        return () => media.removeEventListener("change", updateTarget);
+    }, []);
+
+    return targetReached;
+};
+
 
