@@ -15,10 +15,11 @@ const logo_medium = logo;
 const logo_light = "/logo/dreiseenstafette_small_light.svg";
 
 const menuItems = [
-    { name: "Kategorien", link: "/kategorien" },
-    { name: "Informationen", link: "/informationen" },
-    { name: "Partner", link: "/partner" },
-    { name: "Kontakt", link: "/kontakt" },
+    { name: "Kategorien", link: "/kategorien", target: '_self' },
+    { name: "Informationen", link: "/informationen", target: '_self' },
+    { name: "Partner", link: "/partner", target: '_self' },
+    { name: "Kontakt", link: "/kontakt", target: '_self' },
+    { name: "TV Hüttwilen", link: "https://tvhuettwilen.ch", target: '_blank' },
 ];
 
 export default function Navigation({ children }: any) {
@@ -54,7 +55,7 @@ export default function Navigation({ children }: any) {
                             </div>
                             <div className="hidden space-x-3 lg:space-x-4 xl:space-x-5 md:flex md:justify-end md:items-center">
                                 {menuItems.map(item => (
-                                    <a href={item.link} key={item.name} className="text-base text-blue-500 hover:text-blue-600">
+                                    <a href={item.link} key={item.name} target={item.target} className="text-base text-blue-500 hover:text-blue-600">
                                         {item.name}
                                     </a>
                                 ))}
