@@ -9,10 +9,10 @@ import {
 import { socials } from './footer';
 import Banner from './banner';
 
-const logo = "/logo/dss/dark_9.svg";
-const logo_small = "/logo/dss/dark_small.svg";
-const logo_medium = "/logo/dss/dark_9.svg";
-const logo_light = "/logo/dss/light_small.svg";
+const logo = "/logo/dreiseenstafette.svg";
+const logo_small = logo;
+const logo_medium = logo;
+const logo_light = "/logo/dreiseenstafette_small_light.svg";
 
 const menuItems = [
     { name: "Kategorien", link: "/kategorien" },
