@@ -147,14 +147,14 @@ export default function Footer() {
                         <p className="mt-4 text-base text-gray-300">
                             Updates und Infos zum Wettkampf. Direkt in deine Inbox.
                         </p>
-                        <form action="https://formspree.io/mledbakv" method="post" className="mt-4 sm:flex sm:max-w-md">
+                        <form action="/api/newsletter" method="post" className="mt-4 sm:flex sm:max-w-md">
                             <label htmlFor="email-address" className="sr-only">
                                 Email address
                             </label>
                             <input
                                 type="email"
-                                name="email-address"
-                                id="email-address"
+                                name="email"
+                                id="email"
                                 autoComplete="email"
                                 required
                                 className="w-full min-w-0 appearance-none rounded-full border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
