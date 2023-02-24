@@ -9,7 +9,7 @@ import {
 import { socials } from './footer';
 import Banner from './banner';
 
-const logo = "/logo/dreiseenstafette.svg";
+const logo = "/logo/dss_tv_2.svg";
 const logo_small = logo;
 const logo_medium = logo;
 const logo_light = "/logo/dreiseenstafette_small_light.svg";
