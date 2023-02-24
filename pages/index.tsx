@@ -17,7 +17,7 @@ const Home: NextPage = () => {
                     poster={fallbackImage}
                 >
                     <source
-                        src="/event/background_video.mp4"
+                        src="https://tinyrocket.fra1.digitaloceanspaces.com/background_video.mp4"
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
