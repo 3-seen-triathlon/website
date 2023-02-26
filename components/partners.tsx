@@ -48,7 +48,6 @@ const partners = [
         cols: 3,
         partners: [
             { name: 'Regiosport Kollektiv', image: '/logo/dss22/logo_regiosportkollektiv.png', link: 'https://www.regiosportkollektiv.ch' },
-            { name: 'TV Hüttwilen', image: '/logo/tv_huettwilen.svg', link: 'https://tvhuettwilen.ch' },
         ],
     },
     {
