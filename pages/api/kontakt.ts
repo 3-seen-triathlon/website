@@ -32,7 +32,8 @@ export default function handler(req: any, res: any) {
         res.redirect(302, '/404')
     }
 
-    if (body.kommentar.includes("advanceleadgeneration")) {
+    // everything with click here is spam that we are not interested in
+    if (String(body.kommentar).toLowerCase().includes("click here")) {
         res.status(418).json({ text: `Nice try but not interested ❌` })
     }
 
