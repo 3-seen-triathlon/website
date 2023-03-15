@@ -19,7 +19,6 @@ const menuItems = [
     { name: "Informationen", link: "/informationen", target: '_self' },
     { name: "Partner", link: "/partner", target: '_self' },
     { name: "Kontakt", link: "/kontakt", target: '_self' },
-    { name: "TV Hüttwilen", link: "https://tvhuettwilen.ch", target: '_blank' },
 ];
 
 export default function Navigation({ children }: any) {
