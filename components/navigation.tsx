@@ -29,6 +29,7 @@ export default function Navigation({ children }: any) {
     return (
         <>
             <Banner />
+
             <div className="z-10">
                 <Popover className="relative">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -58,7 +59,7 @@ export default function Navigation({ children }: any) {
                                         {item.name}
                                     </a>
                                 ))}
-                                <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button group">
+                                <a key='registration' href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button group">
                                     <ArrowSmallRightIcon className="button-icon" />
                                     Anmelden
                                 </a>
