@@ -171,11 +171,11 @@ export default function Footer() {
                 <div className="mt-8 pt-8 md:flex md:items-center md:justify-between">
                     <div className="flex space-x-6 md:order-2">
                         {navigation.social.map((item) => (
-                            <Link key={item.name} href={item.href}>
-                                <a target="_blank" className="text-gray-600 hover:text-blue-500">
+                            <Link key={item.name} href={item.href} target='_blank'>
+                                <div className="text-gray-600 hover:text-blue-500">
                                     <span className="sr-only">{item.name}</span>
                                     <item.icon className="h-6 w-6" aria-hidden="true" />
-                                </a>
+                                </div>
                             </Link>
                         ))}
                     </div>

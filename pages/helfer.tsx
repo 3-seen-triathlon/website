@@ -67,9 +67,9 @@ export default function Example() {
 
                             <div className="text-sm">
                                 <Link href="/kontakt#formular">
-                                    <a className="font-medium text-blue-600 hover:text-blue-500">
+                                    <div className="font-medium text-blue-600 hover:text-blue-500">
                                         Passwort vergessen?
-                                    </a>
+                                    </div>
                                 </Link>
                             </div>
                         </div>
