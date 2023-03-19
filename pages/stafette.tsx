@@ -76,7 +76,7 @@ const Stafette: NextPage = () => {
                 <p className="p">
                     Alle Kategorien starten im Wettkampfzentrum am Hüttwilersee.
                     Eine Karte vom Wettkampfzentrum und allgemeine Athleteninfos findest du unter <Link href="/informationen"><span className="link" >Informationen</span></Link>. <span className="p italic">
-                        Neu bieten wir dieses Jahr auch eine Teambörse an, damit du dein Team ergänzen oder als einzelner Athlet nach einem Team suchen kannst: <Link href="/teamboerse"><span className="link" >zur Teambörse</span></Link>.
+                        Neu bieten wir dieses Jahr auch eine Teambörse an, damit du dein Team ergänzen oder als einzelner Athlet nach einem Team suchen kannst: <Link href="https://teams.dreiseenstafette.ch"><span className="link" >zur Teambörse</span></Link>.
                     </span>
                 </p>
 

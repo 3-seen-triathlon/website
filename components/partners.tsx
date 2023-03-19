@@ -83,16 +83,14 @@ export default function Partners() {
                         {partnerType.partners.map(partner => (
                             <div className="col-span-1 relative flex justify-center bg-gray-50 hover:bg-gray-100 p-1 sm:p-2 rounded-lg">
                                 <div className="relative w-full h-24 md:h-32">
-                                    <Link href={partner.link}>
-                                        <a target="_blank" className="" >
-                                            <Image
-                                                objectPosition={'center'}
-                                                objectFit={'contain'}
-                                                layout={'fill'}
-                                                src={partner.image}
-                                                alt={partner.name}
-                                            />
-                                        </a>
+                                    <Link href={partner.link} target='_blank'>
+                                        <Image
+                                            objectPosition={'center'}
+                                            objectFit={'contain'}
+                                            layout={'fill'}
+                                            src={partner.image}
+                                            alt={partner.name}
+                                        />
                                     </Link>
                                 </div>
                             </div>

@@ -90,7 +90,7 @@ const navigation = {
     athletes: [
         { name: 'Kategorien', href: '/kategorien' },
         { name: 'Informationen', href: '/informationen' },
-        { name: 'Teambörse', href: '/teamboerse' },
+        { name: 'Teambörse', href: 'https://teams.dreiseenstafette.ch' },
         { name: 'FAQ', href: '/informationen#faq' },
     ],
     about: [
@@ -109,7 +109,7 @@ export default function Footer() {
             <h2 id="footer-heading" className="sr-only">
                 Footer
             </h2>
-            <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div className="mx-auto max-w-5xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
                 <div className="sm:grid sm:grid-cols-2 xl:gap-8">
                     <div className="grid md:grid-cols-2">
                         <div>

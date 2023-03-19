@@ -83,8 +83,7 @@
 }
 
 .content-wide {
-  max-width: 92rem;
-  @apply mx-auto px-4 sm:px-6 mb-12 md:mb-24;
+  @apply max-w-5xl mx-auto px-4 sm:px-6 mb-12 md:mb-24;
 }
 
 .image {
