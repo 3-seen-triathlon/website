@@ -146,20 +146,22 @@ export default function Footer() {
                         <p className="mt-4 text-base text-gray-300">
                             Updates und Infos zum Wettkampf. Direkt in deine Inbox.
                         </p>
-                        <form action="/api/newsletter" method="post" className="mt-4 sm:flex sm:max-w-md">
-                            <label htmlFor="email-address" className="sr-only">
-                                Email address
-                            </label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                autoComplete="email"
-                                required
-                                className="w-full min-w-0 appearance-none rounded-full border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
-                                placeholder="Deine Mailadresse"
-                            />
-                            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                        <form action="/api/newsletter" method="post" className="mt-4 sm:max-w-md grid grid-cols-1 space-y-4 md:space-y-0 md:space-x-4 md:grid-cols-2">
+                            <div>
+                                <label htmlFor="email-address" className="sr-only">
+                                    Email address
+                                </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    autoComplete="email"
+                                    required
+                                    className="w-full min-w-0 appearance-none rounded-full border border-transparent bg-gray-700 py-2 px-4 text-base text-gray-100 placeholder-gray-300 focus:border-blue-500 focus:placeholder-gray-400 focus:outline-none focus:ring-2  focus:ring-offset-2 focus:ring-offset-blue-500"
+                                    placeholder="Deine Mailadresse"
+                                />
+                            </div>
+                            <div className="mt-3 rounded-md sm:mt-0">
                                 <button type="submit" className="button-inverse group">
                                     <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                                     Anmelden

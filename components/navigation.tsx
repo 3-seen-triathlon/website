@@ -32,7 +32,7 @@ export default function Navigation({ children }: any) {
 
             <div className="z-10">
                 <Popover className="relative">
-                    <div className="mx-auto max-w-5xl px-4 sm:px-6">
+                    <div className="mx-auto max-w-5xl">
                         <div className="flex items-center justify-between py-8 md:py-16 px-6 align-baseline md:space-x-10">
                             <div className="flex justify-start lg:w-0 lg:flex-1">
                                 <Link href="/">
@@ -111,11 +111,11 @@ export default function Navigation({ children }: any) {
                                         <div className="text-center py-6">
                                             <div className="flex justify-center space-x-6 md:order-2">
                                                 {socials.map((item) => (
-                                                    <Link key={item.name} href={item.href}>
-                                                        <a target="_blank" className="text-gray-100 hover:text-gray-200">
+                                                    <Link key={item.name} href={item.href} target='_blank'>
+                                                        <div className="text-gray-100 hover:text-gray-200">
                                                             <span className="sr-only">{item.name}</span>
                                                             <item.icon className="h-5 w-5" aria-hidden="true" />
-                                                        </a>
+                                                        </div>
                                                     </Link>
                                                 ))}
                                             </div>
