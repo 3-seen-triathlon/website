@@ -143,7 +143,7 @@ export default function Footer() {
                     </div>
                     <div className="mt-8 md:mt-0 xl:mt-0">
                         <h3 className="text-xl text-white">Newsletter</h3>
-                        <p className="mt-4 text-base text-gray-300">
+                        <p className="mt-4 text-gray-400">
                             Updates und Infos zum Wettkampf. Direkt in deine Inbox.
                         </p>
                         <form action="/api/newsletter" method="post" className="mt-4 sm:max-w-md grid grid-cols-1 space-y-4 md:space-y-0 md:space-x-4 md:grid-cols-2">

@@ -21,10 +21,6 @@ const Kontakt: NextPage = () => {
                 <Team />
             </div>
 
-            <div className="content">
-                <TV />
-            </div>
-
             <div className="content" id="formular">
                 <h2 className="h3">
                     Kontakt
