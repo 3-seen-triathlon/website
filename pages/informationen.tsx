@@ -1,7 +1,7 @@
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 import type { NextPage } from 'next'
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import FAQ from '../components/faq';
 import Layout from '../components/layout';
 import Timetable from '../components/timetable';

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { ArrowTrendingUpIcon, ArrowUpRightIcon, IdentificationIcon, RocketLaunchIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Infos, { InfoPoint, InfoPointCycling, InfoPointRun, InfoPointSwim } from '../components/infos';
 import Layout from '../components/layout';
 
