@@ -102,14 +102,12 @@ const Kategorien: NextPage = () => {
                 </div>
 
                 <div className="grid content-start">
-                    <h4 className="h4">Lauf</h4>
+                    <h4 className="h4">S'schnellste Rössli Hü</h4>
                     <p className="p">
-                        Kein Velo oder die Schwimmbrille verloren?
-                        Kein Problem - du kannst die 3-Seen-Region auch beschwingten Fusses entdecken.
-                        Die Strecke von 10.55 km führt durch die wunderschöne und vielfältige Seenlandschaft.
+                        Für unsere jüngsten Dorfbewohner bis max. 6 Jahre gibt es im 2023 die Möglichkeit mit einem "Rössli" die Kurzstrecke von 50 Metern huckepack zu bestreiten.
                     </p>
                     <div className="">
-                        <Link href="/lauf">
+                        <Link href="/roessli-hue">
                             <div className="button-inverse group">
                                 Mehr Infos <ArrowSmallRightIcon className="ml-2 h-5 w-5 group-hover:text-white" />
                             </div>

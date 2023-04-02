@@ -4,178 +4,70 @@ import Layout from '../components/layout';
 import Image from "next/legacy/image";
 
 const Lauf: NextPage = () => {
-  return (
-    <Layout>
-      <div className="content">
-        <h1 className="h1">Diä schnellste Seebachtaler:inne</h1>
-        <h2 className="h2 width">
-          Die jüngste Kategorie der DSS mit ihrem Debut im Jahr 2022.
-        </h2>
-      </div>
-
-      <div className="content-wide">
-        <div className="relative w-full h-60 sm:h-80 md:h-[30rem]">
-          <Image
-            objectFit="cover"
-            objectPosition={"center"}
-            layout={'fill'}
-            className="image"
-            src={'/fotos/slider/1.jpg'}
-            alt="People working on laptops"
-          />
-        </div>
-      </div>
-
-      <div className="content">
-        <h3 className="h4">Infos</h3>
-        <p className="p">
-          Diä schnellste Seebachtaler:inne ist ein Format, bei dem Kinder und Jugendliche zwischen 4 und 13 Jahren im Ausscheidungsverfahren gegeneinander antreten.
-          Die Distanzen sind je nach Alter entweder 40m (KiGa) oder 80m (PS/Sek).
-          Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme an am Thurgauer Final im Folgejahr!
-        </p>
-        <p className="p">
-          Der Startgeldbeitrag beträgt 5.- CHF und wird bei der Abgabe der Startnummer eingezogen.
-        </p>
-        <p className="p">
-          Mehr Informationen zum Format findest Du auf der Website von <a href="https://visanasprint.ch/de/" className="link" target="_blank">Visana Sprint</a>.
-        </p>
-      </div>
-
-      <div className="content">
-        <h3 className="h4">Anmeldung</h3>
-        <form
-          action="/api/seebachtaler"
-          method="post"
-        >
-          <div className="mt-5 md:col-span-2 md:mt-0 width">
-            <div className="grid grid-cols-6 gap-6">
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="vorname" className="block text-sm font-medium text-gray-700">
-                  Vorname
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="vorname"
-                  id="vorname"
-                  autoComplete="given-name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="nachname" className="block text-sm font-medium text-gray-700">
-                  Nachname
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="nachname"
-                  id="nachname"
-                  autoComplete="family-name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="jahrgang" className="block text-sm font-medium text-gray-700">
-                  Jahrgang
-                </label>
-                <input
-                  required
-                  type="number"
-                  name="jahrgang"
-                  id="jahrgang"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="wohnort" className="block text-sm font-medium text-gray-700">
-                  Wohnort
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="wohnort"
-                  id="wohnort"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="schule" className="block text-sm font-medium text-gray-700">
-                  Schule
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="schule"
-                  id="schule"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="klasse" className="block text-sm font-medium text-gray-700">
-                  Klasse
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="klasse"
-                  id="klasse"
-                  autoComplete="address-level1"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="email-address" className="block text-sm font-medium text-gray-700">
-                  Emailadresse
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="email"
-                  id="email"
-                  autoComplete="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
-              <div className="col-span-6 sm:col-span-3">
-                <label htmlFor="geschlecht" className="block text-sm font-medium text-gray-700">
-                  Geschlecht
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="geschlecht"
-                  id="geschlecht"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
-                />
-              </div>
-
+    return (
+        <Layout>
+            <div className="content">
+                <h1 className="h1">Diä schnellste Seebachtaler:inne</h1>
+                <h2 className="h2 width">
+                    Die jüngste Kategorie der DSS mit ihrem Debut im Jahr 2022.
+                </h2>
             </div>
-          </div>
-          <div className="flex mt-6">
-            <button type="submit" className="button-inverse group">
-              <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
-              Anmelden
-            </button>
-          </div>
-        </form>
-      </div>
 
-      <div className="content">
-        <h3 className="h4">Ranglisten</h3>
-        <ul className="list-disc list-inside">
-          <li><a href="/dokumente/2022_rangliste_seebachtaler.pdf" target="_blank"><span className="link">Austragung 2022</span></a></li>
-        </ul>
-      </div>
-    </Layout>
-  )
+            <div className="content-wide">
+                <div className="relative w-full h-60 sm:h-80 md:h-[30rem]">
+                    <Image
+                        objectFit="cover"
+                        objectPosition={"center"}
+                        layout={'fill'}
+                        className="image"
+                        src={'/fotos/slider/1.jpg'}
+                        alt="People working on laptops"
+                    />
+                </div>
+            </div>
+
+            <div className="content">
+                <h3 className="h4">Infos</h3>
+                <p className="p">
+                    Diä schnellste Seebachtaler:inne ist ein Format von VisanaSprint, bei dem Kinder und Jugendliche zwischen 7 und 15 Jahren im Ausscheidungsverfahren gegeneinander antreten. Die Distanzen von 50 - 80 Meter werden nach Jahrgang kategorisiert. Jeder Jahrgang bildet eine eigene Kategorie. Knaben und Mädchen laufen getrennt und werden getrennt rangiert. Die 3 schnellsten jeder Kategorie qualifizieren sich für den Finallauf im Zielbereich der DSS.
+                </p>
+                <p className="p">
+                    Teilnahmeberechtigt sind Kinder aller Gemeinden, welche die DSS durchquert (Ueslingen-Buch, Hüttwilen, Nussbaumen, Trüllikon, Horben, Stammheim, Warth-Weiningen).
+
+                </p>
+                <p className='p'>
+                    Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme am Thurgauer Final im Folgejahr! Bei einem Sieg durch ein auswärtiges Kind qualifizieren sich sowohl dieses, wie auch das schnellste Hüttwiler Kind der jeweiligen Kategorie.
+                </p>
+                <p className="p">
+                    Der Startgeldbeitrag beträgt 5.- CHF und wird bei der Abgabe der Startnummer eingezogen.
+                </p>
+                <p className='p'>
+                    Eine Bestätigung der Anmeldung erfolgt jeweils in der ersten Woche des darauffolgenden Monates.
+                    Die Startinformationen werden am Freitag 18. August per Mail verschickt.
+                    Das Anmeldefenster online schliesst am 18. August.
+                    Nachmeldungen können am Sonntag 20. August am Infopoint der Dreiseenstafette von 10.00-11.00 Uhr für einen Aufpreis von 5.- vorgenommen werden.
+                </p>
+
+                <p className="p">
+                    Mehr Informationen zum Format findest Du auf der Website von <a href="https://visanasprint.ch/de/" className="link" target="_blank">Visana Sprint</a>.
+                </p>
+
+                <div className="flex mt-6">
+                    <a href="https://visanasprint.ch/de/wettkaempfe/startmoeglichkeiten/?id=a21aa-3lmgw1-lex221xx-1-ley971ef-h9q" className="button-inverse group" target="_blank">
+                        <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
+                        Anmelden
+                    </a>
+                </div>
+            </div>
+
+            <div className="content">
+                <h3 className="h4">Ranglisten</h3>
+                <ul className="list-disc list-inside">
+                    <li><a href="/dokumente/2022_rangliste_seebachtaler.pdf" target="_blank"><span className="link">Austragung 2022</span></a></li>
+                </ul>
+            </div>
+        </Layout>
+    )
 }
 
 export default Lauf;
