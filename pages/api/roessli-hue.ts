@@ -41,7 +41,7 @@ ${stringify(body)}`,
     }).then(() => {
         const params = new URLSearchParams({
             titel: 'Anmeldung erfolgreich 🎉',
-            text: `Du (${body.vorname} ${body.nachname}) bist für "S'schnellste Rössli Hü" angemeldet! Cool bist du mit dabei und wir freuen uns, dich an der DSS begrüssen zu dürfen 😊 Bis dann!`,
+            text: `Du (${body.vorname_roessli} ${body.nachname_roessli} / ${body.vorname_reiter} ${body.nachname_reiter} ) bist für "S'schnellste Rössli Hü" angemeldet! Cool bist du mit dabei und wir freuen uns, dich an der DSS begrüssen zu dürfen 😊 Bis dann!`,
         }).toString();
         res.redirect(302, `/success?${params}`)
     }).catch((err) => {
