@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import Layout from '../components/layout';
 
-const image = "/event/schwimmausstieg.jpg";
-
 const Kategorien: NextPage = () => {
     return (
         <Layout>
@@ -73,7 +71,7 @@ const Kategorien: NextPage = () => {
                 <div className="grid content-start">
                     <h4 className="h4">Diä schnellste Seebachtaler:inne</h4>
                     <p className="p">
-                        Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen auf 40m (KiGa) und 80m (PS/Sek) um die Wette.
+                        Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen um die Wette.
                         Im Ausscheidungsverfahren über mehrere Läufe wird der/die schnellste Seebachter:in erkoren.
                     </p>
                     <div className="">
