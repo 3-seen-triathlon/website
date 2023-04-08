@@ -13,7 +13,7 @@ const quicklinks = [
     { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '_blank' },
     { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
     { name: 'Hindernisse und Strecke', stat: 'Reitparcours', link: '#reitparcours', target: '' },
-    { name: 'Team vervollständigen', stat: 'Teambörse', link: '/teamboerse', target: '' },
+    { name: 'Team vervollständigen', stat: 'Teambörse', link: 'https://teams.dreiseenstafette.ch', target: '_blank' },
 ];
 
 const Informationen: NextPage = () => {
@@ -44,7 +44,7 @@ const Informationen: NextPage = () => {
 
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:mt-8">
                     {quicklinks.map((item) => (
-                        <Link href={item.link}>
+                        <Link href={item.link} target={item.target}>
                             <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg group">
                                 <ArrowUpRightIcon
                                     className="h-5 w-5 absolute top-2 right-2 group-hover:visible text-gray-300 group-hover:text-blue-500"
@@ -103,7 +103,7 @@ const Informationen: NextPage = () => {
                     Der Reiterparcours wird aus verschiedenen Gymkhana Hindernissen zusammensetzen. Der Parcours wird hier spätestens 4 Wochen vorher aufgeschaltet. Sprünge, nicht höher als 30cm, können vorhanden sein.
                 </p>
                 <p className="p">
-                    Ob Pony oder Pferd, ob Englisch- oder Westernreiten, es sind alle Willkommen und der Parcours kann von allen gemeistert werden. Wer noch kein Team hat, kann sich gerne bei der <a href={'/teamboerse'} className='underline underline-offset-2'>Teambörse</a> registrieren - es melden sich oft Teams an, welche noch Reiter:innen suchen.
+                    Ob Pony oder Pferd, ob Englisch- oder Westernreiten, es sind alle Willkommen und der Parcours kann von allen gemeistert werden. Wer noch kein Team hat, kann sich gerne bei der <a href={'https://teams.dreiseenstafette.ch'} target='_blank' className='underline underline-offset-2'>Teambörse</a> registrieren - es melden sich oft Teams an, welche noch Reiter:innen suchen.
                 </p>
             </div>
 
