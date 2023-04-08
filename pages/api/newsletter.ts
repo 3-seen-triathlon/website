@@ -16,6 +16,11 @@ export default function handler(req: any, res: any) {
         res.redirect(302, '/404')
     }
 
+    // some spam checks
+    if (String(body.email).toLowerCase().includes("data-backup-store")) {
+        res.status(418).json({ text: `Nice try but not interested ❌` })
+    }
+
     webhook.send({
         text: `Anmeldung für den Newsletter: ${stringify(body)}`,
     }).then(() => {
