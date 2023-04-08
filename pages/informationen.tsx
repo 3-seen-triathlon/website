@@ -45,7 +45,7 @@ const Informationen: NextPage = () => {
                 <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:mt-8">
                     {quicklinks.map((item) => (
                         <Link href={item.link} target={item.target}>
-                            <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-lg group">
+                            <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 h-full rounded-lg group">
                                 <ArrowUpRightIcon
                                     className="h-5 w-5 absolute top-2 right-2 group-hover:visible text-gray-300 group-hover:text-blue-500"
                                     aria-hidden="true"

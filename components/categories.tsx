@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/legacy/image";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
 
 const posts = [
@@ -7,25 +6,21 @@ const posts = [
         title: 'Triathlon',
         href: '/triathlon',
         description: 'Entdecke das Seebachtal aus 3 verschiedenen Perspektiven.',
-        imageUrl: '/fotos/kategorien/triathlon.jpg',
     },
     {
         title: 'Stafette',
         href: '/stafette',
         description: 'Schwimmen, Radfahren, Biken, Laufen und optional noch Reiten (bei der Stafette kurz).',
-        imageUrl: '/fotos/kategorien/stafette.jpg',
     },
     {
         title: 'Lauf',
         href: '/lauf',
         description: 'Der Lauf führt Dich um den Hüttwiler- und Nussbaumersee.',
-        imageUrl: '/fotos/kategorien/lauf.jpg',
     },
     {
         title: 'Diä schnellste Seebachtaler Chind',
         href: '/seebachtaler',
         description: 'Das Visana Format findet neu auch an der Dreiseenstafette statt.',
-        imageUrl: '/fotos/kategorien/seebachtaler.jpg',
     },
 ]
 
