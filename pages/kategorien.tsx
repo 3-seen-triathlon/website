@@ -69,7 +69,7 @@ const Kategorien: NextPage = () => {
                 </div>
 
                 <div className="grid content-start">
-                    <h4 className="h4">Diä schnellste Seebachtaler:inne</h4>
+                    <h4 className="h4">Diä schnellste Seebachtaler Chind</h4>
                     <p className="p">
                         Unser Angebot für die Jüngeren: am Nachmittag laufen die Kinder und Jugendlichen um die Wette.
                         Im Ausscheidungsverfahren über mehrere Läufe wird der/die schnellste Seebachter:in erkoren.

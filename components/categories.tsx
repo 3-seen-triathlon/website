@@ -22,7 +22,7 @@ const posts = [
         imageUrl: '/fotos/kategorien/lauf.jpg',
     },
     {
-        title: 'Diä schnellste Seebachtaler:inne',
+        title: 'Diä schnellste Seebachtaler Chind',
         href: '/seebachtaler',
         description: 'Das Visana Format findet neu auch an der Dreiseenstafette statt.',
         imageUrl: '/fotos/kategorien/seebachtaler.jpg',

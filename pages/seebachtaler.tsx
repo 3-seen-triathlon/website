@@ -7,7 +7,7 @@ const Lauf: NextPage = () => {
     return (
         <Layout>
             <div className="content">
-                <h1 className="h1">Diä schnellste Seebachtaler:inne</h1>
+                <h1 className="h1">Diä schnellste Seebachtaler Chind</h1>
                 <h2 className="h2 width">
                     Die jüngste Kategorie der DSS mit ihrem Debut im Jahr 2022.
                 </h2>
@@ -29,7 +29,7 @@ const Lauf: NextPage = () => {
             <div className="content">
                 <h3 className="h4">Infos</h3>
                 <p className="p">
-                    Diä schnellste Seebachtaler:inne ist ein Format von VisanaSprint, bei dem Kinder und Jugendliche zwischen 7 und 15 Jahren im Ausscheidungsverfahren gegeneinander antreten. Die Distanzen von 50 - 80 Meter werden nach Jahrgang kategorisiert. Jeder Jahrgang bildet eine eigene Kategorie. Knaben und Mädchen laufen getrennt und werden getrennt rangiert. Die 3 schnellsten jeder Kategorie qualifizieren sich für den Finallauf im Zielbereich der DSS.
+                    Diä schnellste Seebachtaler Chind ist ein Format von VisanaSprint, bei dem Kinder und Jugendliche zwischen 7 und 15 Jahren im Ausscheidungsverfahren gegeneinander antreten. Die Distanzen von 50 - 80 Meter werden nach Jahrgang kategorisiert. Jeder Jahrgang bildet eine eigene Kategorie. Knaben und Mädchen laufen getrennt und werden getrennt rangiert. Die 3 schnellsten jeder Kategorie qualifizieren sich für den Finallauf im Zielbereich der DSS.
                 </p>
                 <p className="p">
                     Teilnahmeberechtigt sind Kinder aller Gemeinden, welche die DSS durchquert (Ueslingen-Buch, Hüttwilen, Nussbaumen, Trüllikon, Horben, Stammheim, Warth-Weiningen).
