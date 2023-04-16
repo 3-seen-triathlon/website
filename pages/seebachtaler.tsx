@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
-import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
+import { ArrowSmallRightIcon, MapIcon } from '@heroicons/react/24/outline';
 import Layout from '../components/layout';
 import Image from "next/legacy/image";
+import Infos, { InfoPoint } from '../components/infos';
 
 const Lauf: NextPage = () => {
     return (
@@ -53,6 +54,11 @@ const Lauf: NextPage = () => {
                 </p>
 
                 <div className="flex mt-6">
+                    <a href="/dokumente/die-schnellste-seebachtaler-chinde.pdf" className="button-inverse group mr-4" target="_blank">
+                        <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
+                        Flyer
+                    </a>
+
                     <a href="https://visanasprint.ch/de/wettkaempfe/startmoeglichkeiten/?id=a21aa-3lmgw1-lex221xx-1-ley971ef-h9q" className="button-inverse group" target="_blank">
                         <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                         Anmelden
