@@ -22,6 +22,11 @@ const posts = [
         href: '/seebachtaler',
         description: 'Das Visana Format findet neu auch an der Dreiseenstafette statt.',
     },
+    {
+        title: "S'schnellste Rössli Hü",
+        href: '/roessli-hue',
+        description: 'Ein älteres Rössli mit jüngerem Reiter - die neue Plausch Kategorie an der DSS.',
+    },
 ]
 
 export default function Categories() {
