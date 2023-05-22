@@ -5,10 +5,15 @@ import Image from "next/legacy/image";
 import Link from 'next/link';
 import Layout from '../../components/layout';
 import { useState } from 'react';
-import { kv } from "@vercel/kv";
+import { createClient } from "@vercel/kv";
 
 const Counter2: NextPage = () => {
     const [counter, setCounter] = useState(0)
+
+    const kv = createClient({
+        url: process.env.KV_REST_API_URL || '',
+        token: process.env.KV_REST_API_TOKEN || '',
+    })
 
     kv.incr('counter2').then((views) => {
         setCounter(views)
