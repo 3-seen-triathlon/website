@@ -1,24 +1,28 @@
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline';
-import type { NextPage } from 'next';
+import type { GetServerSideProps, InferGetServerSidePropsType, NextPage } from 'next';
 import Head from 'next/head';
 import Image from "next/legacy/image";
 import Link from 'next/link';
 import Layout from '../../components/layout';
-import { useState } from 'react';
 import { createClient } from "@vercel/kv";
 
-const Counter2: NextPage = () => {
-    const [counter, setCounter] = useState(0)
+type Views = {
+    count: number
+};
 
+export const getServerSideProps: GetServerSideProps<{ views: Views; }> = async () => {
     const kv = createClient({
         url: process.env.KV_REST_API_URL || '',
-        token: process.env.KV_REST_API_TOKEN || '',
+        token: process.env.KV_REST_API_TOKEN || '',
     })
+    const count = await kv.incr('counter1')
+    const views: Views = {
+        count: count
+    }
+    return { props: { views } };
+};
 
-    kv.incr('counter2').then((views) => {
-        setCounter(views)
-    })
-
+export const Counter2 = ({ views }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
     return (
         <Layout>
 
@@ -36,7 +40,7 @@ const Counter2: NextPage = () => {
                 <div className="grid content-center">
                     <div>
                         <h1 className="h3">
-                            Du hast den QR Code 2 mit {counter} Ansichten gefunden!
+                            Du hast den QR Code 2 mit {views.count} Ansichten gefunden!
                         </h1>
 
                         <p className="p">
