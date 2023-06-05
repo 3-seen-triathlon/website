@@ -26,7 +26,7 @@ const Hue: NextPage = () => {
             <div className="content">
                 <h3 className="h4">Allgemeine Infos</h3>
                 <p className="p">
-                    Für unsere jüngsten Dorfbewohner bis max. 6 Jahre gibt es im 2023 die Möglichkeit mit einem "Rössli" die Kurzstrecke von 50 Metern huckepack zu bestreiten.
+                    Für unsere jüngsten Dorfbewohner bis max. 5 Jahre gibt es im 2023 die Möglichkeit mit einem "Rössli" die Kurzstrecke von 50 Metern huckepack zu bestreiten.
                     Als Rössli geeignet sind Mami, Papi, Götti und Gotti, Onkel und Tanten, Nachbar, Geschwister, etc. mit Mindestalter 16 Jahre.
                     Frauen und Männer werden getrennt gewertet. Die Läufer dürfen für verschiedene reitende Kinder mehrfach starten.
                     Anmeldung via untenstehendem Anmeldetalon.

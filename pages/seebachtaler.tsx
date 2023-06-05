@@ -30,14 +30,20 @@ const Lauf: NextPage = () => {
             <div className="content">
                 <h3 className="h4">Infos</h3>
                 <p className="p">
-                    Diä schnellste Seebachtaler Chind ist ein Format von VisanaSprint, bei dem Kinder und Jugendliche zwischen 7 und 15 Jahren im Ausscheidungsverfahren gegeneinander antreten. Die Distanzen von 50 - 80 Meter werden nach Jahrgang kategorisiert. Jeder Jahrgang bildet eine eigene Kategorie. Knaben und Mädchen laufen getrennt und werden getrennt rangiert. Die 3 schnellsten jeder Kategorie qualifizieren sich für den Finallauf im Zielbereich der DSS.
+                    Diä schnellste Seebachtaler Chind ist ein Format von VisanaSprint, bei dem Kinder und Jugendliche 
+                    zwischen 5 und 15 Jahren im Ausscheidungsverfahren gegeneinander antreten. Die Distanzen von 50 - 80 
+                    Meter werden nach Jahrgang kategorisiert. Jeder Jahrgang bildet eine eigene Kategorie. Knaben und 
+                    Mädchen laufen getrennt und werden getrennt rangiert. Die 3 schnellsten jeder Kategorie qualifizieren
+                     sich für den Finallauf im Zielbereich der DSS.
                 </p>
                 <p className="p">
-                    Teilnahmeberechtigt sind Kinder aller Gemeinden, welche die DSS durchquert (Ueslingen-Buch, Hüttwilen, Nussbaumen, Trüllikon, Horben, Stammheim, Warth-Weiningen).
-
+                    Teilnahmeberechtigt sind Kinder aller Gemeinden, welche die DSS durchquert (Ueslingen-Buch, 
+                    Hüttwilen, Nussbaumen, Trüllikon, Horben, Stammheim, Warth-Weiningen).
                 </p>
                 <p className='p'>
-                    Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme am Thurgauer Final im Folgejahr! Bei einem Sieg durch ein auswärtiges Kind qualifizieren sich sowohl dieses, wie auch das schnellste Hüttwiler Kind der jeweiligen Kategorie.
+                    Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme am Thurgauer Final im Folgejahr! Bei 
+                    einem Sieg durch ein auswärtiges Kind qualifizieren sich sowohl dieses, wie auch das schnellste 
+                    Hüttwiler Kind der jeweiligen Kategorie.
                 </p>
                 <p className="p">
                     Der Startgeldbeitrag beträgt 5.- CHF und wird bei der Abgabe der Startnummer eingezogen.
@@ -46,7 +52,8 @@ const Lauf: NextPage = () => {
                     Eine Bestätigung der Anmeldung erfolgt jeweils in der ersten Woche des darauffolgenden Monates.
                     Die Startinformationen werden am Freitag 18. August per Mail verschickt.
                     Das Anmeldefenster online schliesst am 18. August.
-                    Nachmeldungen können am Sonntag 20. August am Infopoint der Dreiseenstafette von 10.00-11.00 Uhr für einen Aufpreis von 5.- vorgenommen werden.
+                    Nachmeldungen können am Sonntag 20. August am Infopoint der Dreiseenstafette von 10.00-11.00 Uhr 
+                    für einen Aufpreis von 5.- vorgenommen werden.
                 </p>
 
                 <p className="p">
