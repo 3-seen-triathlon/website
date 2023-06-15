@@ -9,11 +9,13 @@ const stringify = (body: any) => {
 Vorname: ${body.vorname_roessli}
 Nachname: ${body.nachname_roessli}
 Geschlecht: ${body.geschlecht_roessli}
+Jahrgang: ${body.alter_roessli}
 
 Reiter:in:
 Vorname: ${body.vorname_reiter}
 Nachname: ${body.nachname_reiter}
 Geschlecht: ${body.geschlecht_reiter}
+Jahrgang: ${body.alter_reiter}
 
 Angaben:
 Wohnort: ${body.wohnort}
@@ -26,9 +28,11 @@ export default function handler(req: any, res: any) {
     if (!body.vorname_reiter
         || !body.nachname_reiter
         || !body.geschlecht_reiter
+        || !body.alter_reiter
         || !body.vorname_roessli
         || !body.nachname_roessli
         || !body.geschlecht_roessli
+        || !body.alter_roessli
         || !body.wohnort
         || !body.email) {
         log.debug('form is not complete', body)
