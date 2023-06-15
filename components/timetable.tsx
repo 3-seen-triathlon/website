@@ -11,6 +11,7 @@ const all = 'Alle';
 const stafette = 'Stafette';
 const triathlon = 'Triathlon';
 const seebachtaler = 'Diä schnellste Seebachtaler Chind';
+const roessli = 'S\'schnellste Rössli Hü';
 const lauf = 'Lauf';
 
 const categories = [
@@ -18,6 +19,7 @@ const categories = [
     stafette,
     triathlon,
     seebachtaler,
+    roessli,
     lauf,
 ];
 
@@ -30,9 +32,11 @@ const getColor = (category: string) => {
         case seebachtaler:
             return 'bg-orange-100 text-orange-800 hover:bg-orange-200';
         case triathlon:
-            return 'bg-blue-100 text-blue-800 hover:bg-blue-200';
+            return 'bg-blue-200 text-blue-800 hover:bg-blue-300';
         case stafette:
-            return 'bg-cyan-100 text-cyan-800 hover:bg-cyan-200';
+            return 'bg-cyan-200 text-cyan-800 hover:bg-cyan-300';
+        case roessli:
+            return 'bg-teal-100 text-teal-800 hover:bg-teal-200';
 
         default:
             return 'bg-indigo-100 text-indigo-800 hover:bg-indigo-200';
@@ -55,12 +59,14 @@ const events: Array<Event> = [
     { time: '10:40', event: 'Start Triathlon Short Distance - Women', location: 'Torbogen am See', category: triathlon },
     { time: '11:00', event: 'Start Lauf', location: 'Passerelle', category: lauf },
     { time: '13:00', event: 'Start "Diä schnellste Seebachtaler Chinde"', location: 'Finish-Line', category: seebachtaler },
+    { time: 'ca 13:30', event: 'Start "S\'schnellste Rössli Hü"', location: 'Finish-Line', category: roessli},
     { time: '14:00', event: 'Rangverkündigung Triathlon Short Distance', location: 'Festzelt', category: triathlon },
     { time: '14:15', event: 'Rangverkündigung Triathlon Olympic Distance', location: 'Festzelt', category: triathlon },
     { time: '14:30', event: 'Rangverkündigung Stafette kurz', location: 'Festzelt', category: stafette },
     { time: '14:45', event: 'Rangverkündigung Stafette lang', location: 'Festzelt', category: stafette },
     { time: '15:00', event: 'Finalläufe "Diä schnellste Seebachtaler Chinde"', location: 'Finish-Line', category: seebachtaler },
     { time: '15:15', event: 'Rangverkündigung "Diä schnellste Seebachtaler Chinde"', location: 'Festzelt', category: seebachtaler },
+    { time: '15:20', event: 'Rangverkündigung "S\'schnellste Rössli Hü"', location: 'Festzelt', category: roessli },
 ]
 
 export default function Timetable() {
