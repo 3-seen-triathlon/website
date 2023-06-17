@@ -21,7 +21,7 @@ const partners = [
             { name: 'EWE Elektro AG', image: '/logo/dss19/ewe.png', link: 'https://www.ewe-elektro.ch' },
             { name: 'Bikelounge', image: '/logo/dss22/logo_bikelounge.png', link: 'https://bikelounge.ch' },
             { name: 'Volg Hüttwilen', image: '/logo/dss19/volg.png', link: 'https://volg.ch' },
-            { name: 'Landi Hüttwilen', image: '/logo/dss19/landi.png', link: 'https://landihuettwilen.ch' },
+            { name: 'Landi Hüttwilen', image: '/logo/dss23/landi.png', link: 'http://landiseebachtal.ch' },
             { name: 'Levis Dorfmetzg Hüttwilen', image: '/logo/dss19/levi.png', link: 'https://levisdorfmetzg.ch' },
             { name: 'Mosteria', image: '/logo/dss19/mosteria.png', link: 'https://mosteria.ch' },
         ],
@@ -41,6 +41,7 @@ const partners = [
             { name: 'Familia Müsli', image: '/logo/dss19/bio_familia.png', link: 'https://bio-familia.com' },
             { name: 'Sponser Sport Food', image: '/logo/dss19/sponser.png', link: 'https://sponser.ch' },
             { name: 'Bschüssig Teigwaren', image: '/logo/dss19/bschuessig.png', link: 'https://bschüssig.ch' },
+            { name: 'Biomed', image: '/logo/dss23/biomed.png', link: 'https://www.magnesium-biomed.ch/de/home' },
         ],
     },
     {
@@ -85,6 +86,7 @@ export default function Partners() {
                                 <div className="relative w-full h-24 md:h-32">
                                     <Link href={partner.link} target='_blank'>
                                         <Image
+                                            className='select-none'
                                             objectPosition={'center'}
                                             objectFit={'contain'}
                                             layout={'fill'}
