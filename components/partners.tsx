@@ -15,7 +15,6 @@ const partners = [
         cols: 2,
         partners: [
             { name: 'Schreinerei Bantli', image: '/logo/dss19/bantli.png', link: 'https://bantli.com' },
-            { name: 'Amsler Bikes & Parts', image: '/logo/dss21/amsler.png', link: 'https://moros-zweirad.ch' },
             { name: "Moro's Zweirad", image: '/logo/dss21/moros_zweirad_gmbh.png', link: 'https://moros-zweirad.ch' },
             { name: 'Siro Sport', image: '/logo/dss22/logo_intersport_siro.svg', link: 'https://sirosport.ch' },
             { name: 'EWE Elektro AG', image: '/logo/dss19/ewe.png', link: 'https://www.ewe-elektro.ch' },

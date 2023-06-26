@@ -10,7 +10,7 @@ const quicklinks = [
     { name: 'Ablauf Wettkampftag', stat: 'Zeitplan', link: '#zeitplan', target: '' },
     { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum', target: '' },
     { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq', target: '' },
-    { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2020_reglement.pdf', target: '_blank' },
+    { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2023_reglement.pdf', target: '_blank' },
     { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
     { name: 'Hindernisse und Strecke', stat: 'Reitparcours', link: '#reitparcours', target: '' },
     { name: 'Team vervollständigen', stat: 'Teambörse', link: 'https://teams.dreiseenstafette.ch', target: '_blank' },
