@@ -41,6 +41,7 @@ const partners = [
             { name: 'Sponser Sport Food', image: '/logo/dss19/sponser.png', link: 'https://sponser.ch' },
             { name: 'Bschüssig Teigwaren', image: '/logo/dss19/bschuessig.png', link: 'https://bschüssig.ch' },
             { name: 'Biomed', image: '/logo/dss23/biomed.png', link: 'https://www.magnesium-biomed.ch/de/home' },
+            { name: 'Wheycation', image: '/logo/dss23/wheycation.png', link: 'https://wheycation.com/en/' },
         ],
     },
     {
