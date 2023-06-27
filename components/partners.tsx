@@ -16,19 +16,20 @@ const partners = [
         partners: [
             { name: 'Schreinerei Bantli', image: '/logo/dss19/bantli.png', link: 'https://bantli.com' },
             { name: "Moro's Zweirad", image: '/logo/dss21/moros_zweirad_gmbh.png', link: 'https://moros-zweirad.ch' },
-            { name: 'Siro Sport', image: '/logo/dss22/logo_intersport_siro.svg', link: 'https://sirosport.ch' },
             { name: 'EWE Elektro AG', image: '/logo/dss19/ewe.png', link: 'https://www.ewe-elektro.ch' },
             { name: 'Bikelounge', image: '/logo/dss22/logo_bikelounge.png', link: 'https://bikelounge.ch' },
             { name: 'Volg Hüttwilen', image: '/logo/dss19/volg.png', link: 'https://volg.ch' },
             { name: 'Landi Hüttwilen', image: '/logo/dss23/landi.png', link: 'http://landiseebachtal.ch' },
             { name: 'Levis Dorfmetzg Hüttwilen', image: '/logo/dss19/levi.png', link: 'https://levisdorfmetzg.ch' },
             { name: 'Mosteria', image: '/logo/dss19/mosteria.png', link: 'https://mosteria.ch' },
+            { name: 'TDS', image: '/logo/dss23/tds-rad.png', link: 'https://www.tds-rad.ch' },
         ],
     },
     {
         name: 'Suppliers',
         cols: 3,
         partners: [
+            { name: 'Fahnencenter Weinfelden', image: '/logo/dss23/fahnencenter.png', link: 'https://www.fahnen-center.ch' },
             { name: 'DermaPlast Active', image: '/logo/dss22/logo_dermaplast.png', link: 'https://www.dermaplastactive.ch' },
             { name: 'Focus Water', image: '/logo/dss22/logo_focus_water.png', link: 'https://focuswater.ch' },
             { name: 'Saucony', image: '/logo/dss22/logo_saucony.png', link: 'https://saucony.ch' },
@@ -39,7 +40,6 @@ const partners = [
             { name: 'Zaunteam', image: '/logo/dss19/zaunteam.png', link: 'https://zaunteam.ch' },
             { name: 'Familia Müsli', image: '/logo/dss19/bio_familia.png', link: 'https://bio-familia.com' },
             { name: 'Sponser Sport Food', image: '/logo/dss19/sponser.png', link: 'https://sponser.ch' },
-            { name: 'Bschüssig Teigwaren', image: '/logo/dss19/bschuessig.png', link: 'https://bschüssig.ch' },
             { name: 'Biomed', image: '/logo/dss23/biomed.png', link: 'https://www.magnesium-biomed.ch/de/home' },
             { name: 'Wheycation', image: '/logo/dss23/wheycation.png', link: 'https://wheycation.com/en/' },
         ],
@@ -55,10 +55,8 @@ const partners = [
         name: 'Partnerevents',
         cols: 3,
         partners: [
-            { name: 'Triathlon Märwil', image: '/logo/dss19/triathlon_maerwil.png', link: 'https://triathlonmaerwil.ch' },
             { name: 'Zürcher Unterlandstafette', image: '/logo/dss19/unterlandstafette.png', link: 'http://unterlandstafette.ch' },
             { name: 'Schaffhauser Triathlon', image: '/logo/dss19/schaffhauser_triathlon.png', link: 'http://schaffhauser-triathlon.ch' },
-            { name: 'Eglisauer Laufdays', image: '/logo/dss19/eglisauer_laufday.png', link: 'http://laufday.ch' },
         ],
     },
 ];
