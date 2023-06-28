@@ -38,7 +38,7 @@ const Lauf: NextPage = () => {
                 </p>
                 <p className="p">
                     Teilnahmeberechtigt sind Kinder aller Gemeinden, welche die DSS durchquert (Ueslingen-Buch, 
-                    Hüttwilen, Nussbaumen, Trüllikon, Horben, Stammheim, Warth-Weiningen).
+                    Hüttwilen, Nussbaumen, Trütlikon, Horben, Stammheim, Warth-Weiningen).
                 </p>
                 <p className='p'>
                     Zu gewinnen gibt es neben coolen Preisen auch die Teilnahme am Thurgauer Final im Folgejahr! Bei 
