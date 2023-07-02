@@ -19,6 +19,7 @@ export default function handler(req: any, res: any) {
     // some spam checks
     if (String(body.email).toLowerCase().includes("data-backup-store")) {
         res.status(418).json({ text: `Nice try but not interested ❌` })
+        return
     }
 
     webhook.send({
