@@ -49,6 +49,9 @@ const partners = [
         cols: 3,
         partners: [
             { name: 'Regiosport Kollektiv', image: '/logo/dss22/logo_regiosportkollektiv.png', link: 'https://www.regiosportkollektiv.ch' },
+            { name: 'Gebrüder Umbricht AG', image: '/logo/dss23/gebrueder_umbricht.png', link: 'http://www.umbrichtag.ch' },
+            { name: 'Stieger Gartenbau', image: '/logo/dss23/stieger.png', link: 'https://www.stieger-ag.ch' },
+            { name: 'Mosterei Möhl', image: '/logo/dss23/mosterei-moehl.svg', link: 'https://www.moehl.ch/de/' },
         ],
     },
     {
@@ -81,7 +84,7 @@ export default function Partners() {
                     <div className={'mt-6 grid grid-cols-' + partnerType.cols + ' gap-2 md:grid-cols-' + partnerType.cols + ' lg:mt-8'}>
                         {partnerType.partners.map(partner => (
                             <div className="col-span-1 relative flex justify-center bg-gray-50 hover:bg-gray-100 p-1 sm:p-2 rounded-lg">
-                                <div className="relative w-full h-24 md:h-32">
+                                <div className="relative w-full h-24 md:h-32 mx-8 my-4">
                                     <Link href={partner.link} target='_blank'>
                                         <Image
                                             className='select-none'
