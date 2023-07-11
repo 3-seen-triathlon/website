@@ -106,7 +106,7 @@ export default function Timetable() {
                 ))}
             </div>
 
-            <div className="mt-8 flex flex-col">
+            <div className="mt-8 flex flex-col overflow-x-auto">
                 <div className="">
                     <div className="inline-block min-w-full align-middle">
                         <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-md md:rounded-lg">
