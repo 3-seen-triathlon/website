@@ -35,9 +35,9 @@ export default function Categories() {
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2 lg:mt-8">
                 {posts.map((post) => (
                     <Link href={post.href}>
-                        <div key={post.title} className="relative flex flex-col overflow-hidden rounded-lg h-full bg-gray-50 hover:cursor-pointer hover:bg-gray-100 group">
+                        <div key={post.title} className="relative flex flex-col overflow-hidden rounded-3xl h-full bg-gray-50 hover:cursor-pointer hover:bg-gray-100 group">
                             <ArrowUpRightIcon
-                                className="h-5 w-5 absolute top-2 right-2 group-hover:visible text-gray-300 group-hover:text-blue-500"
+                                className="h-5 w-5 absolute top-4 right-4 group-hover:visible text-gray-300 group-hover:text-blue-500"
                                 aria-hidden="true"
                             />
 

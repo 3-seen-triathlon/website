@@ -84,7 +84,7 @@ export default function Partners() {
                     </div>
                     <div className={'mt-6 grid grid-cols-' + partnerType.cols + ' gap-2 md:grid-cols-' + partnerType.cols + ' lg:mt-8'}>
                         {partnerType.partners.map(partner => (
-                            <div className="col-span-1 relative flex justify-center bg-gray-50 hover:bg-gray-100 p-1 sm:p-2 rounded-lg">
+                            <div className="col-span-1 relative flex justify-center bg-gray-50 hover:bg-gray-100 p-1 sm:p-2 rounded-3xl">
                                 <div className="relative w-full h-24 md:h-32 mx-8 my-4">
                                     <Link href={partner.link} target='_blank'>
                                         <Image

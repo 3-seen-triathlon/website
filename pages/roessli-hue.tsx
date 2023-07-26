@@ -56,7 +56,7 @@ const Hue: NextPage = () => {
                                     name="vorname_roessli"
                                     id="vorname_roessli"
                                     autoComplete="given-name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -70,7 +70,7 @@ const Hue: NextPage = () => {
                                     name="nachname_roessli"
                                     id="nachname_roessli"
                                     autoComplete="family-name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -83,7 +83,7 @@ const Hue: NextPage = () => {
                                     type="text"
                                     name="geschlecht_roessli"
                                     id="geschlecht_roessli"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -96,7 +96,7 @@ const Hue: NextPage = () => {
                                     type="number"
                                     name="alter_roessli"
                                     id="alter_roessli"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
                         </div>
@@ -116,7 +116,7 @@ const Hue: NextPage = () => {
                                     name="vorname_reiter"
                                     id="vorname_reiter"
                                     autoComplete="given-name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -130,7 +130,7 @@ const Hue: NextPage = () => {
                                     name="nachname_reiter"
                                     id="nachname_reiter"
                                     autoComplete="family-name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -143,7 +143,7 @@ const Hue: NextPage = () => {
                                     type="text"
                                     name="geschlecht_reiter"
                                     id="geschlecht_reiter"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -156,7 +156,7 @@ const Hue: NextPage = () => {
                                     type="number"
                                     name="alter_reiter"
                                     id="alter_reiter"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const Hue: NextPage = () => {
                                     type="text"
                                     name="wohnort"
                                     id="wohnort"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -190,7 +190,7 @@ const Hue: NextPage = () => {
                                     name="email"
                                     id="email"
                                     autoComplete="email"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
                         </div>

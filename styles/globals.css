@@ -121,7 +121,7 @@
 }
 
 .image {
-  @apply rounded-md;
+  @apply rounded-3xl;
 }
 
 .gradient {

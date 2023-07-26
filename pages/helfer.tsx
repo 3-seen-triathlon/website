@@ -21,7 +21,7 @@ export default function Example() {
                     </div>
                     <form className="mt-8 space-y-6" action="/api/helfer" method="post">
                         <input type="hidden" name="remember" defaultValue="true" />
-                        <div className="-space-y-px rounded-md shadow-sm">
+                        <div className="-space-y-px rounded-3xl shadow-sm">
                             <div>
                                 <label htmlFor="email-address" className="sr-only">
                                     Email address
@@ -77,7 +77,7 @@ export default function Example() {
                         <div>
                             <button
                                 type="submit"
-                                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                className="group relative flex w-full justify-center rounded-3xl border border-transparent bg-blue-600 py-2 px-4 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                             >
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                     <LockClosedIcon className="h-5 w-5 text-blue-500 group-hover:text-blue-400" aria-hidden="true" />

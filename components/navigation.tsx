@@ -48,7 +48,7 @@ export default function Navigation({ children }: any) {
                                 </Link>
                             </div>
                             <div className="-my-2 -mr-2 md:hidden">
-                                <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-blue-500">
+                                <Popover.Button className="inline-flex items-center justify-center rounded-3xl p-2 text-blue-500">
                                     <span className="sr-only">Open menu</span>
                                     <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                                 </Popover.Button>
@@ -88,7 +88,7 @@ export default function Navigation({ children }: any) {
                                             </Link>
                                         </div>
                                         <div className="">
-                                            <Popover.Button className="inline-flex items-center justify-center rounded-md text-white ">
+                                            <Popover.Button className="inline-flex items-center justify-center rounded-3xl text-white ">
                                                 <span className="sr-only">Close menu</span>
                                                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                             </Popover.Button>

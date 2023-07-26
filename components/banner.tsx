@@ -40,7 +40,7 @@ export default function Banner() {
         <div className="absolute inset-y-0 right-0 flex items-start pt-1 pr-3 sm:items-start sm:pt-1 sm:pr-3">
           <button
             type="button"
-            className="flex rounded-md p-2 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-white"
+            className="flex rounded-3xl p-2 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-white"
             onClick={() => removeBanner()}
           >
             <span className="sr-only">Dismiss</span>

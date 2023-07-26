@@ -62,7 +62,7 @@ export default function FAQ() {
                     <Disclosure as="div" className="mt-2" key={item.id}>
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-50 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between rounded-3xl bg-blue-50 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                                     <span>{item.question}</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
@@ -79,7 +79,7 @@ export default function FAQ() {
                 <Disclosure as="div" className="mt-2">
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-50 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                            <Disclosure.Button className="flex w-full justify-between rounded-3xl bg-blue-50 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-100 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                                 <span>Wo finde ich Start- und/oder Ranglisten?</span>
                                 <ChevronUpIcon
                                     className={`${open ? 'rotate-180 transform' : ''

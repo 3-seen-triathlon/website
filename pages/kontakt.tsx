@@ -46,7 +46,7 @@ const Kontakt: NextPage = () => {
                                     name="vorname"
                                     id="vorname"
                                     autoComplete="given-name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 /> </div>
 
                             <div className="col-span-6 sm:col-span-3">
@@ -59,7 +59,7 @@ const Kontakt: NextPage = () => {
                                     name="nachname"
                                     id="nachname"
                                     autoComplete="family-name"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -73,7 +73,7 @@ const Kontakt: NextPage = () => {
                                     name="email"
                                     id="email"
                                     autoComplete="email"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                                 />
                             </div>
 
@@ -90,7 +90,7 @@ const Kontakt: NextPage = () => {
                                     rows={4}
                                     name="kommentar"
                                     id="kommentar"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                     defaultValue={''}
                                 />
                             </div>
@@ -104,7 +104,7 @@ const Kontakt: NextPage = () => {
                                     type="number"
                                     name="spamcheck"
                                     id="spamcheck"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full rounded-3xl border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
 

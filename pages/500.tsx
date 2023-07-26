@@ -34,13 +34,13 @@ const Error500: NextPage = () => {
                             Du kannst es entweder nochmals versuchen und deine Eingaben überprüfen oder - um uns das Debugging einfacher zu machen - via <Link href="/kontakt"><span className="underline underline-offset-4 hover:text-blue-500">Kontaktformular</span></Link> folgenden Fehler senden:
                         </p>
 
-                        <p className="p bg-gray-100 p-2 rounded-md">
+                        <p className="p bg-gray-100 p-2 rounded-3xl">
                             <code className="">
                                 error: {query.error}
                             </code>
                         </p>
 
-                        <p className="p bg-gray-100 p-2 rounded-md">
+                        <p className="p bg-gray-100 p-2 rounded-3xl">
                             <code className="">
                                 data: {query.data}
                             </code>
