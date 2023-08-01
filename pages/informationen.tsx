@@ -6,6 +6,12 @@ import FAQ from '../components/faq';
 import Layout from '../components/layout';
 import Timetable from '../components/timetable';
 
+const reitparcour_links = [
+    { name: 'Hindernis Skizzen', stat: 'Parcours', link: '/dokumente/reiterparcours_skizze.pdf', target: '_blank' },
+    { name: 'Anfahrt', stat: 'Situationsplan', link: '/dokumente/reiterparcours_situationsplan.pdf', target: '_blank' },
+    { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/reiterparcours_regeln.pdf', target: '_blank' },
+]
+
 const quicklinks = [
     { name: 'Ablauf Wettkampftag', stat: 'Zeitplan', link: '#zeitplan', target: '' },
     { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum', target: '' },
@@ -100,11 +106,32 @@ const Informationen: NextPage = () => {
             <div className="content">
                 <h3 className="h4" id="reitparcours">Reitparcours</h3>
                 <p className="p">
-                    Der Reiterparcours wird aus verschiedenen Gymkhana Hindernissen zusammensetzen. Der Parcours wird hier spätestens 4 Wochen vorher aufgeschaltet. Sprünge, nicht höher als 30cm, können vorhanden sein.
+                    Der Reiterparcours wird aus verschiedenen Gymkhana Hindernissen zusammensetzen, siehe Link unten. Ob Pony oder Pferd, ob Englisch- oder Westernreiten, es sind alle Willkommen und der Parcours kann von allen gemeistert werden. Wer noch kein Team hat, kann sich gerne bei der <a href={'https://teams.dreiseenstafette.ch'} target='_blank' className='underline underline-offset-2'>Teambörse</a> registrieren - es melden sich oft Teams an, welche noch Reiter:innen suchen.
                 </p>
-                <p className="p">
-                    Ob Pony oder Pferd, ob Englisch- oder Westernreiten, es sind alle Willkommen und der Parcours kann von allen gemeistert werden. Wer noch kein Team hat, kann sich gerne bei der <a href={'https://teams.dreiseenstafette.ch'} target='_blank' className='underline underline-offset-2'>Teambörse</a> registrieren - es melden sich oft Teams an, welche noch Reiter:innen suchen.
-                </p>
+
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:mt-8">
+                    {reitparcour_links.map((item) => (
+                        <Link href={item.link} target={item.target}>
+                            <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 h-full rounded-3xl group">
+                                <ArrowUpRightIcon
+                                    className="h-5 w-5 absolute top-4 right-4 group-hover:visible text-gray-300 group-hover:text-blue-500"
+                                    aria-hidden="true"
+                                />
+
+                                <div className="grid grid-cols-1">
+                                    <div className="col-span-1 text-base text-gray-900">{item.name}</div>
+
+                                    <div className="flex justify-between items-baseline">
+                                        <div className="flex items-baseline text-2xl font-semibold text-blue-600">
+                                            {item.stat}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+
             </div>
 
             <div className="content" id="faq">
