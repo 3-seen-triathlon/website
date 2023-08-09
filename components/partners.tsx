@@ -56,6 +56,22 @@ const partners = [
         ],
     },
     {
+        name: 'Leporello Sponsoren',
+        cols: 3,
+        partners: [
+            { name: 'EP:Hagen', link: 'https://www.ep-online.ch/hagen/de/', image: '/logo/dss23/hagen.png' },
+            { name: 'exent', link: 'https://www.exent.ch/', image: '/logo/dss23/exent.png' },
+            { name: 'Geiges AG', link: 'https://geiges-ag.ch', image: '/logo/dss23/geiges.png' },
+            { name: 'Rathgeb Bio', link: 'https://rathgeb.bio/', image: '/logo/dss23/rathgeb.png' },
+            { name: 'Hagschnurer', link: 'https://hagschnurer.ch/', image: '/logo/dss23/hagschnurer.png' },
+            { name: 'Keller AG', link: 'https://keller-technik.ch', image: '/logo/dss23/keller.png' },
+            { name: 'Werkstoffen', link: 'https://www.werkstoffen.ch/', image: '/logo/dss23/werkstoffen.png' },
+            { name: 'Metzgerei Liechti', link: 'https://metzgerei-liechti.ch/D/index.php', image: '/logo/dss23/liechti.png' },
+            { name: 'Dreisitzgarage AG', link: 'https://www.dreispitzgarage.ch/', image: '/logo/dss23/dreispitz.png' },
+            { name: 'Fahrzeugbau Brändle', link: 'https://www.braendle.ch/de', image: '/logo/dss23/braendle.png' }
+        ],
+    },
+    {
         name: 'Partnerevents',
         cols: 3,
         partners: [
