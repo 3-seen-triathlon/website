@@ -32,7 +32,7 @@ const infos: InfoPoint[] = [
     {
         name: 'Biken',
         icon: (props: any) => (<MapIcon {...props} />),
-        description: 'Die Bikestrecke beinhaltet Sprünge, deshalb sind Mountainbikes empfohlen. Gravelbikes können auf eigene Verwantwortung benutzt werden.'
+        description: 'Die Bikestrecke beinhaltet Sprünge, deshalb sind Mountainbikes Pflicht. Gravelbikes sind nicht erlaubt.'
     },
     InfoPointRun,
     {
