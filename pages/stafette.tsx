@@ -7,19 +7,18 @@ import Layout from '../components/layout';
 
 const statsShortDistance = [
     { name: 'Schwimmen', stat: '0.5 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506834' },
-    { name: 'Rad', stat: '20.64 km', change: '260 m', link: 'https://connect.garmin.com/modern/course/29504861' },
-    { name: 'Bike', stat: '6.6 km', change: '150 m', link: 'https://connect.garmin.com/modern/course/29509069' },
-    { name: 'Lauf', stat: '6.2 km', change: '52 m', link: 'https://connect.garmin.com/modern/course/29507069' },
-]
-const statsOlympicDistance = [
-    { name: 'Schwimmen', stat: '1 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506971' },
-    { name: 'Rad', stat: '38.2 km', change: '500 m', link: 'https://connect.garmin.com/modern/course/29506670' },
-    { name: 'Bike', stat: '12.6 km', change: '220 m', link: 'https://connect.garmin.com/modern/course/29529369' },
-    { name: 'Lauf', stat: '10.55 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },
+    { name: 'Radfahren', stat: '20.64 km', change: '260 m', link: 'https://connect.garmin.com/modern/course/29504861' },
+    { name: 'Biken', stat: '6.6 km', change: '150 m', link: 'https://connect.garmin.com/modern/course/29509069' },
+    { name: 'Laufen', stat: '6.2 km', change: '52 m', link: 'https://connect.garmin.com/modern/course/29507069' },
+    { name: 'Reiten (optional)', stat: '~ 1km', change: '0 m', link: '/informationen#reitparcours' },
 ]
 
-{/* TODOs: gleiche Infos wie bei Triathlon */ }
-{/* Reitparcours -> link zum doc */ }
+const statsOlympicDistance = [
+    { name: 'Schwimmen', stat: '1 km', change: '0 m', link: 'https://connect.garmin.com/modern/course/29506971' },
+    { name: 'Radfahren', stat: '38.2 km', change: '500 m', link: 'https://connect.garmin.com/modern/course/29506670' },
+    { name: 'Biken', stat: '12.6 km', change: '220 m', link: 'https://connect.garmin.com/modern/course/29529369' },
+    { name: 'Laufen', stat: '10.55 km', change: '100 m', link: 'https://connect.garmin.com/modern/course/29507170' },
+]
 
 const infos: InfoPoint[] = [
     {
@@ -119,26 +118,6 @@ const Stafette: NextPage = () => {
                             </div>
                         </a>
                     ))}
-                    <div className="relative col-span-1 bg-gray-50 hover:bg-gray-100 py-8 px-8 rounded-3xl border-2 border-transparent group">
-                        <div className="grid grid-cols-1">
-                            <div className="col-span-1 text-base text-gray-900">Reiten (optional)</div>
-
-                            <div className="flex justify-between items-baseline">
-                                <div className="flex items-baseline text-2xl font-semibold text-blue-600">
-                                    ~ 1 km
-                                </div>
-                                <div
-                                    className="inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium md:mt-2 lg:mt-0 bg-blue-100">
-                                    <ArrowTrendingUpIcon
-                                        className="-ml-1 mr-2 h-5 w-5 flex-shrink-0 self-center text-blue-600"
-                                        aria-hidden="true"
-                                    />
-                                    0 m
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
