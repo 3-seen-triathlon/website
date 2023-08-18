@@ -80,10 +80,10 @@ const Lauf: NextPage = () => {
                 <p className="p">
                     Eine Bestätigung der Anmeldung erfolgt jeweils in der ersten Woche des
                     darauffolgenden Monates. Die Startinformationen werden am Freitag 18.
-                    August per Mail verschickt. Das Anmeldefenster online schliesst am 18.
-                    August. Nachmeldungen können am Sonntag 20. August am Infopoint der
-                    Dreiseenstafette von 10.00-11.00 Uhr für einen Aufpreis von 5.-
-                    vorgenommen werden.
+                    August per Mail verschickt. <span className="font-bold italic">Das Anmeldefenster online schliesst am 18.
+                        August. Nachmeldungen können am Sonntag 20. August am Infopoint der
+                        Dreiseenstafette von 10.00-11.00 Uhr für einen Aufpreis von 5.-
+                        vorgenommen werden.</span>
                 </p>
 
                 <p className="p">
@@ -115,15 +115,6 @@ const Lauf: NextPage = () => {
                     >
                         <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
                         Flyer
-                    </a>
-
-                    <a
-                        href="https://visanasprint.ch/de/wettkaempfe/startmoeglichkeiten/?id=a21aa-3lmgw1-lex221xx-1-ley971ef-h9q"
-                        className="button-inverse group"
-                        target="_blank"
-                    >
-                        <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-white" />
-                        Anmelden
                     </a>
                 </div>
             </div>
