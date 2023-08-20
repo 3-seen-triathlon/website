@@ -44,7 +44,7 @@ const faqs = [
 ]
 
 const lists = [
-    { name: 'Startliste 2023', link: 'https://www.datasport.com/live/startlist/?racenr=25893' },
+    { name: 'Rangliste 2023', link: 'https://www.datasport.com/live/ranking/?racenr=25893' },
     { name: 'Rangliste 2022', link: 'https://www.datasport.com/live/ranking/?racenr=24893' },
     { name: 'Rangliste 2021', link: 'https://www.datasport.com/live/ranking/?racenr=23893' },
     { name: 'Rangliste 2019', link: 'https://www.datasport.com/live/ranking/?racenr=21893' },
