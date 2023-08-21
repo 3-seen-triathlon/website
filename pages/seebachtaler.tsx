@@ -124,6 +124,14 @@ const Lauf: NextPage = () => {
                 <ul className="list-disc list-inside">
                     <li>
                         <a
+                            href="/dokumente/2023/resultate_seebachtaler.pdf"
+                            target="_blank"
+                        >
+                            <span className="link">Austragung 2023</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="/dokumente/2022_rangliste_seebachtaler.pdf"
                             target="_blank"
                         >

@@ -204,6 +204,20 @@ const Hue: NextPage = () => {
                 </form>
             </div>
 
+            <div className="content">
+                <h3 className="h4">Ranglisten</h3>
+                <ul className="list-disc list-inside">
+                    <li>
+                        <a
+                            href="/dokumente/2023/resultate_roessli.pdf"
+                            target="_blank"
+                        >
+                            <span className="link">Austragung 2023</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </Layout>
     )
 }
