@@ -92,13 +92,14 @@ const navigation = {
         { name: 'Informationen', href: '/informationen' },
         { name: 'Teambörse', href: 'https://teams.dreiseenstafette.ch' },
         { name: 'FAQ', href: '/informationen#faq' },
+        { name: 'Fotos', href: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
     ],
     about: [
         { name: 'Kontakt', href: '/kontakt' },
         { name: 'Partner', href: '/partner' },
-        { name: 'Fotos', href: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
         { name: 'Start- und Ranglisten', href: '/informationen#faq' },
-        { name: 'Helferbereich', href: '/helfer' },
+        { name: 'Impressum', href: '/impressum' },
+        { name: 'Datenschutzerklärung', href: '/2023-09-01_Datenschutzerklaerung_Dreiseenstafette.pdf' },
     ],
     social: socials,
 }

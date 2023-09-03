@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import FormTopic from '../components/formtopic';
 import Layout from '../components/layout';
 import Team from '../components/team';
-import TV from '../components/tv';
 
 const Kontakt: NextPage = () => {
     const [a, setA] = useState(0);

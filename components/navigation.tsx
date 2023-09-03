@@ -8,6 +8,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { socials } from './footer';
 import Banner from './banner';
+import CookieBanner from './cookiebanner';
 
 const logo = "/logo/dreiseenstafette.svg";
 const logo_small = logo;
@@ -29,6 +30,7 @@ export default function Navigation({ children }: any) {
     return (
         <>
             <Banner />
+            <CookieBanner />
 
             <div className="z-10">
                 <Popover className="relative">
