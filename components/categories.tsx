@@ -41,11 +41,11 @@ export default function Categories() {
                                 aria-hidden="true"
                             />
 
-                            <div className="flex flex-1 flex-col justify-between p-6">
+                            <div className="flex flex-1 flex-col justify-between py-6 px-12">
                                 <div className="flex-1">
                                     <div className="mt-2 block">
-                                        <p className="h4 text-xl text-blue-600">{post.title}</p>
-                                        <p className="p">{post.description}</p>
+                                        <p className="text-2xl font-semibold text-blue-600 mb-2">{post.title}</p>
+                                        <p className="text-base">{post.description}</p>
                                     </div>
                                 </div>
                             </div>
