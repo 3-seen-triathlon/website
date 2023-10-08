@@ -18,7 +18,7 @@ const logo_light = "/logo/dreiseenstafette_small_light.svg";
 const menuItems = [
     { name: "Kategorien", link: "/kategorien", target: '_self' },
     { name: "Informationen", link: "/informationen", target: '_self' },
-    { name: "Fotos", link: "https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9", target: '_blank' },
+    { name: "Fotos", link: "https://drive.google.com/drive/folders/1wfxXZt8hcUzo9JpDgFD5U7RLS0FC41lE?usp=drive_link", target: '_blank' },
     { name: "Partner", link: "/partner", target: '_self' },
     { name: "Kontakt", link: "/kontakt", target: '_self' },
 ];

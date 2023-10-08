@@ -92,7 +92,7 @@ const navigation = {
         { name: 'Informationen', href: '/informationen' },
         { name: 'Teambörse', href: 'https://teams.dreiseenstafette.ch' },
         { name: 'FAQ', href: '/informationen#faq' },
-        { name: 'Fotos', href: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9' },
+        { name: 'Fotos', href: 'https://drive.google.com/drive/folders/1wfxXZt8hcUzo9JpDgFD5U7RLS0FC41lE?usp=drive_link' },
     ],
     about: [
         { name: 'Kontakt', href: '/kontakt' },
