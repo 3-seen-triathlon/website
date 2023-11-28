@@ -62,10 +62,6 @@ export default function Navigation({ children }: any) {
                                         {item.name}
                                     </a>
                                 ))}
-                                <a key='registration' href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button group">
-                                    <ArrowSmallRightIcon className="button-icon" />
-                                    Anmelden
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -107,10 +103,6 @@ export default function Navigation({ children }: any) {
                                         </nav>
                                     </div>
                                     <div className="space-y-6 py-6 px-5 text-center">
-                                        <a href="https://onreg.datasport.com/dreiseenstafette-huettwilen-2023" target="_blank" className="button-light group">
-                                            <ArrowSmallRightIcon className="mr-2 h-5 w-5 group-hover:text-blue-500" />
-                                            Anmelden
-                                        </a>
                                         <div className="text-center py-6">
                                             <div className="flex justify-center space-x-6 md:order-2">
                                                 {socials.map((item) => (

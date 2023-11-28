@@ -30,11 +30,13 @@ const Home: NextPage = () => {
             </div>
 
             <div className="content">
-                <h1 className="h2">
-                    Ein atemberaubender Triathlon, eine traditionsreiche Stafette und ein
-                    einzigartiger Lauf in familiärer Atmosphäre - das ist die
-                    Dreiseenstafette im Seebachtal.
-                </h1>
+                <h2 className="h2 italic">
+                    <b>2024 wird die Dreiseenstafette leider nicht stattfinden.</b> Die
+                    Gründe dafür sind divers: von mangelnden Helfereinsätzen über
+                    Ideen zu Neuausrichtungen bis zum Überdenken der Organisationsstruktur
+                    - jedoch sind es keine unlösbaren Probleme. Wir werden mit einem
+                    riesigen Kracher zurück sein und du kannst dir schon jetzt den <b>17.08.2025</b> notieren!
+                </h2>
             </div>
 
             <Categories />
