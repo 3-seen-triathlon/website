@@ -17,7 +17,7 @@ const quicklinks = [
     { name: 'Badi Hüttwilersee', stat: 'Wettkampfzentrum', link: '#wettkampfzentrum', target: '' },
     { name: 'Oft gestellte Frage', stat: 'FAQ', link: '#faq', target: '' },
     { name: 'Wettkampfbestimmungen', stat: 'Reglement', link: '/dokumente/2023_reglement.pdf', target: '_blank' },
-    { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://next.tiny-rocket.ch/s/AXgbWcyae2EpXs9', target: '_blank' },
+    { name: 'Fotos & Videos', stat: 'Impressionen', link: 'https://drive.google.com/drive/folders/1wfxXZt8hcUzo9JpDgFD5U7RLS0FC41lE?usp=drive_link', target: '_blank' },
     { name: 'Hindernisse und Strecke', stat: 'Reitparcours', link: '#reitparcours', target: '' },
     { name: 'Team vervollständigen', stat: 'Teambörse', link: 'https://teams.dreiseenstafette.ch', target: '_blank' },
 ];
