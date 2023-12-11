@@ -1,9 +1,6 @@
 import { IncomingWebhook } from '@slack/webhook';
 import { log } from 'next-axiom';
 
-const url = process.env.SLACK_WEBHOOK_URL as string;
-const webhook = new IncomingWebhook(url);
-
 const stringify = (body: any) => {
     return `Vorname: ${body.vorname}
 Nachname: ${body.nachname}
@@ -11,6 +8,14 @@ Email: ${body.email}
 Thema: ${body.thema}
 Anfrage: ${body.kommentar}`
 };
+
+const spam_words = [
+    'click here',
+    'seo',
+    'leads',
+    'secure online payment',
+    'termination'
+]
 
 export default function handler(req: any, res: any) {
     const body = req.body
@@ -32,10 +37,14 @@ export default function handler(req: any, res: any) {
         res.redirect(302, '/404')
     }
 
-    // everything with click here is spam that we are not interested in
-    if (String(body.kommentar).toLowerCase().includes("click here")) {
-        res.status(418).json({ text: `Nice try but not interested ❌` })
-    }
+    spam_words.forEach((word: string) => {
+        if (String(body.kommentar).toLowerCase().includes(word)) {
+            res.status(418).json({ text: `Nice try but not interested ❌` })
+        }
+    })
+
+    const url = process.env.SLACK_WEBHOOK_URL as string;
+    const webhook = new IncomingWebhook(url);
 
     webhook.send({
         text: `Anfrage über das Kontaktformular: ${stringify(body)}`,
