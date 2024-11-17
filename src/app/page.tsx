@@ -36,8 +36,16 @@ function Hero() {
             Dann markier dir das Datum schon mal fett im Kalender!
           </p>
           <div className='flex flex-wrap gap-4 mt-8'>
-            <Button variant='red' href={'/signup'}>
+            <Button variant='red' target='_blank' href='https://onreg.datasport.com/en/dreiseentriathlon-2025'>
               Anmelden
+              <ArrowLongRightIcon className="size-5" />
+            </Button>
+            <Button
+              variant='red_outline'
+              target='_blank'
+              href='https://www.datasport.com/live/startlist/?racenr=27893'
+            >
+              Startlisten
               <ArrowLongRightIcon className="size-5" />
             </Button>
             <Button
