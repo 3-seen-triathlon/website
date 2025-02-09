@@ -145,7 +145,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-black" >
-      &copy; {new Date().getFullYear()} Dreiseenstafette
+      &copy; {new Date().getFullYear()} 3-Seen-Triathlon 
     </div>
   )
 }
