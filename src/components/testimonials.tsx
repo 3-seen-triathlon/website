@@ -15,7 +15,7 @@ import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
 import { Container } from './container'
 import { Link } from './link'
-import { Heading, Subheading } from './text'
+import { Heading, Lead, Subheading } from './text'
 import { Button } from './button'
 
 const galleries = [
@@ -136,6 +136,9 @@ export function Testimonials() {
           <Heading as="h3" className="mt-2">
             Frühere Austragungen.
           </Heading>
+          <Lead className="mt-6 max-w-3xl">
+            Von der Dreiseenstafette zum 3-Seen-Triathlon; ab 2025 liegt der Fokus auf dem Triathlon - du kannst aber immer noch als Team starten.
+          </Lead>
         </div>
       </Container>
       <div
