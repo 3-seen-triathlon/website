@@ -4,8 +4,8 @@ import "ol/ol.css"
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Dreiseenstafette',
-    default: 'Dreiseenstafette',
+    template: '%s - 3-Seen-Triathlon',
+    default: '3-Seen-Triathlon',
   },
 }
 

@@ -6,12 +6,12 @@ export function Logo({
 }: { className?: string, variant?: string }) {
   if (variant === 'dark') {
     return (
-      <img alt='Dreiseenstafette Logo' src='/logo/3-seen-triathlon.png' className={className} />
+      <img alt='3-Seen-Triathlon Logo' src='/logo/3-seen-triathlon.png' className={className} />
     )
   }
 
   return (
-    <img alt='Dreiseenstafette Logo' src='/logo/3-seen-triathlon_light.png' className={className} />
+    <img alt='3-Seen-Triathlon Logo' src='/logo/3-seen-triathlon_light.png' className={className} />
   )
 }
 

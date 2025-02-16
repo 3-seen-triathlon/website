@@ -130,7 +130,7 @@ export default function Signup() {
         <div className="max-lg:order-first max-lg:max-w-lg">
           <div className="aspect-[3/2] overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
             <img
-              alt="Plannung von der Dreiseenstafette 2025"
+              alt="Plannung von der Dreiseenstafette 2024"
               src="/images/2024_event_planning.png"
               className="block size-full object-cover"
             />
