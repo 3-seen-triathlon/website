@@ -1,5 +1,6 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
+import "ol/ol.css"
 
 export const metadata: Metadata = {
   title: {

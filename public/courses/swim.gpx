@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="StravaGPX" version="1.1" xmlns="http://www.topografix.com/GPX/1/1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<metadata>
+		<name>DSS Swim</name>
+		<copyright author="OpenStreetMap contributors">
+			<year>2020</year>
+			<license>https://www.openstreetmap.org/copyright</license>
+		</copyright>
+	</metadata>
+	<trk>
+		<trkseg>
+			<trkpt lat="47.60909" lon="8.84746">
+				<ele>432.81</ele>
+			</trkpt>
+			<trkpt lat="47.609535000693604" lon="8.847025003826941">
+				<ele>433.1</ele>
+			</trkpt>
+			<trkpt lat="47.60998000000001" lon="8.84659">
+				<ele>433.1</ele>
+			</trkpt>
+			<trkpt lat="47.60998000299343" lon="8.845760000136803">
+				<ele>433.12000000000006</ele>
+			</trkpt>
+			<trkpt lat="47.60998000000001" lon="8.844930000000002">
+				<ele>433.12000000000006</ele>
+			</trkpt>
+			<trkpt lat="47.60948000070052" lon="8.84532500375841">
+				<ele>433.12000000000006</ele>
+			</trkpt>
+			<trkpt lat="47.60898" lon="8.84572">
+				<ele>433.12000000000006</ele>
+			</trkpt>
+			<trkpt lat="47.60903500327507" lon="8.84658999886602">
+				<ele>433.11</ele>
+			</trkpt>
+			<trkpt lat="47.60909" lon="8.84746">
+				<ele>432.81</ele>
+			</trkpt>
+		</trkseg>
+	</trk>
+</gpx>
