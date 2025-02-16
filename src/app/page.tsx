@@ -1,4 +1,4 @@
-import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
+import { ArrowLongRightIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
@@ -8,10 +8,11 @@ import { Testimonials } from '@/components/testimonials'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { Video } from '@/components/video'
 import type { Metadata } from 'next'
+import Route from '@/components/route'
 
 export const metadata: Metadata = {
   description:
-    'Die Dreiseenstafette organisiert einen coolen Triathlon im schönen Seebachtal im Kanton TG.',
+    'Der 3-Seen-Triathlon organisiert einen coolen Triathlon im schönen Seebachtal im Kanton TG.',
 }
 
 function Hero() {
@@ -47,7 +48,7 @@ function Hero() {
               href='/2025_08_17_dreiseenstafette.ics'
             >
               Kalendereintrag
-              <ArrowLongRightIcon className="size-5" />
+              <ArrowDownTrayIcon className="size-5" />
             </Button>
           </div>
         </div>
@@ -95,6 +96,72 @@ function Team() {
   )
 }
 
+function Routes() {
+  return (
+    <Container className="mb-32">
+      <Subheading>Die Strecken</Subheading>
+      <Heading as="h3" className="mt-2">
+        Erlebe das Seebachtal aus 3 unterschiedlichen Perspektiven
+      </Heading>
+      <Lead className="mt-6 max-w-3xl">
+        Vom Naturschutzgebiet am See bis hin zum Ausblick vom Iselisberg bietet dir der Wettkampf eine abwechslungsreiche Landschaft.
+      </Lead>
+      <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="max-w-lg">
+          <p className="text-sm/6 text-gray-600">
+            Die Strecken zwischen Short und Olympic Distance unterscheiden sind kaum; bei der Olympic Distance wird die Strecke aber <b>2x</b> absolviert.
+          </p>
+          <div className='mt-8'>
+            <table className="table-auto text-sm/6 text-gray-600 w-full">
+              <thead className='text-left'>
+                <tr>
+                  <th>Strecke</th>
+                  <th>Short Distance</th>
+                  <th>Olympic</th>
+                </tr>
+              </thead>
+              <tbody className=''>
+                <tr>
+                  <td>Schwimmen</td>
+                  <td>0.5 km</td>
+                  <td>1 km</td>
+                </tr>
+                <tr>
+                  <td>Radfahren</td>
+                  <td>22 km</td>
+                  <td>44 km</td>
+                </tr>
+                <tr>
+                  <td>Laufen</td>
+                  <td>7 km</td>
+                  <td>14 km</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className='flex flex-wrap gap-4 mt-8'>
+            <Button variant='red' href='/courses/swim.gpx'>
+              Schwimmstrecke
+              <ArrowDownTrayIcon className="size-5" />
+            </Button>
+            <Button variant='red' href='/courses/cycling.gpx'>
+              Radstrecke
+              <ArrowDownTrayIcon className="size-5" />
+            </Button>
+            <Button variant='red' href='/courses/swim.gpx'>
+              Laufstrecke
+              <ArrowDownTrayIcon className="size-5" />
+            </Button>
+          </div>
+        </div>
+        <div className="max-lg:order-first max-lg:max-w-lg">
+          <Route />
+        </div>
+      </div>
+    </Container>
+  )
+}
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -106,6 +173,7 @@ export default function Home() {
       </main>
       <Testimonials />
       <Team />
+      <Routes />
       <Footer />
     </div>
   )
