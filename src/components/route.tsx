@@ -12,29 +12,29 @@ import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
 import cyclingCourse from "../../public/courses/cycling.json"
 import swimCourse from "../../public/courses/swim.json"
+import runCourse from "../../public/courses/run.json"
+import posten from "../../public/courses/posten.json"
+import CircleStyle from 'ol/style/Circle'
 import { useGeographic } from "ol/proj";
+import Fill from "ol/style/Fill";
 
 // example from: https://openlayers.org/en/latest/examples/ -> geojson
 
-enum Category {
-  Swim = "swim",
-  Cycle = "cycle",
-  Run = "run",
-}
+const pointStyle = new Style({
+  image: new CircleStyle({
+    radius: 3,
+    fill: new Fill({ color: 'black' }),
+    stroke: new Stroke({ color: 'black', width: 2 }),
+  })
+})
 
-const colors = new Map([
-  [Category.Swim, "red"],
-  [Category.Cycle, "blue"],
-  [Category.Run, "green"],
-])
-
-function getStyleFor(category: Category) {
+function getStyle(color: string, fill?: string) {
   return new Style({
     stroke: new Stroke({
-      color: colors.get(category),
+      color: color,
       width: 3,
     }),
-    fill: undefined,
+    fill: fill ? new Fill({ color: fill }) : undefined,
   })
 }
 
@@ -60,8 +60,10 @@ function Route() {
       target: "map-container",
       layers: [
         osmLayer,
-        getLayerFromData(getStyleFor(Category.Swim), swimCourse),
-        getLayerFromData(getStyleFor(Category.Cycle), cyclingCourse),
+        getLayerFromData(getStyle('red'), swimCourse),
+        getLayerFromData(getStyle('blue'), cyclingCourse),
+        getLayerFromData(getStyle('green'), runCourse),
+        getLayerFromData(pointStyle, posten),
       ],
       view: new View({
         center: [

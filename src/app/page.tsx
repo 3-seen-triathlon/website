@@ -109,6 +109,9 @@ function Routes() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
+            Auf der Karte sind die unterschiedlichen Strecken aufgezeichnet. Bei der Laufstrecke gibt es zwei Verpflegungsposten; sie sind mit schwarzen Punkten markiert.
+          </p>
+          <p className="text-sm/6 text-gray-600 mt-8">
             Die Strecken zwischen Short und Olympic Distance unterscheiden sind kaum; bei der Olympic Distance wird die Strecke aber <b>2x</b> absolviert.
           </p>
           <div className='mt-8'>
@@ -122,19 +125,19 @@ function Routes() {
               </thead>
               <tbody className=''>
                 <tr>
-                  <td>Schwimmen</td>
+                  <td className='text-red-600 font-bold'>Schwimmen</td>
                   <td>0.5 km</td>
-                  <td>1 km</td>
+                  <td>1.5 km</td>
                 </tr>
                 <tr>
-                  <td>Radfahren</td>
+                  <td className='text-blue-600 font-bold'>Radfahren</td>
                   <td>22 km</td>
                   <td>44 km</td>
                 </tr>
                 <tr>
-                  <td>Laufen</td>
-                  <td>7 km</td>
-                  <td>14 km</td>
+                  <td className='text-green-600 font-bold'>Laufen</td>
+                  <td>5 km</td>
+                  <td>10 km</td>
                 </tr>
               </tbody>
             </table>
@@ -148,7 +151,7 @@ function Routes() {
               Radstrecke
               <ArrowDownTrayIcon className="size-5" />
             </Button>
-            <Button variant='red' href='/courses/swim.gpx'>
+            <Button variant='red' href='/courses/run.gpx'>
               Laufstrecke
               <ArrowDownTrayIcon className="size-5" />
             </Button>
