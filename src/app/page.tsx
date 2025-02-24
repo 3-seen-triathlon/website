@@ -62,7 +62,7 @@ function Team() {
     <Container className="mb-32">
       <Subheading>Mithelfen</Subheading>
       <Heading as="h3" className="mt-2">
-        Wir sind auf der Suche nach Helfern.
+        Werde Teil des 3-Seen-Triathlons!
       </Heading>
       <Lead className="mt-6 max-w-3xl">
         Für einen reibungslosen Ablauf vom Wettkampf brauchen wir dich!
@@ -70,11 +70,15 @@ function Team() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Der 3-Seen-Triathlon kann nur dank fleissigen Helfern stattfinden. Ihr seid die heimlichen Stars!
-            Die Aufgaben gehen von der Sicherung der Velostrecke über Kontrolle der Wechselzone bis hin zur Verpflegung der Athleten auf der Laufstrecke.
+            Der 3-Seen-Triathlon lebt von der Gemeinschaft – und du kannst mittendrin statt nur dabei sein!
+            Ob an der Velostrecke, in der Wechselzone oder bei der Verpflegung der Athleten – jede Aufgabe trägt dazu bei, diesen besonderen Event zu einem Erfolg zu machen.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Als Dank für deinen Einsatz erhälst entweder du oder ein Verein deiner Wahl einen fixen Betrag pro Einsatz. Ausserdem sorgen wir für deine Verpflegung während dem Einsatz.
+            Als Helfer bist du nicht nur Teil eines einzigartigen Sportereignisses, sondern unterstützt aktiv die Athleten auf ihrer Strecke.
+            Dein Einsatz wird geschätzt: Du oder ein Verein deiner Wahl erhält einen fixen Betrag pro Einsatz – und natürlich sorgen wir auch für deine Verpflegung.
+          </p>
+          <p className="mt-8 text-sm/6 text-gray-600">
+            Sei dabei, erlebe die besondere Atmosphäre hautnah und werde ein wichtiger Teil des 3-Seen-Triathlons!
           </p>
           <div className="mt-6">
             <Button className="w-full sm:w-auto" href="mailto:info@3-seen-triathlon.ch">
@@ -170,7 +174,7 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-12">
+        <Container className="mt-24">
           <LogoCloud />
         </Container>
       </main>
