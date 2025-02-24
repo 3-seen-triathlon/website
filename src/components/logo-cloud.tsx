@@ -1,4 +1,5 @@
 import { clsx } from 'clsx'
+import sponsors from '../data/sponsors.json'
 
 export function LogoCloud({
   className,
@@ -7,24 +8,24 @@ export function LogoCloud({
     <div
       className={clsx(
         className,
-        'flex justify-center gap-x-8 md:gap-x-12 xl:gap-x-24 ',
+        'flex justify-center gap-x-2 md:gap-x-4 xl:gap-x-16 ',
         'transition',
       )}
     >
-      <a href='https://www.mobiliar.ch/generalagenturen/frauenfeld' target='_blank'>
-        <img
-          alt="Die Mobiliar Generalagentur Frauenfeld"
-          src="/logo/mobiliar.png"
-          className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
-        />
-      </a>
-      <a href='https://www.raiffeisen.ch/seeruecken/de.html' target='_blank'>
-        <img
-          alt="Raiffeisenbank Seerücken"
-          src="/logo/raiffeisen.png"
-          className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
-        />
-      </a>
+      {sponsors.map((sponsor) => (
+        <a
+          key={sponsor.alt}
+          className='bg-gray-50 hover:bg-gray-100 rounded-4xl p-8 sm:p-12'
+          href={sponsor.link}
+          target='_blank'
+        >
+          <img
+            alt={sponsor.alt}
+            src={sponsor.logo}
+            className="h-8 max-sm:mx-auto sm:h-12 lg:h-14"
+          />
+        </a>
+      ))}
     </div>
   )
 }

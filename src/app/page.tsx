@@ -174,14 +174,14 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-24">
+        <Container className="mt-12 sm:mt-24">
           <LogoCloud />
         </Container>
+        <Testimonials />
+        <Team />
+        <Routes />
+        <Footer />
       </main>
-      <Testimonials />
-      <Team />
-      <Routes />
-      <Footer />
     </div>
   )
 }
