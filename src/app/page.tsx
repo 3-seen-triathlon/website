@@ -78,7 +78,7 @@ function Team() {
             Dein Einsatz wird geschätzt: Du oder ein Verein deiner Wahl erhält einen fixen Betrag pro Einsatz – und natürlich sorgen wir auch für deine Verpflegung.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Sei dabei, erlebe die besondere Atmosphäre hautnah und werde ein wichtiger Teil des 3-Seen-Triathlons!
+            Sei dabei, erlebe die besondere Atmosphäre hautnah und werde ein wichtiger Teil des 3-Seen-Triathlons! Melde dich by <code className='bg-gray-50 rounded-md p-1 mx-1'>info@3-seen-triathlon.ch</code>
           </p>
           <div className="mt-6">
             <Button className="w-full sm:w-auto" href="mailto:info@3-seen-triathlon.ch">
