@@ -9,6 +9,7 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import { Video } from '@/components/video'
 import type { Metadata } from 'next'
 import Route from '@/components/route'
+import Timeline from '@/components/timeline'
 
 export const metadata: Metadata = {
   description:
@@ -180,6 +181,7 @@ export default function Home() {
         <Testimonials />
         <Team />
         <Routes />
+        <Timeline />
         <Footer />
       </main>
     </div>
