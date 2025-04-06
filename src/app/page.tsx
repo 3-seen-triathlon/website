@@ -10,6 +10,7 @@ import { Video } from '@/components/video'
 import type { Metadata } from 'next'
 import Route from '@/components/route'
 import Timeline from '@/components/timeline'
+import NewsletterSignup from '@/components/newsletter'
 
 export const metadata: Metadata = {
   description:
@@ -182,6 +183,7 @@ export default function Home() {
         <Team />
         <Routes />
         <Timeline />
+        <NewsletterSignup />
         <Footer />
       </main>
     </div>
