@@ -28,8 +28,7 @@ function Hero() {
             17. August 2025
           </h1>
           <p className="text-white mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Bock auf einen coolen Triathlon?
-            Dann markier dir das Datum schon mal fett im Kalender!
+            <span className="italic mr-2">Der Triathlon im schönen Seebachtal.</span> Ob Short oder Olympic Distance, solo oder als Team - melde dich noch heute für den coolen Wettkampf an!
           </p>
           <div className='flex flex-wrap gap-4 mt-8'>
             <Button variant='red' target='_blank' href='https://onreg.datasport.com/en/dreiseentriathlon-2025'>
@@ -80,7 +79,7 @@ function Team() {
             Dein Einsatz wird geschätzt: Du oder ein Verein deiner Wahl erhält einen fixen Betrag pro Einsatz – und natürlich sorgen wir auch für deine Verpflegung.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Sei dabei, erlebe die besondere Atmosphäre hautnah und werde ein wichtiger Teil des 3-Seen-Triathlons! Melde dich by <code className='bg-gray-50 rounded-md p-1 mx-1'>info@3-seen-triathlon.ch</code>
+            Sei dabei, erlebe die besondere Atmosphäre hautnah und werde ein wichtiger Teil des 3-Seen-Triathlons! Melde dich by <code className='bg-gray-50 rounded-md p-1 mx-1'>info @ 3-seen-triathlon.ch</code>
           </p>
           <div className="mt-6">
             <Button className="w-full sm:w-auto" href="mailto:info@3-seen-triathlon.ch">
@@ -132,18 +131,18 @@ function Routes() {
               <tbody className=''>
                 <tr>
                   <td className='text-red-600 font-bold'>Schwimmen</td>
-                  <td>0.5 km</td>
-                  <td>1.5 km</td>
+                  <td>0.5 km <span className="italic">(1 Lap)</span></td>
+                  <td>1.5 km <span className="italic">(3 Laps)</span></td>
                 </tr>
                 <tr>
                   <td className='text-blue-600 font-bold'>Radfahren</td>
-                  <td>22 km</td>
-                  <td>44 km</td>
+                  <td>22 km <span className="italic">(1 Lap)</span></td>
+                  <td>44 km <span className="italic">(2 Laps)</span></td>
                 </tr>
                 <tr>
                   <td className='text-green-600 font-bold'>Laufen</td>
-                  <td>5 km</td>
-                  <td>10 km</td>
+                  <td>5 km <span className="italic">(1 Lap)</span></td>
+                  <td>10 km <span className="italic">(2 Laps)</span></td>
                 </tr>
               </tbody>
             </table>
@@ -180,9 +179,9 @@ export default function Home() {
           <LogoCloud />
         </Container>
         <Testimonials />
-        <Team />
         <Routes />
         <Timeline />
+        <Team />
         <NewsletterSignup />
         <Footer />
       </main>
