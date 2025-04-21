@@ -11,6 +11,7 @@ import type { Metadata } from 'next'
 import Route from '@/components/route'
 import Timeline from '@/components/timeline'
 import NewsletterSignup from '@/components/newsletter'
+import LogoCloudSimple from '@/components/logo-cloud-simple'
 
 export const metadata: Metadata = {
   description:
@@ -184,6 +185,7 @@ export default function Home() {
           <LogoCloud />
         </Container>
         <Testimonials />
+        <LogoCloudSimple />
         <Routes />
         <Timeline />
         <Team />
