@@ -60,7 +60,7 @@ export default function NewsletterSignup() {
   }
 
   return (
-    <Container className="mb-16 md:mb-32 flex justify-center">
+    <Container className="my-12 md:my-16 flex justify-center">
       <div className=''>
         <Lead className="max-w-3xl">
           Für den Newsletter anmelden

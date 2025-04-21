@@ -129,7 +129,7 @@ export function Testimonials() {
   }
 
   return (
-    <div className="overflow-hidden py-32">
+    <div className="overflow-hidden py-12 sm:py-16">
       <Container>
         <div ref={setReferenceWindowRef}>
           <Subheading>Das ist die DSS</Subheading>

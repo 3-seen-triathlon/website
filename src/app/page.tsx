@@ -60,7 +60,7 @@ function Hero() {
 
 function Team() {
   return (
-    <Container className="mb-32">
+    <Container className="py-12 sm:py-16">
       <Subheading>Mithelfen</Subheading>
       <Heading as="h3" className="mt-2">
         Werde Teil des 3-Seen-Triathlons!
@@ -103,7 +103,7 @@ function Team() {
 
 function Routes() {
   return (
-    <Container className="mb-32">
+    <Container className="py-12 sm:py-16">
       <Subheading>Die Strecken</Subheading>
       <Heading as="h3" className="mt-2">
         Erlebe das Seebachtal aus 3 unterschiedlichen Perspektiven
@@ -180,7 +180,7 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-12 sm:mt-24">
+        <Container className="pt-12 sm:pt-24">
           <LogoCloud />
         </Container>
         <Testimonials />

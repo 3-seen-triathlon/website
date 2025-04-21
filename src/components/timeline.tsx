@@ -81,7 +81,7 @@ function classNames(...classes: any) {
 
 export default function Timeline() {
   return (
-    <Container className="mb-32">
+    <Container className="py-12 sm:py-16">
       <Subheading>Zeitplan</Subheading>
       <Heading as="h3" className="mt-2">
         Der Zeitliche Ablauf des 3ST
