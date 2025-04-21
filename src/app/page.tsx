@@ -148,6 +148,11 @@ function Routes() {
             </table>
           </div>
           <div className='flex flex-wrap gap-4 mt-8'>
+            <Button variant='red_outline' href='/2025/wettkampfreglement.pdf'>
+              Wettkampfreglement
+              <ArrowDownTrayIcon className="size-5" />
+            </Button>
+
             <Button variant='red' href='/courses/swim.gpx'>
               Schwimmstrecke
               <ArrowDownTrayIcon className="size-5" />
