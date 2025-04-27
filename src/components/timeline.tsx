@@ -84,7 +84,7 @@ export default function Timeline() {
     <Container className="py-12 sm:py-16">
       <Subheading>Zeitplan</Subheading>
       <Heading as="h3" className="mt-2">
-        Der Zeitliche Ablauf des 3ST
+        Der Ablauf des 3ST
       </Heading>
       <Lead className="mt-6 max-w-3xl">
         Alle Events sind beim Wettkampfzentrum bei der Badi Hüttwilersee.
