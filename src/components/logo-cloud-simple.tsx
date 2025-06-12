@@ -20,10 +20,17 @@ const sponsoren = [
     name: "Nüssli",
     logos: [
       "/2025/partner/nussli.png",
+    ],
+    category: "Olypmic Distance",
+  },
+  {
+    name: "Ruba",
+    logos: [
       "/2025/partner/ruba_nussli.png"
     ],
     category: "Olypmic Distance",
   },
+
   {
     name: "ThurPlus",
     logos: [
