@@ -39,6 +39,13 @@ const sponsoren = [
     category: "Badekappen",
   },
   {
+    name: "EWE Elektro AG",
+    logos: [
+      "/2025/partner/ewe.png",
+    ],
+    category: "Supplier"
+  },
+  {
     name: "Hans Hagen AG",
     logos: [
       "/2025/partner/hans_hagen.png",
