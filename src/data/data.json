@@ -1,0 +1,192 @@
+{
+	"categories": [
+		{
+			"name": "Hauptsponsoren",
+			"grid": 2,
+			"partner": [
+				{
+					"name": "Die Mobiliar Generalagentur Frauenfeld",
+					"link": "https://www.mobiliar.ch/generalagenturen/frauenfeld",
+					"logo": "/logo/mobiliar.png"
+				},
+				{
+					"name": "Raiffeisenbank Seerücken",
+					"link": "https://www.raiffeisen.ch/seeruecken/de.html",
+					"logo": "/logo/raiffeisen.png"
+				}
+			]
+		},
+		{
+			"name": "Sprintsponsor",
+			"grid": 2,
+			"partner": [
+				{
+					"name": "Geiges AG",
+					"link": "https://www.geiges-ag.ch/",
+					"logo": "/2025/partner/geiges.svg"
+				}
+			]
+		},
+		{
+			"name": "Kategoriensponsoren",
+			"grid": 3,
+			"partner": [
+				{
+					"name": "Ruba Objektbau AG",
+					"link": "https://ruba.ch/",
+					"logo": "/2025/partner/ruba_nussli.png"
+				},
+				{
+					"name": "Nüssli Schweiz AG",
+					"link": "https://www.nussli.com/en/",
+					"logo": "/2025/partner/nussli.png"
+				},
+				{
+					"name": "Uferlos",
+					"link": "https://www.tripadvisor.ch/Restaurant_Review-g199034-d12790251-Reviews-Uferlos_an_der_Schifflande-Stein_am_Rhein.html?m=69573",
+					"logo": "/2025/partner/uferlos.jpg"
+				},
+				{
+					"name": "Mosteria",
+					"link": "https://mosteria.ch/",
+					"logo": "/2025/partner/mosteria.png"
+				},
+				{
+					"name": "TIT Imhof AG",
+					"link": "https://www.tit-imhof.ch/",
+					"logo": "/2025/partner/tit_imhof.svg"
+				},
+				{
+					"name": "EWE Elektro",
+					"link": "https://www.ewe-elektro.ch/",
+					"logo": "/2025/partner/ewe.png"
+				},
+				{
+					"name": "Egli Bikes",
+					"link": "https://eglibikes.ch/",
+					"logo": "/2025/partner/egli_bikes.svg"
+				}
+			]
+		},
+		{
+			"name": "Badekappensponsor",
+			"grid": 3,
+			"partner": [
+				{
+					"name": "ThurPlus",
+					"link": "https://www.thurplus.ch/",
+					"logo": "/2025/partner/thurplus.png"
+				}
+			]
+		},
+		{
+			"name": "Accomodation",
+			"grid": 4,
+			"partner": []
+		},
+		{
+			"name": "Leporello",
+			"grid": 4,
+			"partner": [
+				{
+					"name": "Fahnen-Center Weinfelden",
+					"link": "https://www.fahnen-center.ch/",
+					"logo": "/2025/partner/fahnencenter.png"
+				},
+				{
+					"name": "Hans Hagen AG",
+					"link": "https://hagen-ag.ch/",
+					"logo": "/2025/partner/hans_hagen.png"
+				},
+				{
+					"name": "Landi Seebachtal",
+					"link": "https://landi.swiss/de-CH/cooperative/landi-seebachtal",
+					"logo": "/2025/partner/landi.png"
+				},
+				{
+					"name": "Dreispitzgarage Uesslingen",
+					"link": "https://www.dreispitzgarage.ch/",
+					"logo": "/2025/partner/dreispitz.png"
+				},
+				{
+					"name": "Werkstoffen",
+					"link": "https://www.werkstoffen.ch/",
+					"logo": "/2025/partner/werkstoffen.png"
+				},
+				{
+					"name": "Massnahmezentrum Kalchrain",
+					"link": "https://kalchrain.tg.ch/",
+					"logo": "/2025/partner/kalchrain.png"
+				},
+				{
+					"name": "Erich Liechti Metzgerei",
+					"link": "https://www.metzgerei-liechti.ch/D/index.php",
+					"logo": "/2025/partner/liechti.png"
+				},
+				{
+					"name": "Exent AG",
+					"link": "https://www.exent.ch/",
+					"logo": "/2025/partner/exent.png"
+				}
+			]
+		},
+		{
+			"name": "Web",
+			"grid": 4,
+			"partner": [
+				{
+					"name": "Stieger Gartenbau",
+					"link": "https://www.stieger-ag.ch/",
+					"logo": "/2025/partner/stieger.png"
+				},
+				{
+					"name": "Gebrüder Umbricht",
+					"link": "https://www.umbrichtag.ch/index.html",
+					"logo": "/2025/partner/umbricht.png"
+				},
+				{
+					"name": "Hagschnurrer Schüür",
+					"link": "https://hagschnurer.ch/",
+					"logo": "/2025/partner/hagschnurer.png"
+				}
+			]
+		},
+		{
+			"name": "Supplier",
+			"grid": 4,
+			"partner": [
+				{
+					"name": "Zaunteam",
+					"link": "https://www.zaunteam.de/de",
+					"logo": "/2025/partner/zaunteam.png"
+				},
+				{
+					"name": "Focus Water",
+					"link": "https://focuswater.ch/",
+					"logo": "/2025/partner/focus_water.png"
+				},
+				{
+					"name": "DermaPlast Active",
+					"link": "https://www.hartmann.info/en/site/dermaplastactive/products",
+					"logo": "/2025/partner/dermaplast.png"
+				},
+				{
+					"name": "Barilla",
+					"link": "https://www.barilla.com/",
+					"logo": "/2025/partner/barilla.svg"
+				}
+			]
+		},
+		{
+			"name": "Preise",
+			"grid": 4,
+			"partner": [
+				{
+					"name": "Beda Beck",
+					"link": "https://www.bedabeck.ch/",
+					"logo": "/2025/partner/bedabeck.png"
+				}
+			]
+		}
+	]
+}
