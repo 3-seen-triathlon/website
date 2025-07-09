@@ -105,7 +105,7 @@ function Team() {
 function Routes() {
   return (
     <Container className="py-12 sm:py-16">
-      <Subheading>Die Strecken</Subheading>
+      <Subheading id='strecken'>Die Strecken</Subheading>
       <Heading as="h3" className="mt-2">
         Erlebe das Seebachtal aus 3 unterschiedlichen Perspektiven
       </Heading>
@@ -166,6 +166,11 @@ function Routes() {
               Laufstrecke
               <ArrowDownTrayIcon className="size-5" />
             </Button>
+            <Button variant='red' href='/wettkampfzentrum.jpg'>
+              Wettkampfzentrum
+              <ArrowDownTrayIcon className="size-5" />
+            </Button>
+
           </div>
         </div>
         <div className="max-lg:order-first max-lg:max-w-lg">
