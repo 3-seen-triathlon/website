@@ -118,7 +118,7 @@ function Routes() {
             Auf der Karte sind die unterschiedlichen Strecken aufgezeichnet. Bei der Laufstrecke gibt es zwei Verpflegungsposten; sie sind mit schwarzen Punkten markiert.
           </p>
           <p className="text-sm/6 text-gray-600 mt-8">
-            Die Strecken zwischen Short und Olympic Distance unterscheiden sind kaum; bei der Olympic Distance wird die Strecke aber <b>2x</b> absolviert.
+            Die Strecken zwischen Short und Olympic Distance unterscheiden sind kaum; bei der Olympic Distance wird die Strecke aber <b>2x</b> absolviert. <span className='italic'>Die Rad- und Laufstrecke werden dabei im Uhrzeigersinn absolviert.</span>
           </p>
           <div className='mt-8'>
             <table className="table-auto text-sm/6 text-gray-600 w-full">
