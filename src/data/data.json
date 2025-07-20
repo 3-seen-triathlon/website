@@ -47,11 +47,6 @@
 					"logo": "/2025/partner/uferlos.jpg"
 				},
 				{
-					"name": "Mosteria",
-					"link": "https://mosteria.ch/",
-					"logo": "/2025/partner/mosteria.png"
-				},
-				{
 					"name": "TIT Imhof AG",
 					"link": "https://www.tit-imhof.ch/",
 					"logo": "/2025/partner/tit_imhof.svg"
@@ -99,6 +94,11 @@
 					"logo": "/2025/partner/hans_hagen.png"
 				},
 				{
+					"name": "Mosteria",
+					"link": "https://mosteria.ch/",
+					"logo": "/2025/partner/mosteria.png"
+				},
+				{
 					"name": "Landi Seebachtal",
 					"link": "https://landi.swiss/de-CH/cooperative/landi-seebachtal",
 					"logo": "/2025/partner/landi.png"
@@ -127,6 +127,26 @@
 					"name": "Exent AG",
 					"link": "https://www.exent.ch/",
 					"logo": "/2025/partner/exent.png"
+				},
+				{
+					"name": "Otto Wägeli AG",
+					"link": "https://waegeli.ch",
+					"logo": "/2025/partner/waegeli.png"
+				},
+				{
+					"name": "Zubi",
+					"link": "https://www.zubi.swiss/",
+					"logo": "/2025/partner/zubi.png"
+				},
+				{
+					"name": "Keller Technik AG",
+					"link": "https://www.zubi.swiss/",
+					"logo": "/2025/partner/keller.png"
+				},
+				{
+					"name": "Stift Hoefli",
+					"link": "https://www.stift-hoefli.ch/",
+					"logo": "/2025/partner/stift_hoefli.png"
 				}
 			]
 		},
@@ -174,6 +194,11 @@
 					"name": "Barilla",
 					"link": "https://www.barilla.com/",
 					"logo": "/2025/partner/barilla.svg"
+				},
+				{
+					"name": "Swisslos",
+					"link": "https://www.swisslos.ch/",
+					"logo": "/2025/partner/swisslos.png"
 				}
 			]
 		},

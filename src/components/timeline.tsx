@@ -93,7 +93,7 @@ export default function Timeline() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Bitte behalte im Hinterkopf, dass aus Sicherheitsgründen die Badi während dem Wettkampf nicht mit dem Auto erreicht oder verlassen werden darf.
+            Bitte beachte, dass aus Sicherheitsgründen die Badi während dem Wettkampf nicht mit dem Auto auf der üblichen Zubringerstrasse erreicht oder verlassen werden darf.
           </p>
         </div>
       </div>
