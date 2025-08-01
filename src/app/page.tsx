@@ -12,6 +12,7 @@ import Route from '@/components/route'
 import Timeline from '@/components/timeline'
 import NewsletterSignup from '@/components/newsletter'
 import LogoCloudSimple from '@/components/logo-cloud-simple'
+import Contact from '@/components/contact'
 
 export const metadata: Metadata = {
   description:
@@ -195,6 +196,7 @@ export default function Home() {
         <Timeline />
         <Team />
         <NewsletterSignup />
+        <Contact />
         <Footer />
       </main>
     </div>
