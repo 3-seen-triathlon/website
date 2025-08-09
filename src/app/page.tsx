@@ -13,6 +13,7 @@ import Timeline from '@/components/timeline'
 import NewsletterSignup from '@/components/newsletter'
 import LogoCloudSimple from '@/components/logo-cloud-simple'
 import Contact from '@/components/contact'
+import Banner from '@/components/banner'
 
 export const metadata: Metadata = {
   description:
@@ -184,21 +185,24 @@ function Routes() {
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
-      <Hero />
-      <main>
-        <Container className="pt-12 sm:pt-24">
-          <LogoCloud />
-        </Container>
-        <Testimonials />
-        <LogoCloudSimple />
-        <Routes />
-        <Timeline />
-        <Team />
-        <NewsletterSignup />
-        <Contact />
-        <Footer />
-      </main>
-    </div>
+    <>
+      <Banner />
+      <div className="overflow-hidden">
+        <Hero />
+        <main>
+          <Container className="pt-12 sm:pt-24">
+            <LogoCloud />
+          </Container>
+          <Testimonials />
+          <LogoCloudSimple />
+          <Routes />
+          <Timeline />
+          <Team />
+          <NewsletterSignup />
+          <Contact />
+          <Footer />
+        </main>
+      </div>
+    </>
   )
 }
