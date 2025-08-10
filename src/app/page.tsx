@@ -168,7 +168,7 @@ function Routes() {
               Laufstrecke
               <ArrowDownTrayIcon className="size-5" />
             </Button>
-            <Button variant='red' href='/wettkampfzentrum.jpg'>
+            <Button variant='red' href='/wettkampfzentrum.png'>
               Wettkampfzentrum
               <ArrowDownTrayIcon className="size-5" />
             </Button>
