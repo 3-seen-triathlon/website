@@ -82,7 +82,7 @@ function classNames(...classes: any) {
 export default function Timeline() {
   return (
     <Container className="py-12 sm:py-16">
-      <Subheading>Zeitplan</Subheading>
+      <Subheading id='zeitplan'>Zeitplan</Subheading>
       <Heading as="h3" className="mt-2">
         Der Ablauf des 3ST
       </Heading>
