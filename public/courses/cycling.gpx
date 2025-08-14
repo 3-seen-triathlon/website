@@ -1,13 +1,11 @@
 <?xml version="1.0"?>
 <gpx version="1.1"
 creator="Viking 1.9 -- http://viking.sf.net/"
- xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
-  <name>cycling.gpx</name>
-  <metadata>
-    <desc>Created by: StravaGPX</desc>
-  </metadata>
+xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www8.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v2 http://www.garmin.com/xmlschemas/TrackPointExtensionv2.xsd http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd">
+  <name>Top Layer</name>
 <trk>
   <name>VIKING_TR001</name>
+  <extensions><gpxx:TrackExtension><gpxx:DisplayColor>DarkGreen</gpxx:DisplayColor></gpxx:TrackExtension></extensions>
   <trkseg>
   <trkpt lat="47.608830000000005" lon="8.847940000000001">
     <ele>435.99</ele>
@@ -102,34 +100,34 @@ creator="Viking 1.9 -- http://viking.sf.net/"
   <trkpt lat="47.609100000000005" lon="8.868170000000001">
     <ele>462.5</ele>
   </trkpt>
-  <trkpt lat="47.608560000000004" lon="8.86885">
+  <trkpt lat="47.60817423850701" lon="8.86928715362549">
     <ele>456.34000000000003</ele>
   </trkpt>
-  <trkpt lat="47.6079" lon="8.869610000000002">
+  <trkpt lat="47.60750153268895" lon="8.8700274433136">
     <ele>450.66</ele>
   </trkpt>
-  <trkpt lat="47.60718000000001" lon="8.87039">
+  <trkpt lat="47.60723389463506" lon="8.869845053100587">
     <ele>447.24</ele>
   </trkpt>
-  <trkpt lat="47.60681" lon="8.87063">
+  <trkpt lat="47.60699518926944" lon="8.869823595428468">
     <ele>445.91</ele>
   </trkpt>
-  <trkpt lat="47.606300000000005" lon="8.870830000000002">
+  <trkpt lat="47.60646714019634" lon="8.869855781936646">
     <ele>443.14000000000004</ele>
   </trkpt>
-  <trkpt lat="47.60615000000001" lon="8.87092">
+  <trkpt lat="47.606177795977686" lon="8.870402952575684">
     <ele>442.41</ele>
   </trkpt>
-  <trkpt lat="47.606010000000005" lon="8.871030000000001">
+  <trkpt lat="47.606394804291725" lon="8.870563885116578">
     <ele>442.01</ele>
   </trkpt>
-  <trkpt lat="47.605880000000006" lon="8.871170000000001">
+  <trkpt lat="47.60644543943546" lon="8.87075700416565">
     <ele>441.6700000000001</ele>
   </trkpt>
-  <trkpt lat="47.60575" lon="8.871350000000001">
+  <trkpt lat="47.606112693307914" lon="8.870939394378663">
     <ele>441.31</ele>
   </trkpt>
-  <trkpt lat="47.605520000000006" lon="8.87175">
+  <trkpt lat="47.605751010333634" lon="8.871325632476807">
     <ele>440.86</ele>
   </trkpt>
   <trkpt lat="47.605360000000005" lon="8.87212">
@@ -138,85 +136,85 @@ creator="Viking 1.9 -- http://viking.sf.net/"
   <trkpt lat="47.60521000000001" lon="8.87254">
     <ele>440.94000000000005</ele>
   </trkpt>
-  <trkpt lat="47.60512000000001" lon="8.872660000000002">
+  <trkpt lat="47.60513252665295" lon="8.8727472032547">
     <ele>440.82000000000005</ele>
   </trkpt>
-  <trkpt lat="47.60481500319383" lon="8.873520005070652">
+  <trkpt lat="47.60483594124115" lon="8.873648425483704">
     <ele>440.70000000000005</ele>
   </trkpt>
-  <trkpt lat="47.604510000000005" lon="8.87438">
+  <trkpt lat="47.60454297107365" lon="8.874436994934083">
     <ele>440.43</ele>
   </trkpt>
-  <trkpt lat="47.604255001962564" lon="8.8750450031349">
+  <trkpt lat="47.60427893482557" lon="8.875129004859925">
     <ele>440.11000000000007</ele>
   </trkpt>
-  <trkpt lat="47.604000000000006" lon="8.875710000000002">
+  <trkpt lat="47.60402574813051" lon="8.87576737060547">
     <ele>438.92</ele>
   </trkpt>
-  <trkpt lat="47.603860000000005" lon="8.875960000000001">
+  <trkpt lat="47.603891920382274" lon="8.876035591506959">
     <ele>438.1700000000001</ele>
   </trkpt>
-  <trkpt lat="47.60361" lon="8.876330000000001">
+  <trkpt lat="47.60365319976523" lon="8.876357456588746">
     <ele>437.14000000000004</ele>
   </trkpt>
-  <trkpt lat="47.60298000254741" lon="8.87687667987675">
+  <trkpt lat="47.603016606127206" lon="8.876926084899903">
     <ele>436.06000000000006</ele>
   </trkpt>
-  <trkpt lat="47.60235000249761" lon="8.877423346586408">
+  <trkpt lat="47.6023872388925" lon="8.877478619956971">
     <ele>436.18</ele>
   </trkpt>
-  <trkpt lat="47.60172000000001" lon="8.877970000000001">
+  <trkpt lat="47.60175786408609" lon="8.87802579059601">
     <ele>435.68</ele>
   </trkpt>
-  <trkpt lat="47.6012500008657" lon="8.878375003506678">
+  <trkpt lat="47.601269550830224" lon="8.878412028694154">
     <ele>435.32000000000005</ele>
   </trkpt>
-  <trkpt lat="47.60078000000001" lon="8.87878">
+  <trkpt lat="47.60083910795849" lon="8.878841182136537">
     <ele>435.47</ele>
   </trkpt>
-  <trkpt lat="47.60042000000001" lon="8.87931">
+  <trkpt lat="47.600455685275264" lon="8.879356166267396">
     <ele>435.42</ele>
   </trkpt>
-  <trkpt lat="47.600170000000006" lon="8.879900000000001">
+  <trkpt lat="47.60020971452723" lon="8.879914065742494">
     <ele>435.21000000000004</ele>
   </trkpt>
-  <trkpt lat="47.599760005929696" lon="8.881075009407521">
+  <trkpt lat="47.599797349207684" lon="8.881121059799195">
     <ele>434.7300000000001</ele>
   </trkpt>
-  <trkpt lat="47.59935" lon="8.88225">
+  <trkpt lat="47.599403067047106" lon="8.882285138511659">
     <ele>435.41</ele>
   </trkpt>
-  <trkpt lat="47.599090000000004" lon="8.88316">
+  <trkpt lat="47.5991209183561" lon="8.883186360740662">
     <ele>435.83000000000004</ele>
   </trkpt>
-  <trkpt lat="47.598830002297234" lon="8.883880003454488">
+  <trkpt lat="47.59888217596755" lon="8.883905192756654">
     <ele>436.58000000000004</ele>
   </trkpt>
-  <trkpt lat="47.59857" lon="8.8846">
+  <trkpt lat="47.59860725914035" lon="8.884650846862794">
     <ele>437.58000000000004</ele>
   </trkpt>
-  <trkpt lat="47.59835" lon="8.8854">
+  <trkpt lat="47.59838660116821" lon="8.885417958641053">
     <ele>438.01</ele>
   </trkpt>
-  <trkpt lat="47.59815000382504" lon="8.886340003661536">
+  <trkpt lat="47.598173176998365" lon="8.886394282722474">
     <ele>439.15000000000003</ele>
   </trkpt>
-  <trkpt lat="47.597950000000004" lon="8.88728">
+  <trkpt lat="47.59799592575487" lon="8.887300869369508">
     <ele>440.39000000000004</ele>
   </trkpt>
-  <trkpt lat="47.59779" lon="8.8878">
+  <trkpt lat="47.59782229130148" lon="8.887848040008546">
     <ele>440.55000000000007</ele>
   </trkpt>
-  <trkpt lat="47.59769000000001" lon="8.888050000000002">
+  <trkpt lat="47.59771376947551" lon="8.888100167655946">
     <ele>440.72</ele>
   </trkpt>
-  <trkpt lat="47.597550000000005" lon="8.888300000000001">
+  <trkpt lat="47.59757269076523" lon="8.888363024139405">
     <ele>440.9</ele>
   </trkpt>
-  <trkpt lat="47.59706000234179" lon="8.889035006891687">
+  <trkpt lat="47.59708795588743" lon="8.889097949409486">
     <ele>441.06000000000006</ele>
   </trkpt>
-  <trkpt lat="47.59657000000001" lon="8.88977">
+  <trkpt lat="47.596691844574806" lon="8.88972022190094">
     <ele>440.71000000000004</ele>
   </trkpt>
   <trkpt lat="47.59662" lon="8.889850000000001">
