@@ -63,7 +63,7 @@ function Route() {
         getLayerFromData(getStyle('red'), swimCourse),
         getLayerFromData(getStyle('blue'), cyclingCourse),
         getLayerFromData(getStyle('green'), runCourse),
-        getLayerFromData(pointStyle, posten),
+        // getLayerFromData(pointStyle, posten),
       ],
       view: new View({
         center: [

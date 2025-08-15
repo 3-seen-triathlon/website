@@ -117,13 +117,10 @@ function Routes() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Auf der Karte sind die unterschiedlichen Strecken aufgezeichnet. Bei der Laufstrecke gibt es zwei Verpflegungsposten; sie sind mit schwarzen Punkten markiert.
-          </p>
-          <p className="text-sm/6 text-gray-600 mt-8">
             Die Strecken zwischen Short und Olympic Distance unterscheiden sind kaum; bei der Olympic Distance wird die Strecke aber <b>2x</b> absolviert. <span className='italic'>Die Rad- und Laufstrecke werden dabei im Uhrzeigersinn absolviert.</span>
           </p>
           <p className="text-sm/6 text-gray-600 mt-8">
-              <span className="font-bold">Parkplätze:</span> Beschilderung vor Ort beachten – bitte frühzeitig anreisen! Der Badiparkplatz ist zwar sehr nah am Wettkampfzentrum, jedoch kostenpflichtig. Er ist zudem während dem Wettkampf gesperrt und es ist keine Ausfahrt möglich von 10.00 bis ca. 13.00 Uhr. Es hat aber Gratisparkplätze etwas weiter weg. Bitte Beschilderung beachten und den Einweiseposten Folge leisten.
+            <span className="font-bold">Parkplätze:</span> Beschilderung vor Ort beachten – bitte frühzeitig anreisen! Der Badiparkplatz ist zwar sehr nah am Wettkampfzentrum, jedoch kostenpflichtig. Er ist zudem während dem Wettkampf gesperrt und es ist keine Ausfahrt möglich von 10.00 bis ca. 13.00 Uhr. Es hat aber Gratisparkplätze etwas weiter weg. Bitte Beschilderung beachten und den Einweiseposten Folge leisten.
           </p>
           <div className='mt-8'>
             <table className="table-auto text-sm/6 text-gray-600 w-full">
